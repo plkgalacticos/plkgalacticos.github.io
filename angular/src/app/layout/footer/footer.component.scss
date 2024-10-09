@@ -1,0 +1,31 @@
+@import '../../../assets/styles/layout.scss';
+
+.footer {
+  row-gap: 6rem;
+  column-gap: 4rem;
+  min-height: 30vh;
+  padding: 6rem 1rem;
+}
+
+.footer-logo {
+  width: 192px;
+  height: auto;
+}
+
+
+.fed-logos {
+  gap: 1rem;
+}
+
+.fed-logos img {
+  width: 96px;
+  height: auto;
+}
+
+.social {
+  gap: 2rem;
+}
+
+.social-logos {
+  gap: 2rem;
+}

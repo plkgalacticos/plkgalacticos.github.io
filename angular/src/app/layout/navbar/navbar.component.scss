@@ -1,0 +1,114 @@
+@import '../../../assets/styles/layout.scss';
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: var(--space-md);
+  // display: flex;
+  // flex-direction: row;
+  // align-items: center;
+  // justify-content: space-evenly;
+  z-index: 10;
+
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.nav-logo img{
+  width: 120px;
+  height: auto;
+}
+
+.nav-links {
+  gap: 1.7rem;
+}
+
+.nav-link a:hover {
+  color: var(--color-yellow-main);
+}
+
+
+// BURGER
+
+.burger {
+  cursor: pointer;
+  position: absolute;
+  right: 1rem;
+
+  div {
+    width: 18px;
+    height: 3px;
+    background-color: var(--color-purple-main);
+    margin: 4px;
+
+    transition: all 0.3s ease;
+  }
+}
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 5px);
+}
+.toggle .line2 {
+  opacity: 0;
+}
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -5px);
+}
+
+
+// MOBILE
+
+.navbar-mobile {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: var(--space-md);
+  // display: flex;
+  // flex-direction: row;
+  // align-items: center;
+  // justify-content: space-evenly;
+  z-index: 10;
+
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+
+  height: 6rem;
+}
+
+.nav-links-mobile {
+  width: 100%;
+  position: fixed;
+  top: 6rem;
+  z-index: 10;
+
+  // background-color: rgba(255, 255, 255, 0.5);
+  // backdrop-filter: blur(8px);
+  // -webkit-backdrop-filter: blur(8px);
+
+  background-color: var(--color-purple-main);
+  color: var(--color-text-secondary);
+
+  display: flex;
+  height: 0px;
+  transition: 0.5s ease-out;
+  overflow: hidden;
+}
+
+.nav-link-mobile {
+  padding-bottom: var(--space-md);
+}
+
+.nav-link-mobile a:hover, .nav-link-mobile a:active, .nav-link-mobile a:focus {
+  color: var(--color-yellow-main);
+}
+
+.toggle-nav-content {
+  height: 12rem;
+}
+
+@media only screen and (max-width: 768px) {
+
+}
