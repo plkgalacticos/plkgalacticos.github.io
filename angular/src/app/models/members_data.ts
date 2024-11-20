@@ -93,10 +93,8 @@ Donosim posebnu atmosferu na natjecanju sa svojim općepoznatim hypeanjem, uvije
     ipf: 'https://www.openipf.org/u/stjepanromic',
     description: `Ja sam Stjepan, studiram stomatologiju i volim powerliftat kako bi bio efikasniji u vađenju zubi.
 
-Pridružio sam se ovom klubu zbog stoga što sam se stvarno pronašao u ovom sportu i želim ostvariti što bolje ciljeve i cijenim zajednicu koja se međusovno motivira i gura kako bi svi postali bolji
-
-Jebiga nemam što više za reći osim što nisam baš fan rasnih manjina u Hrvatskoj`,
-    description_en: "I'm Stjepan, studying dentistry, and I like powerlifting to be more efficient in tooth extraction. I joined this club because I really found myself in this sport and want to achieve better goals, and I value the community that motivates each other and pushes to become better. Damn, I don't have much more to say except that I'm not really a fan of ethnic minorities in Croatia.",
+Pridružio sam se ovom klubu zbog stoga što sam se stvarno pronašao u ovom sportu i želim ostvariti što bolje ciljeve i cijenim zajednicu koja se međusovno motivira i gura kako bi svi postali bolji.`,
+    description_en: "I'm Stjepan, studying dentistry, and I like powerlifting to be more efficient in tooth extraction. I joined this club because I really found myself in this sport and want to achieve better goals, and I value the community that motivates each other and pushes to become better.",
     imgUrl: '/assets/images/members/Romic_Stjepan.jpg'
   },
   {
@@ -118,7 +116,7 @@ Jebiga nemam što više za reći osim što nisam baš fan rasnih manjina u Hrvat
     name: 'Marko Kuzmić',
     nickname: 'Profesor',
     nickname_en: 'Professor',
-    weight: "66/74/83",
+    weight: "83",
     category: "Open",
     category_en: "Open",
     years_competing: 4,

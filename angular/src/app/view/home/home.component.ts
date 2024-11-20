@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import 'particlesjs'
 declare var particlesJS: any;
 
@@ -7,7 +7,7 @@ declare var particlesJS: any;
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })
-export class HomeComponent{
+export class HomeComponent implements OnInit{
 
   // ngOnInit(): void {
   //   //Called after the constructor, initializing input properties, and the first call to ngOnChanges.
@@ -18,5 +18,8 @@ export class HomeComponent{
 
   //   particlesJS.load('particles-js', '../../assets/particles.json', null);
   // }
+  ngOnInit(): void {
+    window.scrollTo(0, 1);
+  }
 }
 
