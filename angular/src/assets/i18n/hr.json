@@ -1,0 +1,119 @@
+{
+  "nav": {
+    "home": "Početna",
+    "members": "Članovi"
+  },
+  "hero": {
+    "h": "Klub iznad svega",
+    "btn": "Postani Galactico",
+    "data": {
+      "h1": "Oboreni rekordi",
+      "h2": "Medalje",
+      "h3": "Međunarodni natjecatelji"
+    }
+  },
+  "story": {
+    "h": "Priča",
+    "our": "Naša",
+    "h2": "TKO SMO MI",
+    "p1": "Dobrodošli u Galacticos, gdje snaga gradi zajednicu! Naš klub nije posvećen samo treningu i rezultatu, to je zajednica posvećenih sportaša koji dijele istu strast prema powerliftingu. Pod motom 'Klub iznad svega', težimo izgradnji najtrofejnijeg i najjačeg powerlifting kluba u Hrvatskoj, a i šire.",
+    "p2": "U Galacticosu ne vjerujemo samo u snagu mišića, već u snagu timskog duha i podrške. Naš cilj je omogućiti svakom članu da ostvari svoje ciljeve, bez obzira na to jesu li novi u sportu ili iskusni natjecatelji. Ovdje ćete pronaći vrhunske trenere, najjače liftere i prijateljsku atmosferu, koja teži k tome da nitko nije iznad kluba, već svatko doprinosi istom. Takav duh motivirat će vas da postignete zavidne rezultate i pređete preko svojih granica.",
+    "p3": "Pridružite nam se na ovom uzbudljivom putovanju, postanite dio naše zajednice i izvucite maksimum iz sebe. Zajedničkim snagama možemo izgraditi najbolji klub ikad!",
+    "btn": "Upoznajte Galacticose"
+  },
+  "mission": {
+    "h": "Misija",
+    "our": "Naša",
+    "h2": "ZA ŠTO SE ZALAŽEMO",
+    "p": "Izgraditi najinkluzivniju i najposvećeniju zajednicu sportaša snage, osigurati platforme za rast, izvrsnost i priznanje na svakoj razini."
+  },
+  "vision": {
+    "h": "Vizija",
+    "our": "Naša",
+    "h2": "Pogled u budućnost",
+    "p": "Stvoriti svjetski poznato godišnje natjecanje u powerliftingu koje postavlja nove standarde u sportskom duhu, sportskim dostignućima i mogućnostima sponzorstva."
+  },
+  "values": {
+    "h": "Vrijednosti",
+    "our": "Naše",
+    "h1": "Snaga & Otpornost",
+    "p1": "Prihvaćajući mentalnu i fizičku snagu, inspiriramo članove da prevladaju granice i neprestano se poboljšavaju.",
+    "h2": "Zajednica & Podrška",
+    "p2": "Naša zajednica cvjeta na međusobnoj podršci i druženju, pozivajući liftere svih razina da zajedno rastu.",
+    "h3": "Integritet & Sportsko Ponašanje",
+    "p3": "Njegujemo najviše standarde poštenja i poštovanja, stvarajući pouzdano i pozitivno okruženje za sve natjecatelje.",
+    "h4": "Zdravlje & Dobrobit",
+    "p4": "Promičući holistički pristup, fokusiramo se na cjelokupno zdravlje, nudeći smjernice o prehrani, oporavku i prevenciji ozljeda."
+  },
+  "comp": {
+    "h1": "7. - 9. ožujka",
+    "h2": "Lokacija",
+    "btn": "Ostanite informirani",
+    "p": "Po prvi puta u Hrvatskoj, Cibalae Open Kup će ugostiti natjecatelje iz više od 5 zemalja. Ovaj je događaj prekretnica koja okuplja vrhunske powerlifters iz cijelog svijeta."
+  },
+  "faq": {
+    "h1": "Često",
+    "h2": "Postavljana",
+    "h3": "Pitanja",
+    "q1": "Što je powerlifting?",
+    "a1": "Powerlifting je sport snage koji se sastoji od tri osnovne discipline: čučanj, bench press i mrtvo dizanje. Cilj je podići najveću moguću težinu u svakoj disciplini.",
+    "q2": "Tko može trenirati powerlifting?",
+    "a2": "Powerlifting je za sve! Bez obzira na dob, spol ili razinu iskustva, naš klub će vas podržati na svakom koraku.",
+    "q3": "Kako powerlifting utječe na moje tijelo?",
+    "a3": "Powerlifting povećava snagu, poboljšava gustoću mišića i kostiju te unapređuje vašu tjelesnu kompoziciju, čineći vas jačim i izdržljivijim.",
+    "q4": "Pomaže li powerlifting u mršavljenju?",
+    "a4": "Da, powerlifting može pomoći u mršavljenju jer podizanje teških utega povećava potrošnju kalorija i ubrzava metabolizam, čak i nakon treninga.",
+    "q5": "Je li powerlifting dobar za starije osobe?",
+    "a5": "Definitivno. Powerlifting jača mišiće i kosti, što je ključno za održavanje mobilnosti i smanjenje rizika od ozljeda kod starijih osoba.",
+    "q6": "Koliko često trebam trenirati?",
+    "a6": "To ovisi o vašim ciljevima i rasporedu. Obično se preporučuju 3-5 treninga tjedno za optimalan napredak.",
+    "q7": "Koje su dobne kategorije u powerliftingu?",
+    "a7": "Powerlifting ima više dobnih kategorija koje omogućuju natjecanje u skladu s dobi natjecatelja: Kadet: do 18 godina, Junior: 19-23 godine, Senior/Open: 24-39 godina, Masters: 40 godina i stariji (podijeljeni u dobne podkategorije: Masters I, II, III itd.).",
+    "q8": "Koje su težinske kategorije u powerliftingu?",
+    "a8": "Težinske kategorije su sljedeće: Muškarci: 59 kg, 66 kg, 74 kg, 83 kg, 93 kg, 105 kg, 120 kg, 120+ kg, Žene: 47 kg, 52 kg, 57 kg, 63 kg, 69 kg, 76 kg, 84 kg, 84+ kg",
+    "q9": "Kako se prijaviti za natjecanje?",
+    "a9": "Prijava za natjecanje obavlja se putem saveza ili organizatora natjecanja. Važno je napomenuti da morate biti član kluba kako biste se mogli natjecati.",
+    "q10": "Koju opremu trebam za natjecanje?",
+    "a10": "Za sudjelovanje na natjecanjima obavezni su natjecateljski triko (singlet), pamučna majica i duge čarape za mrtvo dizanje. Ostala oprema, poput remena, steznika za koljena i zapešća, nije obavezna, ali se može koristiti ako želite dodatnu podršku ili sigurnost.",
+    "q11": "Kada se obavlja vaganje?",
+    "a11": "Vaganje se obavlja 2 sata prije početka natjecanja. To je obavezan proces gdje se utvrđuje vaša težinska kategorija. Nakon vaganja imate dovoljno vremena za obrok, rehidrataciju i pripremu prije početka natjecanja.",
+    "q12": "Što znači moto kluba 'Klub iznad svega'?",
+    "a12": "Moto 'Klub iznad svega' odražava našu filozofiju da niti jedan pojedinac nije važniji od kluba. Svi članovi podržavaju jedni druge, bodre se tijekom treninga i natjecanja te rade na tome da postanu što bolji sportaši. Snaga našeg kluba leži u zajedništvu.",
+    "q13": "Kako se mogu učlaniti u klub?",
+    "a13": "Za učlanjenje kliknite ",
+    "a132": "gumb",
+    "a133": " u nastavku."
+  },
+  "join": {
+    "h1": "Postani",
+    "h2": "Galactico",
+    "h3": "Danas",
+    "p": "Pridruži nam se u našoj misiji da postanemo najbolji powerlifting klub",
+    "btn": "Rastimo zajedno"
+  },
+  "footer": {
+    "h1": "O nama",
+    "h2": "Dokumenti",
+    "h3": "Društvene mreže",
+    "l11": "Početna",
+    "l12": "Članovi",
+    "l13": "Registracija",
+    "l21": "Statut"
+  },
+  "members": {
+    "medals": "medalja",
+    "years": "godina u sportu",
+    "records": "aktivnih rekorda"
+  },
+  "swal": {
+    "h": "Dobrodošao budući Galactico!",
+    "p": "Dobrodošao u prvi korak prema postajanju Galacticom! Drago nam je što si pokazao interes za pridruživanje našoj zajednici u powerliftingu. Molimo slijedi korake u nastavku kako bi završio svoju registraciju.",
+    "l11": "Ispuni ",
+    "l12": "Obrazac za članstvo",
+    "a": "https://docs.google.com/forms/d/19Sa7yMPG-rdvS_aRigg8WWvJKFJqGYeB8HP570iIxgU/edit?usp=drive_web",
+    "l21": "Nakon što pošalješ obrazac, molimo pošalji nam izravnu poruku na ",
+    "l22": "To će nam pomoći potvrditi tvoju prijavu i pružiti ti daljnje informacije o tvojem članstvu i aktivnostima kluba.",
+    "btn": "Ide gas"
+  }
+
+}

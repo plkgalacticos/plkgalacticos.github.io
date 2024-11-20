@@ -1,19 +1,10 @@
 @import '../../../assets/styles/layout.scss';
 
 .navbar {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  padding: var(--space-md);
-  // display: flex;
-  // flex-direction: row;
-  // align-items: center;
-  // justify-content: space-evenly;
-  z-index: 10;
-
-  background-color: rgba(255, 255, 255, 0.5);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
+  background-color: rgba(239, 239, 239, 1);
+  // background-color: rgba(239, 239, 239, 0.95);
+  // backdrop-filter: blur(2px);
+  // -webkit-backdrop-filter: blur(8px);
 }
 
 .nav-logo img{
@@ -21,14 +12,9 @@
   height: auto;
 }
 
-.nav-links {
-  gap: 1.7rem;
-}
-
 .nav-link a:hover {
   color: var(--color-yellow-main);
 }
-
 
 // BURGER
 
@@ -61,40 +47,15 @@
 // MOBILE
 
 .navbar-mobile {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  padding: var(--space-md);
-  // display: flex;
-  // flex-direction: row;
-  // align-items: center;
-  // justify-content: space-evenly;
-  z-index: 10;
-
-  background-color: rgba(255, 255, 255, 0.5);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-
-  height: 6rem;
+  background-color: rgba(239, 239, 239, 1);
+  // background-color: rgba(239, 239, 239, 0.8);
+  // backdrop-filter: blur(4px);
+  // -webkit-backdrop-filter: blur(8px);
 }
 
 .nav-links-mobile {
-  width: 100%;
-  position: fixed;
-  top: 6rem;
-  z-index: 10;
 
-  // background-color: rgba(255, 255, 255, 0.5);
-  // backdrop-filter: blur(8px);
-  // -webkit-backdrop-filter: blur(8px);
-
-  background-color: var(--color-purple-main);
-  color: var(--color-text-secondary);
-
-  display: flex;
-  height: 0px;
   transition: 0.5s ease-out;
-  overflow: hidden;
 }
 
 .nav-link-mobile {
@@ -106,9 +67,5 @@
 }
 
 .toggle-nav-content {
-  height: 12rem;
-}
-
-@media only screen and (max-width: 768px) {
-
+  height: 14rem;
 }

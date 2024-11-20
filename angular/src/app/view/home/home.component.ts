@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import 'particlesjs'
 declare var particlesJS: any;
 
@@ -7,16 +7,16 @@ declare var particlesJS: any;
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })
-export class HomeComponent implements OnInit{
+export class HomeComponent{
 
-  ngOnInit(): void {
-    //Called after the constructor, initializing input properties, and the first call to ngOnChanges.
-    //Add 'implements OnInit' to the class.
-    particlesJS.load('particles-js', 'assets/particles.json', function() {
-      console.log('callback - particles.js config loaded');
-    });
+  // ngOnInit(): void {
+  //   //Called after the constructor, initializing input properties, and the first call to ngOnChanges.
+  //   //Add 'implements OnInit' to the class.
+  //   particlesJS.load('particles-js', 'assets/particles.json', function() {
+  //     console.log('callback - particles.js config loaded');
+  //   });
 
-    particlesJS.load('particles-js', '../../assets/particles.json', null);
-  }
+  //   particlesJS.load('particles-js', '../../assets/particles.json', null);
+  // }
 }
 
