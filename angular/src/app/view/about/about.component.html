@@ -1,0 +1,42 @@
+<main id="about" class="px-4 py-8 lg:py-16 bg-logo-black text-white">
+  <!-- <div id="particles-js" class="particles-background">
+    <canvas class="particles-js-canvas-el" style="width: 100%; height: 100vh;">
+    </canvas>
+  </div> -->
+
+  <section class="hero text-center">
+    <img class="hero-logo slide-top" src="/assets/images/logo/logo.svg" alt="LOGO">
+    <h1 class="hero-text font-bold text-4xl xl:text-6xl text-logo-purple slide-bottom font-secondary mt-12">&bdquo;{{'Klub iznad svega' | uppercase}}&#8223;</h1>
+    <button class="hero-button btn-primary bg-logo-yellow-op-8 text-logo-white text-2xl md:text-3xl font-semibold z-10 slide-in-elliptic-top-fwd px-8 py-4  mt-12 hover:text-logo-purple">Become a Galacticos</button>
+  </section>
+
+  <!-- DATA -->
+
+  <section class="max-container pr-4 bg-logo-black text-white">
+      <div class="flex flex-col md:flex-row justify-between flex-wrap gap-12">
+          <div class="flex flex-row justify-start md:justify-center items-start gap-8">
+            <img class="icon w-[72px] h-[72px] md:w-[96px] md:h-[96px]" src="/assets/images/icons/trophy.svg" alt="WAREHOUSE">
+            <div class="flex flex-col justify-start items-start">
+              <h2 class="flex text-3xl md:text-6xl -translate-y-1 md:-translate-y-4 leading-none"><app-counter [targetValue]="86" class="pr-4"></app-counter></h2>
+              <h4 class="text-lg md:text-2xl font-semibold">Oborenih rekorda</h4>
+            </div>
+          </div>
+
+          <div class="flex flex-row justify-start md:justify-center items-start gap-8">
+            <img class="icon w-[72px] h-[72px] md:w-[96px] md:h-[96px]" src="/assets/images/icons/medal-white.svg" alt="OPEN ROOM">
+            <div class="flex flex-col max-w-64">
+              <h2 class="flex text-3xl md:text-6xl -translate-y-1 md:-translate-y-4 leading-none"><app-counter [targetValue]="120" class="pr-4"></app-counter></h2>
+              <h4 class="text-lg md:text-2xl font-semibold">Medalja</h4>
+            </div>
+          </div>
+
+          <div class="flex flex-row justify-start md:justify-center items-start gap-8">
+            <img class="icon w-[72px] h-[72px] md:w-[96px] md:h-[96px]" src="/assets/images/icons/globe.svg" alt="TRUCK">
+            <div class="flex flex-col max-w-32">
+              <h2 class="flex text-3xl md:text-6xl -translate-y-1 md:-translate-y-4 leading-none"><app-counter [targetValue]="2"></app-counter></h2>
+              <h4 class="text-lg md:text-2xl font-semibold self-start">Internacionalnih natjecatelja</h4>
+            </div>
+          </div>
+      </div>
+  </section>
+</main>

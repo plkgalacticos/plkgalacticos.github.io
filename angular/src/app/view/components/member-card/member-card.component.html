@@ -1,0 +1,10 @@
+<div [ngClass]="{'border-logo-yellow': isCurrent}" class="group relative border-2 bg-logo-purple rounded-md">
+  <div>
+    <img *ngIf="member.imgUrl" class="object-cover w-60 h-60" src="{{member.imgUrl}}" alt="Photo of a member">
+    <img *ngIf="!member.imgUrl" class="object-contain w-60 h-60 p-4" src="/assets/images/logo/logo-round.png" alt="Photo of a member">
+  </div>
+  <h3 class="text-2xl font-semibold px-2 py-4">{{member.name}}</h3>
+  <div class="absolute top-0 bg-black-op flex-row justify-center items-center w-full h-full hidden group-hover:flex active:hidden duration-500 cursor-pointer">
+    <img  class="bg-logo-yellow-300 rounded-full flex justify-center items-start p-2 w-12" src="/assets/images/icons/click.svg" alt="CLICK">
+  </div>
+</div>

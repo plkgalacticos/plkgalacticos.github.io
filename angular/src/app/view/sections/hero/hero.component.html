@@ -1,0 +1,79 @@
+<!-- <section id="hero" class="w-full flex flex-col justify-center h-full">
+  <div class="flex flex-col justify-center items-center gap-12 lg:gap-8 text-center">
+    <h1 #trackView [ngClass]="{'slide-top': isInView[0], 'slide-top-pre': !isInView[0]}" class="text-4xl lg:text-8xl max-md:pt-24 font-bold font-montserrat leading-normal slide-top">Cibalae Open Kup 2025</h1>
+    <img #trackView [ngClass]="{'slide-top': isInView[1], 'slide-top-pre': !isInView[1]}" class="w-full max-w-screen-sm max-lg:max-w-80 object-contain slide-top" src="/assets/images/logo/logo-bright.png" alt="GALACTICOS LOGO">
+    <h2 #trackView [ngClass]="{'slide-top': isInView[2], 'slide-top-pre': !isInView[2]}" class="text-xl lg:text-3xl text-bold max-w-screen-sm slide-top">Compete with the best and prove your strength from 7th-9th March in Vinkovci</h2>
+    <button #trackView [ngClass]="{'slide-top': isInView[3], 'slide-top-pre': !isInView[3]}" class="btn-gradient text-xl lg:text-2xl px-6 py-3 slide-top">Register now</button>
+  </div>
+</section> -->
+
+<section id="about" class="bg-logo-black text-white">
+  <div id="particles-js" class="particles-background">
+    <canvas class="particles-js-canvas-el" style="width: 100%; height: 100vh;">
+    </canvas>
+  </div>
+
+  <swal
+    #joinSwal
+    title='{{"swal.h" | translate}}'
+    html='<p class="text-left">{{"swal.p" | translate}}</p>
+    <div class="mt-4 mb-4">
+      <ul class="list-disc ml-5">
+        <li class="text-left">{{"swal.l11" | translate}}
+          <a href="{{"swal.a" | translate}}" target="_blank" class="text-blue-500 hover:underline">
+            {{"swal.l12" | translate}}
+          </a>.
+        </li>
+        <li class="text-left">{{"swal.l21" | translate}}
+          <a href="https://www.instagram.com/plk.galacticos/" target="_blank" class="text-blue-500 hover:underline">
+            Instagram
+          </a>.
+          {{"swal.l22" | translate}}
+        </li>
+      </ul>
+    </div>'
+    icon="info"
+    confirmButtonText="Ide gas"
+    >
+  </swal>
+
+  <section class="hero text-center">
+    <img class="hero-logo slide-top" src="/assets/images/logo/logo.svg" alt="Powerlifting club Galacticos logo">
+    <h1 class="hero-text font-bold text-4xl xl:text-6xl text-logo-purple slide-bottom font-secondary mt-12">&bdquo;{{"hero.h" | translate | uppercase}}&#8223;</h1>
+    <button class="hero-button btn-primary bg-logo-yellow-op-8 text-logo-white text-2xl md:text-3xl font-semibold z-10 slide-in-elliptic-top-fwd px-8 py-4  mt-12 hover:text-logo-purple"
+    [swal]="joinSwal">
+      {{"hero.btn" | translate}}
+    </button>
+  </section>
+
+  <!-- DATA -->
+
+  <section class="padding-xs max-container pr-4 bg-logo-black text-white">
+      <div class="flex flex-col md:flex-row justify-between flex-wrap gap-12">
+          <div class="flex flex-row justify-start md:justify-center items-start gap-3 md:gap-8">
+            <img class="icon w-[72px] h-[72px] md:w-[96px] md:h-[96px]" src="/assets/images/icons/trophy.svg" alt="WAREHOUSE">
+            <div class="flex flex-col justify-start items-start">
+              <h2 class="flex text-3xl md:text-6xl -translate-y-1 md:-translate-y-4 leading-none"><app-counter [targetValue]="86" class="pr-4"></app-counter></h2>
+              <h4 class="text-lg md:text-2xl font-semibold -translate-y-1 md:-translate-y-4">{{"hero.data.h1" | translate}}</h4>
+            </div>
+          </div>
+
+          <div class="flex flex-row justify-start md:justify-center items-start gap-3 md:gap-8">
+            <img class="icon w-[72px] h-[72px] md:w-[96px] md:h-[96px]" src="/assets/images/icons/medal-white.svg" alt="OPEN ROOM">
+            <div class="flex flex-col max-w-64">
+              <h2 class="flex text-3xl md:text-6xl -translate-y-1 md:-translate-y-4 leading-none"><app-counter [targetValue]="120" class="pr-4"></app-counter></h2>
+              <h4 class="text-lg md:text-2xl font-semibold -translate-y-1 md:-translate-y-4">{{"hero.data.h2" | translate}}</h4>
+            </div>
+          </div>
+
+          <div class="flex flex-row justify-start md:justify-center items-start gap-3 md:gap-8">
+            <img class="icon w-[72px] h-[72px] md:w-[96px] md:h-[96px]" src="/assets/images/icons/globe.svg" alt="TRUCK">
+            <div class="flex flex-col max-w-32">
+              <h2 class="flex text-3xl md:text-6xl -translate-y-1 md:-translate-y-4 leading-none"><app-counter [targetValue]="2"></app-counter></h2>
+              <h4 class="text-lg md:text-2xl font-semibold self-start -translate-y-1 md:-translate-y-4">{{"hero.data.h3" | translate}}</h4>
+            </div>
+          </div>
+      </div>
+  </section>
+</section>
+

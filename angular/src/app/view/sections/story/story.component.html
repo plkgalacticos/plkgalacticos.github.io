@@ -1,0 +1,30 @@
+<section class="relative flex flex-col lg:flex-row justify-evenly">
+  <img class="max-w-16 md:max-w-28 lg:max-w-36 h-auto absolute top-0 left-0" src="/assets/images/bg-border.png" alt="LINE">
+  <div class="padding-xl md:pl-24 lg:pl-4 lg:pt-32 md:pb-12 lg:pb-32">
+    <h2 #trackView [ngClass]="{'slide-right': isInView[0], 'slide-right-pre': !isInView[0]}" class="subheading-text">
+      {{"story.h2" | translate | uppercase}}
+    </h2>
+    <h1 #trackView [ngClass]="{'slide-left': isInView[1], 'slide-left-pre': !isInView[1]}" class="heading-text leading-3">
+      {{"story.our" | translate}}
+      <span class="text-logo-yellow">{{"story.h" | translate}}</span>
+    </h1>
+    <p #trackView [ngClass]="{'slide-top': isInView[2], 'slide-top-pre': !isInView[2]}" class="info-text-lg">
+      {{"story.p1" | translate}}
+    </p>
+    <p #trackView [ngClass]="{'slide-top': isInView[3], 'slide-top-pre': !isInView[3]}" class="info-text-lg">
+      {{"story.p2" | translate}}
+    </p>
+    <p #trackView [ngClass]="{'slide-top': isInView[4], 'slide-top-pre': !isInView[4]}" class="info-text-lg">
+      {{"story.p3" | translate}}
+    </p>
+    <a routerLink="/members">
+      <button #trackView [ngClass]="{'slide-right': isInView[5], 'slide-right-pre': !isInView[5]}" class="btn-primary py-3 mt-12 icon-text-aligner min-md:my-2">
+        <img class="icon icon--lg" src="/assets/images/icons/ig-white.svg" alt="INSTAGRAM">
+        <p class="text-xl font-semibold">{{"story.btn" | translate}}</p>
+      </button>
+    </a>
+  </div>
+  <div class="flex flex-row justify-center items-center pb-8">
+    <img class="w-full max-w-24 md:max-w-44 lg:max-w-xs object-contain" src="/assets/images/logo/logo-round.png" alt="Powerlifting Club Galacticos Logo">
+  </div>
+</section>
