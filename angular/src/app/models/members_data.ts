@@ -93,7 +93,7 @@ Donosim posebnu atmosferu na natjecanju sa svojim općepoznatim hypeanjem, uvije
     ipf: 'https://www.openipf.org/u/stjepanromic',
     description: `Ja sam Stjepan, studiram stomatologiju i volim powerliftat kako bi bio efikasniji u vađenju zubi.
 
-Pridružio sam se ovom klubu zbog stoga što sam se stvarno pronašao u ovom sportu i želim ostvariti što bolje ciljeve i cijenim zajednicu koja se međusovno motivira i gura kako bi svi postali bolji.`,
+Pridružio sam se ovom klubu zbog toga što sam se stvarno pronašao u ovom sportu i želim ostvariti što bolje ciljeve i cijenim zajednicu koja se međusobno motivira i gura kako bi svi postali bolji.`,
     description_en: "I'm Stjepan, studying dentistry, and I like powerlifting to be more efficient in tooth extraction. I joined this club because I really found myself in this sport and want to achieve better goals, and I value the community that motivates each other and pushes to become better.",
     imgUrl: '/assets/images/members/Romic_Stjepan.jpg'
   },
@@ -108,9 +108,9 @@ Pridružio sam se ovom klubu zbog stoga što sam se stvarno pronašao u ovom spo
     records: 5,
     ig: 'https://www.instagram.com/_anajozinovic_/',
     ipf: 'https://www.openipf.org/u/anajozinovic',
-    description: ``,
-    description_en: "",
-    imgUrl: ''
+    description: `Oliverova žena`,
+    description_en: "Oliver's wife",
+    imgUrl: '/assets/images/members/Jozinovic_Ana.jpg'
   },
   {
     name: 'Marko Kuzmić',

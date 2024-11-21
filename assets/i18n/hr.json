@@ -102,8 +102,8 @@
   },
   "members": {
     "medals": "medalja",
-    "years": "godina u sportu",
-    "records": "aktivnih rekorda"
+    "years": "Godina u sportu",
+    "records": "Oboreno rekorda"
   },
   "swal": {
     "h": "Dobrodošao budući Galactico!",

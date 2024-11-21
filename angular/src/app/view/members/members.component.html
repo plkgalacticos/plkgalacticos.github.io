@@ -19,11 +19,11 @@
           <div class="flex flex-row justify-start gap-3">
             <div class="flex flex-row">
               <img class="icon icon--md mr-2" src="/assets/images/icons/medal.svg" alt="MEDAL">
-              <p>{{currentMember.years_competing}} {{"members.years" | translate}}</p>
+              <p>{{"members.years" | translate}}: {{currentMember.years_competing}} </p>
             </div>
             <div *ngIf="currentMember.records > 0" class="flex flex-row">
               <img class="icon icon--md mr-2" src="/assets/images/icons/trophy-yellow.svg" alt="TROPHY">
-              <p>{{currentMember.records}} {{"members.records" | translate}}</p>
+              <p>{{"members.records" | translate}}: {{currentMember.records}} </p>
             </div>
           </div>
           <div class="flex flex-row justify-start gap-2">

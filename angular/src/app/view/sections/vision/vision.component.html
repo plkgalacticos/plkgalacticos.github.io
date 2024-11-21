@@ -1,7 +1,7 @@
 <section class="relative flex flex-col lg:flex-row lg:gap-12 ">
   <img class="max-w-16 md:max-w-28 h-auto absolute top-0 left-0" src="/assets/images/bg-border.png" alt="Yellow line border">
   <div class="padding-xl lg:pt-32 md:pl-24 pr-8 flex-1">
-    <h2 #trackView [ngClass]="{'slide-right': isInView[0], 'slide-right-pre': !isInView[0]}" class="text-lg font-semibold font-palanquin leading-3">
+    <h2 #trackView [ngClass]="{'slide-right': isInView[0], 'slide-right-pre': !isInView[0]}" class="subheading-text">
       {{"vision.h2" | translate | uppercase}}
     </h2>
     <h1 #trackView [ngClass]="{'slide-left': isInView[1], 'slide-left-pre': !isInView[1]}" class="heading-text leading-3">
@@ -12,7 +12,7 @@
       {{"vision.p" | translate}}
     </p>
   </div>
-  <div class="lg:flex-[2_2_0%] bg-vision bg-top bg-cover w-full max-md:h-[40vh] max-lg:h-[50vh]">
+  <div class="lg:flex-[2_2_0%] bg-vision bg-top bg-cover w-full max-md:min-h-[40vh] max-lg:min-h-[50vh]">
 
     <!-- <img class="object-fill" src="/assets/images/tara_deadlift.png" alt="DEADLIFT"> -->
   </div>

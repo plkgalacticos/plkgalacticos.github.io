@@ -101,9 +101,9 @@
     "l21": "Statute"
   },
   "members": {
-    "medals": "medals",
-    "years": "years competing",
-    "records": "active records"
+    "medals": "Medals",
+    "years": "Years competing",
+    "records": "Broken records"
   },
   "swal": {
     "h": "Welcome Future Galactico!",

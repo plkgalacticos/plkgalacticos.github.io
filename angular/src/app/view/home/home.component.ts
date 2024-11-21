@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Meta, Title } from '@angular/platform-browser';
 import 'particlesjs'
 declare var particlesJS: any;
 
@@ -9,17 +10,19 @@ declare var particlesJS: any;
 })
 export class HomeComponent implements OnInit{
 
-  // ngOnInit(): void {
-  //   //Called after the constructor, initializing input properties, and the first call to ngOnChanges.
-  //   //Add 'implements OnInit' to the class.
-  //   particlesJS.load('particles-js', 'assets/particles.json', function() {
-  //     console.log('callback - particles.js config loaded');
-  //   });
+  constructor(private titleService: Title, private metaService: Meta) {}
 
-  //   particlesJS.load('particles-js', '../../assets/particles.json', null);
-  // }
-  ngOnInit(): void {
+  ngOnInit() {
     window.scrollTo(0, 1);
+    this.titleService.setTitle('Galacticos');
+
+    this.metaService.updateTag({ name: 'description', content: "Naš klub je zajednica sportaša strastvenih za powerlifting. Težimo biti najjači i najtrofejniji klub." });
+    this.metaService.updateTag({ property: 'og:title', content: 'Galacticos' });
+    this.metaService.updateTag({ property: 'og:description', content: 'Naš klub je zajednica sportaša strastvenih za powerlifting. Težimo biti najjači i najtrofejniji klub.' });
+    this.metaService.updateTag({ property: 'og:image', content: 'assets/images/logo/logo-round.png' });
+    this.metaService.updateTag({ property: 'og:image:width', content: '1024' });
+    this.metaService.updateTag({ property: 'og:image:height', content: '675' });
   }
+
 }
 
