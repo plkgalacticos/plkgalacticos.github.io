@@ -79,8 +79,7 @@
         <img [ngClass]="{'rotate-90': isActive[7]}" class="icon icon--md" src="/assets/images/icons/arrow-right.svg" alt="ARROW">
         <h2 class="font-semibold text-2xl">{{"faq.q7" | translate}}</h2>
       </div>
-      <p [class.active]="isActive[7]" class="hidden">
-        {{"faq.a7" | translate}}
+      <p [class.active]="isActive[7]" class="hidden" [innerHTML]="'faq.a7' | translate">
       </p>
     </div>
 
@@ -90,8 +89,7 @@
         <img [ngClass]="{'rotate-90': isActive[8]}" class="icon icon--md" src="/assets/images/icons/arrow-right.svg" alt="ARROW">
         <h2 class="font-semibold text-2xl">{{"faq.q8" | translate}}</h2>
       </div>
-      <p [class.active]="isActive[8]" class="hidden">
-        {{"faq.a8" | translate}}
+      <p [class.active]="isActive[8]" class="hidden" [innerHTML]="'faq.a8' | translate">
       </p>
     </div>
 

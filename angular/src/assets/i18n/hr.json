@@ -49,7 +49,7 @@
     "h1": "7. - 9. ožujka",
     "h2": "Lokacija",
     "btn": "Ostanite informirani",
-    "p": "Po prvi puta u Hrvatskoj, Cibalae Open Kup će ugostiti natjecatelje iz više od 5 zemalja. Ovaj je događaj prekretnica koja okuplja vrhunske powerlifters iz cijelog svijeta."
+    "p": "Po prvi puta u Hrvatskoj, Cibalae Open Kup će ugostiti natjecatelje iz više od 5 zemalja. Ovaj je događaj prekretnica koja okuplja vrhunske powerliftere iz cijelog svijeta."
   },
   "faq": {
     "h1": "Često",
@@ -68,9 +68,9 @@
     "q6": "Koliko često trebam trenirati?",
     "a6": "To ovisi o vašim ciljevima i rasporedu. Obično se preporučuju 3-5 treninga tjedno za optimalan napredak.",
     "q7": "Koje su dobne kategorije u powerliftingu?",
-    "a7": "Powerlifting ima više dobnih kategorija koje omogućuju natjecanje u skladu s dobi natjecatelja: Kadet: do 18 godina, Junior: 19-23 godine, Senior/Open: 24-39 godina, Masters: 40 godina i stariji (podijeljeni u dobne podkategorije: Masters I, II, III itd.).",
+    "a7": "Powerlifting ima više dobnih kategorija: <ul> <br> <li>Kadet: do 18 godina</li> <li>Junior: 19-23 godine</li> <li>Senior/Open: 24-39 godina</li> <li>Masters: 40 godina i stariji (podijeljeni u dobne podkategorije: Masters I, II, III itd.)</li> </ul>",
     "q8": "Koje su težinske kategorije u powerliftingu?",
-    "a8": "Težinske kategorije su sljedeće: Muškarci: 59 kg, 66 kg, 74 kg, 83 kg, 93 kg, 105 kg, 120 kg, 120+ kg, Žene: 47 kg, 52 kg, 57 kg, 63 kg, 69 kg, 76 kg, 84 kg, 84+ kg",
+    "a8": "Težinske kategorije su sljedeće: <ul> <br> <li>Muškarci: 59 kg, 66 kg, 74 kg, 83 kg, 93 kg, 105 kg, 120 kg, 120+ kg </li> <li>Žene: 47 kg, 52 kg, 57 kg, 63 kg, 69 kg, 76 kg, 84 kg, 84+ kg</li> </ul>",
     "q9": "Kako se prijaviti za natjecanje?",
     "a9": "Prijava za natjecanje obavlja se putem saveza ili organizatora natjecanja. Važno je napomenuti da morate biti član kluba kako biste se mogli natjecati.",
     "q10": "Koju opremu trebam za natjecanje?",
