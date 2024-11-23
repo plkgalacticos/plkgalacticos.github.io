@@ -7,6 +7,7 @@ import { Component, ElementRef, OnDestroy, OnInit, QueryList, ViewChild, ViewChi
 })
 export class MissionComponent implements OnInit, OnDestroy{
   isInView: boolean[] = []; // Array to store visibility for each div
+  hasBeenInView: boolean[] = []; // Track if it has ever been in view
 
   @ViewChildren('trackView') trackDivs!: QueryList<ElementRef>;
 
@@ -22,7 +23,10 @@ export class MissionComponent implements OnInit, OnDestroy{
       (entries) => {
         entries.forEach((entry) => {
           const index = Number(entry.target.getAttribute('data-index')); // Get the div index
-          this.isInView[index] = entry.isIntersecting; // Set visibility based on intersection
+          if (!this.hasBeenInView[index] && entry.isIntersecting) {
+            this.isInView[index] = true; // Set visibility to true
+            this.hasBeenInView[index] = true; // Mark as having been in view
+          }
         });
       },
       {
@@ -35,6 +39,7 @@ export class MissionComponent implements OnInit, OnDestroy{
     // Observe each div
     this.trackDivs.forEach((div, index) => {
       this.isInView[index] = false; // Set initial visibility to false
+      this.hasBeenInView[index] = false; // Initially, hasn't been in view
       div.nativeElement.setAttribute('data-index', index.toString()); // Set a unique index
       this.observer.observe(div.nativeElement);
     });
