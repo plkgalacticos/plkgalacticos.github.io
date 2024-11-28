@@ -3,12 +3,12 @@
 </div> -->
 
 <main id="members" class="px-4 py-8 lg:px-16 lg:pb-32 pt-44 bg-logo-black text-white">
-  <div *ngIf="currentMember" class="flex flex-col justify-center items-center max-container">
+  <div class="flex flex-col justify-center items-center max-container">
     <div>
-      <h1 class="heading-text">Galactico</h1>
+      <h1 class="heading-text">{{"members.h" | translate}}</h1>
     </div>
 
-    <div class="flex flex-col xl:flex-row justify-center items-start gap-16 mt-16">
+    <div *ngIf="currentMember"  class="flex flex-col xl:flex-row justify-center items-start gap-16 mt-16">
       <div class="flex flex-col gap-8 flex-1">
         <h2 class="font-palanquin font-bold text-3xl xl:text-4xl">{{currentMember.name}}  <span *ngIf="currentMember.nickname ">({{nickname$ | async}})</span></h2>
         <div class="data flex flex-col justify-start items-start gap-3">
@@ -18,23 +18,23 @@
           </div>
           <div class="flex flex-row justify-start gap-3">
             <div class="flex flex-row">
-              <img class="icon icon--md mr-2" src="/assets/images/icons/medal.svg" alt="MEDAL">
+              <img class="icon icon--md mr-2" src="/assets/images/icons/medal.svg" alt="IKONA POWERLIFTING MEDALJE">
               <p>{{"members.years" | translate}}: {{currentMember.years_competing}} </p>
             </div>
             <div *ngIf="currentMember.records > 0" class="flex flex-row">
-              <img class="icon icon--md mr-2" src="/assets/images/icons/trophy-yellow.svg" alt="TROPHY">
+              <img class="icon icon--md mr-2" src="/assets/images/icons/trophy-yellow.svg" alt="IKONA POWERLIFTING TROFEJA">
               <p>{{"members.records" | translate}}: {{currentMember.records}} </p>
             </div>
           </div>
           <div class="flex flex-row justify-start gap-2">
-            <a href="{{currentMember.ig}}" target="_blank"><img class="icon icon--lg sm" src="/assets/images/icons/ig-white.svg" alt="IG"></a>
-            <a href="{{currentMember.ipf}}" target="_blank"><img class="icon icon--lg sm" src="/assets/images/icons/trophy.svg" alt="TROPHY"></a>
+            <a href="{{currentMember.ig}}" target="_blank"><img class="icon icon--lg sm" src="/assets/images/icons/ig-white.svg" alt="POWERLIFTING KLUB IG"></a>
+            <a href="{{currentMember.ipf}}" target="_blank"><img class="icon icon--lg sm" src="/assets/images/icons/trophy.svg" alt="POWERLIFTING KLUB TROPHY"></a>
           </div>
           <p class="mt-4 max-w-lg" [innerHTML]="description$ | async"></p>
         </div>
       </div>
       <div *ngIf="currentMember.imgUrl" class="w-full flex flex-row justify-center items-center flex-1">
-        <img class="object-cover w-full max-w-2xl max-h-[60vh] mx-auto rounded-md" src="{{currentMember.imgUrl}}" alt="Photo of a member">
+        <img class="object-cover w-full max-w-2xl max-h-[60vh] mx-auto rounded-md" src="{{currentMember.imgUrl}}" alt="Slika clana powerlifting kluba">
       </div>
     </div>
 

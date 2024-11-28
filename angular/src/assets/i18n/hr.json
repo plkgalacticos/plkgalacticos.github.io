@@ -16,7 +16,7 @@
     "h": "Priča",
     "our": "Naša",
     "h2": "TKO SMO MI",
-    "p1": "Dobrodošli u Galacticos, gdje snaga gradi zajednicu! Naš klub nije posvećen samo treningu i rezultatu, to je zajednica posvećenih sportaša koji dijele istu strast prema powerliftingu. Pod motom 'Klub iznad svega', težimo izgradnji najtrofejnijeg i najjačeg powerlifting kluba u Hrvatskoj, a i šire.",
+    "p1": "Dobrodošli u Powerlifting Klub Galacticos, gdje snaga gradi zajednicu! Naš klub nije posvećen samo treningu i rezultatu, to je zajednica posvećenih sportaša koji dijele istu strast prema powerliftingu. Pod motom 'Klub iznad svega', težimo izgradnji najtrofejnijeg i najjačeg powerlifting kluba u Hrvatskoj, a i šire.",
     "p2": "U Galacticosu ne vjerujemo samo u snagu mišića, već u snagu timskog duha i podrške. Naš cilj je omogućiti svakom članu da ostvari svoje ciljeve, bez obzira na to jesu li novi u sportu ili iskusni natjecatelji. Ovdje ćete pronaći vrhunske trenere, najjače liftere i prijateljsku atmosferu, koja teži k tome da nitko nije iznad kluba, već svatko doprinosi istom. Takav duh motivirat će vas da postignete zavidne rezultate i pređete preko svojih granica.",
     "p3": "Pridružite nam se na ovom uzbudljivom putovanju, postanite dio naše zajednice i izvucite maksimum iz sebe. Zajedničkim snagama možemo izgraditi najbolji klub ikad!",
     "btn": "Upoznajte Galacticose"
@@ -37,19 +37,19 @@
     "h": "Vrijednosti",
     "our": "Naše",
     "h1": "Snaga & Otpornost",
-    "p1": "Prihvaćajući mentalnu i fizičku snagu, inspiriramo članove da prevladaju granice i neprestano se poboljšavaju.",
+    "p1": "Gradimo mentalnu i fizičku snagu, inspiriramo članove da prevladaju granice i da neprestano napreduju.",
     "h2": "Zajednica & Podrška",
-    "p2": "Naša zajednica cvjeta na međusobnoj podršci i druženju, pozivajući liftere svih razina da zajedno rastu.",
+    "p2": "Naša zajednica je temeljena na međusobnoj podršci i druženju, pozivajući liftere svih razina da zajedno rastu.",
     "h3": "Integritet & Sportsko Ponašanje",
-    "p3": "Njegujemo najviše standarde poštenja i poštovanja, stvarajući pouzdano i pozitivno okruženje za sve natjecatelje.",
+    "p3": "Promičemo sportski fair play i stvaramo ugodno i pozitivno okruženje za sve natjecatelje.",
     "h4": "Zdravlje & Dobrobit",
-    "p4": "Promičući holistički pristup, fokusiramo se na cjelokupno zdravlje, nudeći smjernice o prehrani, oporavku i prevenciji ozljeda."
+    "p4": "Fokusiramo se na cjelokupno zdravlje, stavljamo važnost na prehranu, oporavak i prevenciju ozljeda."
   },
   "comp": {
     "h1": "7. - 9. ožujka",
     "h2": "Lokacija",
     "btn": "Ostanite informirani",
-    "p": "Po prvi puta u Hrvatskoj, Cibalae Open Kup će ugostiti natjecatelje iz više od 5 zemalja. Ovaj je događaj prekretnica koja okuplja vrhunske powerliftere iz cijelog svijeta."
+    "p": "Po prvi puta u Hrvatskoj, Cibalae Open Kup će ugostiti natjecatelje iz više od 5 zemalja. Ovo natjecanje će dići standarde natjecanja u Hrvatskoj i podići ljestvicu za sve buduće događaje ovog tipa."
   },
   "faq": {
     "h1": "Često",
@@ -98,9 +98,11 @@
     "l11": "Početna",
     "l12": "Članovi",
     "l13": "Registracija",
-    "l21": "Statut"
+    "l21": "Statut",
+    "copy": "Sva prava zadržana."
   },
   "members": {
+    "h": "Galacticosi",
     "medals": "medalja",
     "years": "Godina u sportu",
     "records": "Oboreno rekorda"
@@ -117,3 +119,4 @@
   }
 
 }
+

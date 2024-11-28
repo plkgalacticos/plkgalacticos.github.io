@@ -16,8 +16,8 @@
     "h": "Story",
     "our": "Our",
     "h2": "WHO WE ARE",
-    "p1": "Welcome to Galacticos, where strength builds community! Our club is not only dedicated to training and results; it's a community of dedicated athletes who share the same passion for powerlifting. Under the motto 'Club above all,' we strive to build the most trophy-laden and strongest powerlifting club in Croatia and beyond.",
-    "p2": "At Galacticos, we don't just believe in the strength of muscles, but in the strength of team spirit and support. Our goal is to enable every member to achieve their goals, whether they are new to the sport or experienced competitors. Here you will find top coaches, the strongest lifters, and a friendly atmosphere, aiming to ensure that no one is above the club, but everyone contributes to it. Such a spirit will motivate you to achieve impressive results and push beyond your limits.",
+    "p1": "Welcome to Powerlifting Club Galacticos, where strength builds a community! Our club is not only dedicated to training and results; it's a community of dedicated athletes who share the same passion for powerlifting. Under the motto 'Club above all,' we strive to build the most trophy-laden and strongest powerlifting club in Croatia and beyond.",
+    "p2": "At Galacticos, we don't just believe in the strength of muscles, but in the strength of team spirit and support. Our goal is to enable every member to reach their potential, whether they are new to the sport or experienced competitors. Here you will find top coaches, the strongest lifters, and a friendly atmosphere, aiming to ensure that no one is above the club, but everyone contributes to it. Such a spirit will motivate you to achieve impressive results and push beyond your limits.",
     "p3": "Join us on this exciting journey, become part of our community and get the most out of yourself. Together, we can build the best club ever!",
     "btn": "Meet Galacticos"
   },
@@ -43,7 +43,7 @@
     "h3": "Integrity & Sportsmanship",
     "p3": "We uphold the highest standards of fairness and respect, fostering a trustworthy and positive environment for all competitors.",
     "h4": "Health & Wellness",
-    "p4": "Promoting a holistic approach, we focus on overall health, offering guidance on nutrition, recovery, and injury prevention."
+    "p4": "We promote a holistic approach, we focus on overall health, offering guidance on nutrition, recovery, and injury prevention."
   },
   "comp": {
     "h1": "7th - 9th March",
@@ -98,9 +98,11 @@
     "l11": "Home",
     "l12": "Members",
     "l13": "Register",
-    "l21": "Statute"
+    "l21": "Statute",
+    "copy": "All right reserved."
   },
   "members": {
+    "h": "Galactico",
     "medals": "Medals",
     "years": "Years competing",
     "records": "Broken records"

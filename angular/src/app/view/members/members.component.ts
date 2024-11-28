@@ -24,7 +24,6 @@ export class MembersComponent {
 
   ngOnInit(): void {
     window.scrollTo(0, 1);
-    this.currentMember = members[0]
 
     this.updateText(this.translate.currentLang);  // Initialize text based on the current language
 
