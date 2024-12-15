@@ -12,15 +12,13 @@
   top: 0;
   left: 0;
   right: 0;
-
   height: 100vh;
-
   background-color: #ddd;
   overflow: hidden;
 }
 
 .hero {
-  height: 100vh;
+  height: calc(100vh);
   width: 100%;
 
   display: flex;
@@ -30,9 +28,10 @@
 }
 
 .hero-logo {
-  width: 60%;
-  height: auto;
-  animation-delay: 0.5s;
+  // width: 100%;
+  // max-width: 678px;
+  // height: auto;
+  // animation-delay: 0.5s;
 }
 
 .hero-text {

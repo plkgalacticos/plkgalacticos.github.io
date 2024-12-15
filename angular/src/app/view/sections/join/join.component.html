@@ -4,12 +4,12 @@
       <span class="text-logo-yellow">{{"join.h2" | translate}}</span>
       {{"join.h3" | translate}}
     </h2>
-    <p #trackView [ngClass]="{'slide-top': isInView[1], 'slide-top-pre': !isInView[1]}" class="z-10 text-2xl lg:text-3xl font-semibold font-montserrat leading-normal text-center">
+    <p #trackView [ngClass]="{'slide-top': isInView[1], 'slide-top-pre': !isInView[1]}" class="z-10 text-xl lg:text-3xl font-semibold font-montserrat leading-normal text-center">
       {{"join.p" | translate}}
     </p>
     <button #trackView [ngClass]="{'scale-in-center': isInView[2], 'scale-in-center-pre': !isInView[2]}"
       [swal]="joinSwal"
-      class="z-10 btn-primary px-10 py-3 text-2xl font-semibold">
+      class="z-10 btn-primary px-10 py-3 text-lg lg:text-2xl font-semibold">
       {{"join.btn" | translate}}
     </button>
 </section>

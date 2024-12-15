@@ -14,7 +14,7 @@
    <div class="w-full max-w-1440 flex flex-row items-center justify-between">
      <a routerLink="/">
        <div class="nav-logo">
-         <img src="/assets/images/logo/logo-square.png" alt="Powerlifting Klub Galacticos logo">
+         <img src="/assets/images/logo/plk-galacticos-logo-square.png" alt="Powerlifting Klub Galacticos logo">
        </div>
      </a>
      <div class="flex flex-row justify-center items-center gap-12">
@@ -30,7 +30,7 @@
           <a href="https://www.youtube.com/@PLKGalacticos" target="_blank"><img class="icon icon--lg" src="/assets/images/icons/yt-logo-black.svg" alt="YOUTUBE"></a>
        </div>
 
-      <select name="lang" id="lang" formControlName="siteLanguage" (change)="changeSiteLanguage($event)"
+      <select aria-label="Language select" name="lang" id="lang" formControlName="siteLanguage" (change)="changeSiteLanguage($event)"
         class="bg-transparent border-transparent focus:border-transparent focus:ring-0 focus:outline-none cursor-pointer">
         <option [selected]="siteLanguage.value == 'hr'" value="hr">HR</option>
         <option [selected]="siteLanguage.value == 'en'" value="en">EN</option>
@@ -42,7 +42,7 @@
   <nav class="navbar-mobile fixed w-full z-20 p-2 flex-row items-center justify-evenly flex sm:hidden">
     <a routerLink="/">
       <div class="nav-logo">
-        <img src="/assets/images/logo/logo-square.png" alt="Powerlifting Klub Galacticos logo">
+        <img src="/assets/images/logo/plk-galacticos-logo-square.png" alt="Powerlifting Klub Galacticos logo">
       </div>
     </a>
 
