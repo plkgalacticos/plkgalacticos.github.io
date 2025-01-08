@@ -72,7 +72,7 @@ const Navbar = ({t}) => {
                       <option className='' value="hr">HR</option>
                     </select>
                 </div>
-                <div><a href={"/" + t['home-link']}><Image className='max-w-32' src={'/images/logo/plk-galacticos-logo-bright.png'} alt={'PLK Galacticos logo'}></Image></a></div>
+                <div><a href={"/" + t['home-link']}><img className='max-w-32' src={'/images/logo/plk-galacticos-logo-bright.png'} alt={'PLK Galacticos logo'}></img></a></div>
                 <div className={`burger mr-2 ${isOpen ? 'toggle' : ''}`} onClick={toggleMenu}>
                   <div className="line1"></div>
                   <div className="line2"></div>
