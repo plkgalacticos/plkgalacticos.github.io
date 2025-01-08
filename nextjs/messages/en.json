@@ -88,9 +88,10 @@
       "q12": "What does the club’s motto 'Club Above All' mean?",
       "a12": "The motto 'Club Above All' reflects our philosophy that no individual is more important than the club. All members support one another, cheer each other on during training and competitions, and work together to become the best athletes they can be. The strength of our club lies in its unity.",
       "q13": "How do I join the club?",
-      "a13": "To join the club, click the ",
+      "a13": "To join the club, click the following ",
       "a132": "button",
-      "a133": " below."
+      "a133": ".",
+      "join-link": "/en/#join" 
     },
     "join": {
       "h1": "Become a",

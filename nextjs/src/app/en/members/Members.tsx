@@ -29,11 +29,13 @@ const Members = () => {
                 {currentMember.name}
                 {currentMember.nickname_en && <span> ({currentMember.nickname_en})</span>}
               </h2>
-              <div className="data flex flex-col justify-start items-start gap-4">
-                <div className="flex flex-row justify-start gap-4">
+              <div className="data flex flex-col justify-start items-start gap-2">
+                {/* <div className="flex flex-row justify-start gap-4">
                   <p className="pill">{currentMember.weight} kg</p>
                   <p className="pill">{currentMember.category}</p>
-                </div>
+                </div> */}
+                <p className="">Weight category: {currentMember.weight} kg</p>
+                <p className="">Age category: {currentMember.category}</p>
                 <div className="flex flex-row justify-start gap-3">
                   <div className="flex flex-row">
                     <img

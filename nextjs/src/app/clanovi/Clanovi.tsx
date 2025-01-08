@@ -30,11 +30,14 @@ const Clanovi = () => {
               {currentMember.name}
               {currentMember.nickname && <span> ({currentMember.nickname})</span>}
             </h2>
-            <div className="data flex flex-col justify-start items-start gap-4">
-              <div className="flex flex-row justify-start gap-4">
+            <div className="data flex flex-col justify-start items-start gap-2">
+              {/* <div className="flex flex-row justify-start gap-4">
                 <p className="pill">{currentMember.weight} kg</p>
                 <p className="pill">{currentMember.category}</p>
-              </div>
+              </div> */}
+
+              <p className="">Težinska kategorija: {currentMember.weight} kg</p>
+              <p className="">Dobna kategorija: {currentMember.category}</p>
               <div className="flex flex-row justify-start gap-3">
                 <div className="flex flex-row">
                   <img
@@ -43,7 +46,7 @@ const Clanovi = () => {
                     alt="IKONA POWERLIFTING MEDALJE"
                   />
                   <p>
-                    Years: {currentMember.years_competing}
+                    Godina u sportu: {currentMember.years_competing}
                   </p>
                 </div>
                 {currentMember.records > 0 && (

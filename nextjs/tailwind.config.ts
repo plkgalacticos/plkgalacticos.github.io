@@ -49,7 +49,7 @@ export default {
       boxShadow: {
         '3xl': '0 10px 40px rgba(0, 0, 0, 0.1)',
         'inset-gray': 'inset 0px 128px 72px 0px rgba(38,38,38,1);',
-        'inset-black': 'inset 0px 128px 72px 48px rgba(8,8,8,0.8);',
+        'inset-black': 'inset 0px 128px 72px 48px rgba(8,8,8,1);',
         'inset-md-bottom': 'inset 0px -112px 48px 0px rgba(38,38,38,1);'
       },
       backgroundImage: {

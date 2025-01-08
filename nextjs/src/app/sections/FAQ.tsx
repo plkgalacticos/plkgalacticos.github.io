@@ -89,7 +89,7 @@ const FAQ = ({ t }) => {
                         >
                         </span>
                         {index == 12 ? 
-                                                <span><span className='text-logo-yellow cursor-pointer'>{t['a132']}</span> {t['a133']}</span>
+                                                <span><a href={t['join-link']} className='text-logo-yellow cursor-pointer'>{t['a132']}</a> {t['a133']}</span>
                         
                                                 : ''
                         }

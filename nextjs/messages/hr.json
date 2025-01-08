@@ -88,9 +88,10 @@
       "q12": "Što znači moto kluba 'Klub iznad svega'?",
       "a12": "Moto 'Klub iznad svega' odražava našu filozofiju da niti jedan pojedinac nije važniji od kluba. Svi članovi podržavaju jedni druge, bodre se tijekom treninga i natjecanja te rade na tome da postanu što bolji sportaši. Snaga našeg kluba leži u zajedništvu.",
       "q13": "Kako se mogu učlaniti u klub?",
-      "a13": "Za učlanjenje kliknite ",
+      "a13": "Za učlanjenje kliknite prikazani ",
       "a132": "gumb",
-      "a133": " u nastavku."
+      "a133": ".",
+      "join-link": "/#join" 
     },
     "join": {
       "h1": "Postani",

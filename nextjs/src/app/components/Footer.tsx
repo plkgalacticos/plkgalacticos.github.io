@@ -33,7 +33,7 @@ const Footer = ({t}) => {
   };
   
   return (
-    <footer className='flex flex-col justify-end py-8 bg-footer bg-blend-darken bg-black/90 text-white px-4 min-h-[100vh] shadow-inset-black'>
+    <footer className='flex flex-col justify-end py-8 bg-footer bg-no-repeat bg-cover bg-blend-darken bg-black/90 text-white px-4  shadow-inset-black'>
         <div className='max-container flex flex-col justify-center items-center'>
             <div><img className='max-w-64 lg:max-w-96' src='/images/logo/plk-galacticos-logo-bright.png' alt='PLK Galacticos logo'></img></div>
             <div className='flex flex-col md:flex-row justify-start md:justify-evenly items-start w-full'>
