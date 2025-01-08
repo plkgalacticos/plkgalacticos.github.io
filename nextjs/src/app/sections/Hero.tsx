@@ -40,8 +40,8 @@ const Hero = ({t}) => {
             <h2 className='slide-top text-xl lg:text-3xl italic max-md:pb-2 max-md:pt-4'>&bdquo;{t['h2']}&#8217;&#8217;</h2>
             <div className='flex flex-col md:flex-row justify-center items-center gap-4 md:gap-8'>
                 <button onClick={showAlert} className='btn-primary max-md:w-full'>{t['btn']}</button>
-                <a>
-                    <button onClick={showAlert} className='btn-secondary flex flex-row justify-center items-center gap-2'>
+                <a href='https://www.instagram.com/plk.galacticos/'>
+                    <button className='btn-secondary flex flex-row justify-center items-center gap-2'>
                         <img className='w-6 h-auto' src="/icons/ig-white.svg" alt="Instagram ikona" />
                         {t['btn2']}
                     </button>
