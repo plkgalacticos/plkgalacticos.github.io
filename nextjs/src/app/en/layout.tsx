@@ -4,6 +4,7 @@ import "../globals.css";
 import en from '../../../messages/en.json';
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import CookieBanner from "../components/CookieBanner";
 
 export default async function RootLayout({
   children,

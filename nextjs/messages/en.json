@@ -138,6 +138,13 @@
       "l21": "After submitting the form, please send us a direct message on ",
       "l22": "This will help us verify your application and provide you with further details about your membership and club activities.",
       "btn": "Ide gas"
+    },
+    "cookies": {
+        "p1": "We use ",
+        "p2": "cookies",
+        "p3": " on our site",
+        "allow": "Allow Cookies",
+        "decline": "Decline"
     }
   }
   

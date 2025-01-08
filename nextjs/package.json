@@ -20,6 +20,7 @@
     "sweetalert2": "^11.15.10"
   },
   "devDependencies": {
+    "@types/gtag.js": "^0.0.20",
     "@types/node": "^20",
     "@types/prop-types": "^15.7.14",
     "@types/react": "^19",

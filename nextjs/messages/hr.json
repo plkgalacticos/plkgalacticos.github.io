@@ -138,6 +138,13 @@
       "l21": "Nakon što pošalješ obrazac, molimo pošalji nam izravnu poruku na ",
       "l22": "To će nam pomoći potvrditi tvoju prijavu i pružiti ti daljnje informacije o tvojem članstvu i aktivnostima kluba.",
       "btn": "Ide gas"
+    },
+    "cookies": {
+        "p1": "Koristimo ",
+        "p2": "kolačiće",
+        "p3": " na našoj stranici",
+        "allow": "Prihvati kolačiće",
+        "decline": "Odbij"
     }
   
   }
