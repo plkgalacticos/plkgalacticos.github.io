@@ -24,8 +24,8 @@ const Clanovi = () => {
       </div>
  
       {currentMember && (
-        <div className="flex w-full flex-col xl:flex-row justify-center items-start gap-16 mt-16">
-          <div className="flex flex-col gap-8 flex-1 mx-auto">
+        <div className="flex w-full flex-col xl:flex-row justify-start items-start gap-16 mt-16">
+          <div className="flex flex-col gap-8 flex-1 md:mx-auto">
             <h2 className="font-palanquin font-bold text-2xl xl:text-3xl">
               {currentMember.name}
               {currentMember.nickname && <span> ({currentMember.nickname})</span>}
