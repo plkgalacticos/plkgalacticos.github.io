@@ -6,6 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "predeploy": "npm run build",
+    "deploy": "echo https://plkgalacticos.hr > ./out/CNAME && gh-pages -d out --nojekyll",
+    "homepage": "https://plkgalacticos.hr/",
     "lint": "next lint"
   },
   "dependencies": {
