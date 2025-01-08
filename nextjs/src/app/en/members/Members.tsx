@@ -44,7 +44,7 @@ const Members = () => {
                       alt="POWERLIFTING MEDAL ICON"
                     />
                     <p>
-                      Years: {currentMember.years_competing}
+                      Years competing: {currentMember.years_competing}
                     </p>
                   </div>
                   {currentMember.records > 0 && (

@@ -56,7 +56,7 @@ const Clanovi = () => {
                       src="icons/trophy-yellow.svg"
                       alt="IKONA POWERLIFTING TROFEJA"
                     />
-                    <p>Records: {currentMember.records}</p>
+                    <p>Broj rekorda: {currentMember.records}</p>
                   </div>
                 )}
               </div>
