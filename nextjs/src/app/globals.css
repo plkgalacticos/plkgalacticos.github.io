@@ -286,7 +286,7 @@ body {
         bottom: calc(var(--height) + var(--gap-between-tooltip-to-button));
       }
     .value-card {
-        @apply relative bg-blend-darken bg-top bg-cover bg-black/70 transition-transform duration-500 hover:scale-105 flex flex-col justify-end items-start min-h-64 w-full  md:max-w-sm gap-6 border-2 border-white p-4 rounded-md
+        @apply relative  bg-top bg-cover bg-no-repeat bg-blend-darken bg-black/70 transition-transform duration-500 hover:scale-105 flex flex-col justify-end items-start min-h-64 w-full  md:max-w-sm gap-6 border-2 border-white p-4 rounded-md
     }
       
 }
