@@ -65,7 +65,7 @@ const Navbar = ({t}) => {
         </nav>
 
         <nav className={`fixed top-0 w-full block lg:hidden z-50 ${isOpen ? '' : 'pointer-events-none'}`}>
-            <div className='flex flex-row justify-between items-center bg-plk-black py-2 z-50 bg-black pointer-events-auto'>
+            <div className='flex flex-row justify-between items-center bg-plk-black py-4 z-50 bg-black pointer-events-auto'>
                 <div className='ml-2'>
                     <select className='bg-black cursor-pointer' value={lang} onChange={handleLanguageChange}>
                       <option className='' value="en">EN</option>

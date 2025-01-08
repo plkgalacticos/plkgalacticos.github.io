@@ -37,7 +37,7 @@ export default function Home() {
         <section className="bg-black px-4 py-12 pb-36">
             <Competition t={hr}></Competition>
         </section>
-        <section id='join' className="z-[1] bg-join bg-center bg-no-repeat bg-cover bg-fixed bg-blend-darken bg-black/70">
+        <section id='join' className="z-[1] ">
             <Join t={hr}></Join>
         </section>
         <section className="bg-black px-4 py-36">
