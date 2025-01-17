@@ -94,6 +94,11 @@ body {
     .subheading-text {
         @apply font-semibold text-2xl lg:text-3xl leading-none;
     }
+
+    .bg-center-safari {
+        background-position-x: 50%;
+        background-position-y: 0%;
+    }
 }
 
 @layer components {
