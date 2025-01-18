@@ -6,28 +6,42 @@ const Instructions = ({t}) => {
   return (
     <section className='relative bg-black text-white px-4 py-8 lg:px-16 lg:pb-32 pt-32 flex flex-col gap-16'>
         <h1 className='heading-text text-center z-10'>{t['h']}</h1>
-        <div className='flex flex-col gap-6 z-10 max-container-sm'>
+        <div className='flex flex-col gap-8 z-10 max-container-sm'>
             <h2 className='subheading-text'>{t['h1']}</h2>
-            <ol className='flex flex-col gap-2'>
-                <li className='flex flex-row items-center gap-4'><img className='w-6 h-auto' src="/images/logo/plk-galacticos-logo-round.png" alt="" />{t['l1']}</li>
-                <li className='flex flex-row items-center gap-4'><img className='w-6 h-auto' src="/images/logo/plk-galacticos-logo-round.png" alt="" />{t['l2']}</li>
-                <li className='flex flex-row items-center gap-4'><img className='w-6 h-auto' src="/images/logo/plk-galacticos-logo-round.png" alt="" />{t['l3']}</li>
-                <li className='flex flex-row items-center gap-4'><img className='w-6 h-auto' src="/images/logo/plk-galacticos-logo-round.png" alt="" />{t['l4']}</li>
-                <li className='flex flex-row items-center gap-4'><img className='w-6 h-auto' src="/images/logo/plk-galacticos-logo-round.png" alt="" />{t['l5']}</li>
+            <h3 className='text-lg'>{t['h2']}</h3>
+            <ol className='flex flex-col gap-4 list-decimal ml-4'>
+                <li><p className='font-semibold text-logo-yellow'>{t['l11']}</p> {t['l12']}</li>
+                <li><p className='font-semibold text-logo-yellow'>{t['l21']}</p> {t['l22']}</li>
+                <li><p className='font-semibold text-logo-yellow'>{t['l31']}</p> {t['l32']}</li>
+                <li><p className='font-semibold text-logo-yellow'>{t['l41']}</p> {t['l42']}</li>
+                <li><p className='font-semibold text-logo-yellow'>{t['l51']}</p> {t['l52']}</li>
             </ol>
-            <div>
+
+            <div className='mt-8'>
+                <h3 className='text-xl font-semibold mb-4'>{t['h3']}</h3>
                 <p>{t['p1']}</p>
-                <p>{t['p2']} <a href='mailto:plkgalacticos@gmail.com' className='text-logo-yellow underline'>plkgalacticos@gmail.com</a>.</p>
-                <p>{t['p3']}</p>
+                <p>{t['p2']} <a href='mailto:plkgalacticos@gmail.com' className='text-logo-yellow underline'>plkgalacticos@gmail.com</a></p>
+            </div>
+
+            <div className='flex flex-col gap-2 mt-8'>
+             <h3 className='text-xl font-semibold'>{t['h4']}</h3>
+             <p>{t['p3']}:</p>
+             <ol className='flex flex-col gap-2'>
+                 <li className='flex flex-row items-center gap-4'><img className='w-6 h-auto' src="/images/logo/plk-galacticos-logo-round.png" alt="" /><span>{t['d1']}.</span></li>
+                 <li className='flex flex-row items-center gap-4'><img className='w-6 h-auto' src="/images/logo/plk-galacticos-logo-round.png" alt="" /><span>{t['d21']} <span className='font-semibold'>{t['d22']}</span>.</span></li>
+                 <li className='flex flex-row items-center gap-4'><img className='w-6 h-auto' src="/images/logo/plk-galacticos-logo-round.png" alt="" /><span>{t['d31']} <span className='font-semibold'>{t['d32']}</span>.</span></li>
+                 <li className='flex flex-row items-center gap-4'><img className='w-6 h-auto' src="/images/logo/plk-galacticos-logo-round.png" alt="" /><span>{t['d41']} <span className='font-semibold'>{t['d42']}</span> {t['d43']}.</span></li>
+                 <li className='flex flex-row items-center gap-4'><img className='w-6 h-auto' src="/images/logo/plk-galacticos-logo-round.png" alt="" /><span>{t['d51']} <span className='font-semibold'>{t['d52']}</span>.</span></li>
+             </ol>
             </div>
             <div className='realative flex flex-col lg:flex-row flex-wrap justify-center items-center gap-8 mt-8'>
-                <a className='relative' href="/docs/obrazac_pristupnica_eng.docx" download="obrazac_pristupnica_eng.docx">
-                    <div className="button" data-tooltip="Size: 2470KB">
+                <a className='relative' href={`/docs/${t['doc1']}.pdf`} download={`${t['doc1']}.pdf`}>
+                    <div className="button" data-tooltip="Size: 195KB">
                         <div className="button-wrapper">
                           <div className="text font-semibold">
                             <span className="mr-4">
                               <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1.6em" height="2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 15V3m0 12l-4-4m4 4l4-4M2 17l.621 2.485A2 2 0 0 0 4.561 21h14.878a2 2 0 0 0 1.94-1.515L22 17"></path></svg>
-                            </span>obrazac_pristupnica_eng</div>
+                            </span>{t['doc1']}</div>
                             
                             <span className="icon">
                               <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="2em" height="2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 15V3m0 12l-4-4m4 4l4-4M2 17l.621 2.485A2 2 0 0 0 4.561 21h14.878a2 2 0 0 0 1.94-1.515L22 17"></path></svg>
@@ -35,13 +49,13 @@ const Instructions = ({t}) => {
                         </div>
                     </div>
                 </a>
-                <a className='relative' href="/docs/registracija_eng.docx" download="registracija_eng.docx">
-                    <div className="button" data-tooltip="Size: 103KB">
+                <a className='relative' href={`/docs/${t['doc2']}.pdf`} download={`${t['doc2']}.pdf`}>
+                    <div className="button" data-tooltip="Size: 233KB">
                         <div className="button-wrapper">
                           <div className="text font-semibold">
                             <span className="mr-4">
                               <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1.6em" height="2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 15V3m0 12l-4-4m4 4l4-4M2 17l.621 2.485A2 2 0 0 0 4.561 21h14.878a2 2 0 0 0 1.94-1.515L22 17"></path></svg>
-                            </span>registracija_eng</div>
+                            </span>{t['doc2']}</div>
 
                             <span className="icon">
                               <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="2em" height="2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 15V3m0 12l-4-4m4 4l4-4M2 17l.621 2.485A2 2 0 0 0 4.561 21h14.878a2 2 0 0 0 1.94-1.515L22 17"></path></svg>
@@ -49,13 +63,13 @@ const Instructions = ({t}) => {
                         </div>
                     </div>
                 </a>
-                <a className='relative' href="/docs/izjava_eng.docx" download="izjava_eng.docx">
-                    <div className="button" data-tooltip="Size: 99KB">
+                <a className='relative' href={`/docs/${t['doc3']}.pdf`} download={`${t['doc3']}.pdf`}>
+                    <div className="button" data-tooltip="Size: 190KB">
                         <div className="button-wrapper">
                           <div className="text font-semibold">
                             <span className="mr-4">
                               <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1.6em" height="2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 15V3m0 12l-4-4m4 4l4-4M2 17l.621 2.485A2 2 0 0 0 4.561 21h14.878a2 2 0 0 0 1.94-1.515L22 17"></path></svg>
-                            </span>izjava_eng</div>
+                            </span>{t['doc3']}</div>
 
                             <span className="icon">
                               <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="2em" height="2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 15V3m0 12l-4-4m4 4l4-4M2 17l.621 2.485A2 2 0 0 0 4.561 21h14.878a2 2 0 0 0 1.94-1.515L22 17"></path></svg>
@@ -63,8 +77,27 @@ const Instructions = ({t}) => {
                         </div>
                     </div>
                 </a>
-                {/* <a href="/docs/registracija_eng.docx" download="registracija_eng.docx">Click here to download the document</a>
-                <a href="/docs/izjava_eng.docx" download="izjava_eng.docx">Click here to download the document</a> */}
+                <a className='relative' href={`/docs/${t['doc4']}.pdf`} download={`${t['doc4']}.pdf`}>
+                    <div className="button" data-tooltip="Size: 143KB">
+                        <div className="button-wrapper">
+                          <div className="text font-semibold">
+                            <span className="mr-4">
+                              <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1.6em" height="2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 15V3m0 12l-4-4m4 4l4-4M2 17l.621 2.485A2 2 0 0 0 4.561 21h14.878a2 2 0 0 0 1.94-1.515L22 17"></path></svg>
+                            </span>{t['doc4']}</div>
+
+                            <span className="icon">
+                              <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="2em" height="2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 15V3m0 12l-4-4m4 4l4-4M2 17l.621 2.485A2 2 0 0 0 4.561 21h14.878a2 2 0 0 0 1.94-1.515L22 17"></path></svg>
+                            </span>
+                        </div>
+                    </div>
+                </a>
+                {/* <a href="/docs/registracija_eng.pdf" download="registracija_eng.pdf">Click here to download the document</a>
+                <a href="/docs/izjava_eng.pdf" download="izjava_eng.pdf">Click here to download the document</a> */}
+            </div>
+
+            <div className='mt-8'>
+                <p>{t['p4']}</p>
+                <p>{t['p5']}</p>
             </div>
 
         </div>

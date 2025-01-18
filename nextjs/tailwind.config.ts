@@ -43,7 +43,7 @@ export default {
         "navbar-gray": "rgba(239, 239, 239, 1)",
         "red": "#B8001F",
         "black": "#080808",
-        "white": "#f8f8f8",
+        "white": "#efefef",
         "gold": "#ffc100"
       },
       boxShadow: {
