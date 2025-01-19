@@ -1,8 +1,7 @@
 'use client'
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
-// import {google} from "googleapis"
-import { getSheetData } from "../actions/sheetData.action";
+import SheetDB from 'sheetdb-js'
 
 const CompetitionForm = ({t}) => {
 
@@ -54,6 +53,17 @@ const CompetitionForm = ({t}) => {
     setFile(newFile);
   };
 
+  const checkErrors = (errorsObj) => {
+    // Iterate over each property in the errors object
+    for (const key in errorsObj) {
+        // Check if the property's value is truthy
+        if (errorsObj[key]) {
+            return false; // Return false if any value is truthy
+        }
+    }
+    return true; // Return true if all values are falsey (empty in this case)
+};
+
   const validateForm = () => {
     const newErrors = {
         email: '',
@@ -95,7 +105,7 @@ const CompetitionForm = ({t}) => {
     }
 
     setErrors(newErrors);
-    return Object.keys(newErrors).length === 0;
+    return checkErrors(newErrors);
   };
 
   const sendEmail = () => {
@@ -129,116 +139,52 @@ const CompetitionForm = ({t}) => {
             );
   }
 
-//   const persistToGoogleSheets = async () => {
-//     try {
-//         const auth = new google.auth.GoogleAuth({
-//             credentials: {
-//                 client_email: process.env.GOOGLE_CLIENT_EMAIL,
-//                 private_key: process.env.GOOGLE_PRIVATE_KEY?.replace(/\\n/g, '\b')
-//             },
-//             scopes: [
-//                 'https://www.googleapis.com/auth/drive',
-//                 'https://www.googleapis.com/auth/drive.file',
-//                 'https://www.googleapis.com/auth/spreadsheets',
-//             ]
-//         })
-
-//         const sheet = google.sheets({version: 'v4', auth})
-
-//         await sheet.spreadsheets.values.append({
-//             spreadsheetId: process.env.GOOGLE_SHEET_ID,
-//             range: 'A1:Q1',
-//             valueInputOption: 'USER_ENTERED',
-//             requestBody: {
-//                 values: [
-//                     form.email,
-//                     form.gender,
-//                     form.name,
-//                     form.surname,
-//                     form.yearOfBirth,
-//                     form.club,
-//                     form.competitionType.benchOnly && form.competitionType.fullPower ? 'Full powerlifting & Bench press only' : form.competitionType.benchOnly ? 'Bench press only' : 'Full powerlifting',
-//                     form.competitionType.fullPower ? form.fullPowerDetails.ageCategory : '/',
-//                     form.competitionType.fullPower ? form.fullPowerDetails.weightCategory + ' kg' : '/',
-//                     form.competitionType.fullPower ? form.fullPowerDetails.bestTotal + ' kg' : '/',
-//                     form.competitionType.benchOnly ? form.benchOnlyDetails.ageCategory : '/',
-//                     form.competitionType.benchOnly ? form.benchOnlyDetails.weightCategory + ' kg' : '/',
-//                     form.competitionType.benchOnly ? form.benchOnlyDetails.bestBenchPress + ' kg' : '/',
-//                     form.photographs ? 'Da' : 'Ne',
-//                     form.tshirtSelected ? 'Da' : 'Ne',
-//                     form.tshirt.cut ? form.tshirt.cut : '/', 
-//                     form.tshirt.size ? form.tshirt.size : '/' 
-//                 ]
-//             }
-//         })
-
-//     } catch (e) {
-
-//     }
-//   }
-
   const handleSubmit = async (e) => {
     e.preventDefault();
     setMessage("");
     if (validateForm()) {
-          if (form.competitionType.benchOnly && form.competitionType.fullPower && form.photographs && form.tshirtSelected) {
-            const file = await fetchFile('/docs/105.png')
-          } else if (form.competitionType.benchOnly && form.competitionType.fullPower && form.photographs && !form.tshirtSelected) {
-            const file = await fetchFile('/docs/90.png')
-          } else if (form.competitionType.benchOnly && form.competitionType.fullPower && !form.photographs && form.tshirtSelected) {
-            const file = await fetchFile('/docs/85.png')
-          } else if (form.competitionType.benchOnly && form.competitionType.fullPower && !form.photographs && !form.tshirtSelected) {
-            const file = await fetchFile('/docs/70.png')
-          } else if ( (form.competitionType.benchOnly || form.competitionType.fullPower) && form.photographs && form.tshirtSelected) {
-            const file = await fetchFile('/docs/70.png')
-          } else if ( (form.competitionType.benchOnly || form.competitionType.fullPower) && form.photographs && !form.tshirtSelected) {
-            const file = await fetchFile('/docs/55.png')
-          } else if ( (form.competitionType.benchOnly || form.competitionType.fullPower) && !form.photographs && form.tshirtSelected) {
-            const file = await fetchFile('/docs/50.png')
-          } else {
-            const file = 'https://drive.google.com/file/d/1czwGyMalyWcS5kv760i3nK7ls4BueeI4/view?usp=drive_link'//await fetchFile('/docs/35.png')
-          }
+        //   if (form.competitionType.benchOnly && form.competitionType.fullPower && form.photographs && form.tshirtSelected) {
+        //     const file = await fetchFile('/docs/105.png')
+        //   } else if (form.competitionType.benchOnly && form.competitionType.fullPower && form.photographs && !form.tshirtSelected) {
+        //     const file = await fetchFile('/docs/90.png')
+        //   } else if (form.competitionType.benchOnly && form.competitionType.fullPower && !form.photographs && form.tshirtSelected) {
+        //     const file = await fetchFile('/docs/85.png')
+        //   } else if (form.competitionType.benchOnly && form.competitionType.fullPower && !form.photographs && !form.tshirtSelected) {
+        //     const file = await fetchFile('/docs/70.png')
+        //   } else if ( (form.competitionType.benchOnly || form.competitionType.fullPower) && form.photographs && form.tshirtSelected) {
+        //     const file = await fetchFile('/docs/70.png')
+        //   } else if ( (form.competitionType.benchOnly || form.competitionType.fullPower) && form.photographs && !form.tshirtSelected) {
+        //     const file = await fetchFile('/docs/55.png')
+        //   } else if ( (form.competitionType.benchOnly || form.competitionType.fullPower) && !form.photographs && form.tshirtSelected) {
+        //     const file = await fetchFile('/docs/50.png')
+        //   } else {
+        //     const file = 'https://drive.google.com/file/d/1czwGyMalyWcS5kv760i3nK7ls4BueeI4/view?usp=drive_link'//await fetchFile('/docs/35.png')
+        //   }
 
           //sendEmail();
-        //   await persistToGoogleSheets();
           const sheetForm = {
-                    email: form.email,
-                    gender: form.gender,
-                    name: form.name,
-                    surname: form.surname,
-                    yearOfBirth: form.yearOfBirth,
-                    club: form.club,
-                    competitionType: form.competitionType.benchOnly && form.competitionType.fullPower ? 'Full powerlifting & Bench press only' : form.competitionType.benchOnly ? 'Bench press only' : 'Full powerlifting',
-                    fullPowerAgeCategory: form.competitionType.fullPower ? form.fullPowerDetails.ageCategory : '/',
-                    fullPowerWeightCategory: form.competitionType.fullPower ? form.fullPowerDetails.weightCategory + ' kg' : '/',
-                    fullPowerBestTotal: form.competitionType.fullPower ? form.fullPowerDetails.bestTotal + ' kg' : '/',
-                    benchOnlyAgeCategory: form.competitionType.benchOnly ? form.benchOnlyDetails.ageCategory : '/',
-                    benchOnlyWeightCategory: form.competitionType.benchOnly ? form.benchOnlyDetails.weightCategory + ' kg' : '/',
-                    bestBenchPress: form.competitionType.benchOnly ? form.benchOnlyDetails.bestBenchPress + ' kg' : '/',
-                    photographs: form.photographs ? 'Da' : 'Ne',
-                    tshirt: form.tshirtSelected ? 'Da' : 'Ne',
-                    tshirtCut: form.tshirt.cut ? form.tshirt.cut : '/', 
-                    tshirtSize: form.tshirt.size ? form.tshirt.size : '/' 
+                    "Email": form.email,
+                    "Spol": form.gender,
+                    "Ime": form.name,
+                    "Prezime": form.surname,
+                    "Godina rođenja": form.yearOfBirth,
+                    "Klub": form.club,
+                    "Tip natjecanja": form.competitionType.benchOnly && form.competitionType.fullPower ? 'Full powerlifting & Bench press only' : form.competitionType.benchOnly ? 'Bench press only' : 'Full powerlifting',
+                    "Full power dobna kategorija": form.competitionType.fullPower ? form.fullPowerDetails.ageCategory : '/',
+                    "Full power težinska kategorija": form.competitionType.fullPower ? form.fullPowerDetails.weightCategory + ' kg' : '/',
+                    "Najbolji total": form.competitionType.fullPower ? form.fullPowerDetails.bestTotal + ' kg' : '/',
+                    "Bench only dobna kategorija": form.competitionType.benchOnly ? form.benchOnlyDetails.ageCategory : '/',
+                    "Bench only težinska kategorija": form.competitionType.benchOnly ? form.benchOnlyDetails.weightCategory + ' kg' : '/',
+                    "Najbolji bench press": form.competitionType.benchOnly ? form.benchOnlyDetails.bestBenchPress + ' kg' : '/',
+                    "Fotogragije": form.photographs ? 'Da' : 'Ne',
+                    "Majica": form.tshirtSelected ? 'Da' : 'Ne',
+                    "Kroj": form.tshirt.cut ? form.tshirt.cut : '/', 
+                    "Veličina": form.tshirt.size ? form.tshirt.size : '/' 
           }
 
-          console.log(sheetForm)
-
-          await getSheetData(sheetForm)
-
-        //   console.log('here')
-
-        //   const response = await fetch('/lib/googleApi', {
-        //     method: 'POST',
-        //     headers: {
-        //         'Accept': 'application/json',
-        //         'Content-Type': 'application/json'
-        //     },
-        //     body: JSON.stringify(sheetForm)
-        //   })
-
-        //   const content = await response.json()
-        //   console.log(content)
-        //   console.log('here')
+          SheetDB.write('https://sheetdb.io/api/v1/wxafnxolcqbw9', { sheet: 'Sheet1', data: sheetForm }).then(function(result){
+          }, function(error){
+          });
 
     } else {
       setMessage(t['e16']);
@@ -373,7 +319,6 @@ const CompetitionForm = ({t}) => {
                 <option value="Ultimate">Ultimate</option>
                 <option value="Virovitica">Virovitica</option>
                 <option value="Wild Hogs">Wild Hogs</option>
-                <option value="Zagrebački Powerlifting Savez">Zagrebački Powerlifting Savez</option>
             </select>
             {errors.club && <p>{errors.club}</p>}
           </div>

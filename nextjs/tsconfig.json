@@ -25,6 +25,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/en/cibalae-open-cup"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/en/cibalae-open-cup", "src/app/prijava"],
   "exclude": ["node_modules"]
 }

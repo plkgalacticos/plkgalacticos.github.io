@@ -3,7 +3,7 @@ import type { NextConfig } from "next";
 /** @type {import('next').NextConfig} */
 const nextConfig: NextConfig = {
     basePath: "",
-    // output: "export",
+    output: "export",
     future: {
 
         // by default, if you customize webpack config, they switch back to version 4.
