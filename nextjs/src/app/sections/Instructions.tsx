@@ -4,7 +4,7 @@ const Instructions = ({t}) => {
     t = t['instructions']
 
   return (
-    <section className='relative bg-black text-white px-4 py-8 lg:px-16 lg:pb-32 pt-32 flex flex-col gap-16'>
+    <section className='relative bg-black text-white px-4 py-8 lg:px-16 lg:pb-32 lg:pt-32 flex flex-col gap-16 '>
         <h1 className='heading-text text-center z-10'>{t['h']}</h1>
         <div className='flex flex-col gap-8 z-10 max-container-sm'>
             <h2 className='subheading-text'>{t['h1']}</h2>
@@ -102,7 +102,7 @@ const Instructions = ({t}) => {
 
         </div>
 
-        <div className='border-4 border-gold rounded-md p-4 rotate-45 absolute -left-44 -top-0'>
+        <div className='border-4 border-gold rounded-md p-4 rotate-45 absolute -left-44 lg:-left-52 -top-36 lg:-top-0'>
             <div className='border-4 border-gold rounded-md p-4'>
                 <div className='border-2 border-gold rounded-md p-4'>
                     <div className='border-2 border-gold rounded-md p-4'>
@@ -114,7 +114,7 @@ const Instructions = ({t}) => {
             </div>
         </div>
 
-        <div className='border-4 border-gold rounded-md p-4 rotate-45 absolute -right-44 -bottom-24 lg:-bottom-8 z-0 overflow-x-hidden'>
+        <div className='border-4 border-gold rounded-md p-4 rotate-45 absolute -right-44 lg:-right-56 bottom-28 lg:-bottom-8 z-0 overflow-hidden'>
             <div className='border-4 border-gold rounded-md p-4'>
                 <div className='border-2 border-gold rounded-md p-4'>
                     <div className='border-2 border-gold rounded-md p-4'>

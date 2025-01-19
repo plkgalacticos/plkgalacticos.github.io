@@ -22,6 +22,9 @@ export default function Home() {
         <section className="bg-black px-4 py-24">
             <Data t={hr}></Data>
         </section>
+        <section className="bg-black px-4 py-12 pb-36 overflow-y-hidden">
+            <Competition t={hr}></Competition>
+        </section>
         <section className="bg-black">
             <Story t={hr}></Story>
         </section>
@@ -33,9 +36,6 @@ export default function Home() {
         </section>
         <section className="bg-black px-4 py-72">
             <Values t={hr}></Values>
-        </section>
-        <section className="bg-black px-4 py-12 pb-36">
-            <Competition t={hr}></Competition>
         </section>
         <section id='join' className="z-[1] ">
             <Join t={hr}></Join>

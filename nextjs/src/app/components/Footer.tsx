@@ -86,7 +86,7 @@ const Footer = ({t}) => {
 
           <div className="w-full flex flex-col md:flex-row justify-center items-center gap-4 md:gap-12 mt-8 text-sm">
             <p>WebDesign by Patrick&Petar</p>
-            <p>© 2025 PLKGalacticos. {t['footer.copy']} </p>
+            <p>© 2025 Powerlifting klub Galacticos. {t['footer.copy']} </p>
           </div>
         </div>
     </footer>
