@@ -6,6 +6,7 @@ import SheetDB from 'sheetdb-js'
 const CompetitionForm = ({t}) => {
 
   const [file, setFile] = useState(null);
+  const [isRegistrationSuccess, setIsRegistrationSuccess] = useState(false);
   const [form, setForm] = useState({
     email: "",
     gender: "",
@@ -142,25 +143,8 @@ const CompetitionForm = ({t}) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setMessage("");
+    setFile("");
     if (validateForm()) {
-        //   if (form.competitionType.benchOnly && form.competitionType.fullPower && form.photographs && form.tshirtSelected) {
-        //     const file = await fetchFile('/docs/105.png')
-        //   } else if (form.competitionType.benchOnly && form.competitionType.fullPower && form.photographs && !form.tshirtSelected) {
-        //     const file = await fetchFile('/docs/90.png')
-        //   } else if (form.competitionType.benchOnly && form.competitionType.fullPower && !form.photographs && form.tshirtSelected) {
-        //     const file = await fetchFile('/docs/85.png')
-        //   } else if (form.competitionType.benchOnly && form.competitionType.fullPower && !form.photographs && !form.tshirtSelected) {
-        //     const file = await fetchFile('/docs/70.png')
-        //   } else if ( (form.competitionType.benchOnly || form.competitionType.fullPower) && form.photographs && form.tshirtSelected) {
-        //     const file = await fetchFile('/docs/70.png')
-        //   } else if ( (form.competitionType.benchOnly || form.competitionType.fullPower) && form.photographs && !form.tshirtSelected) {
-        //     const file = await fetchFile('/docs/55.png')
-        //   } else if ( (form.competitionType.benchOnly || form.competitionType.fullPower) && !form.photographs && form.tshirtSelected) {
-        //     const file = await fetchFile('/docs/50.png')
-        //   } else {
-        //     const file = 'https://drive.google.com/file/d/1czwGyMalyWcS5kv760i3nK7ls4BueeI4/view?usp=drive_link'//await fetchFile('/docs/35.png')
-        //   }
-
           //sendEmail();
           const sheetForm = {
                     "Email": form.email,
@@ -178,13 +162,33 @@ const CompetitionForm = ({t}) => {
                     "Najbolji bench press": form.competitionType.benchOnly ? form.benchOnlyDetails.bestBenchPress + ' kg' : '/',
                     "Fotogragije": form.photographs ? 'Da' : 'Ne',
                     "Majica": form.tshirtSelected ? 'Da' : 'Ne',
-                    "Kroj": form.tshirt.cut ? form.tshirt.cut : '/', 
-                    "Veličina": form.tshirt.size ? form.tshirt.size : '/' 
+                    "Kroj": form.tshirtSelected && form.tshirt.cut ? form.tshirt.cut : '/', 
+                    "Veličina": form.tshirtSelected && form.tshirt.size ? form.tshirt.size : '/' 
           }
 
           SheetDB.write('https://sheetdb.io/api/v1/wxafnxolcqbw9', { sheet: 'Sheet1', data: sheetForm }).then(function(result){
           }, function(error){
           });
+
+          setMessage(t['e14'])
+
+          if (form.competitionType.benchOnly && form.competitionType.fullPower && form.photographs && form.tshirtSelected) {
+            setFile('105.pdf')
+          } else if (form.competitionType.benchOnly && form.competitionType.fullPower && form.photographs && !form.tshirtSelected) {
+            setFile('90.pdf')
+          } else if (form.competitionType.benchOnly && form.competitionType.fullPower && !form.photographs && form.tshirtSelected) {
+            setFile('85.pdf')
+          } else if (form.competitionType.benchOnly && form.competitionType.fullPower && !form.photographs && !form.tshirtSelected) {
+            setFile('70.pdf')
+          } else if ( (form.competitionType.benchOnly || form.competitionType.fullPower) && form.photographs && form.tshirtSelected) {
+            setFile('70.pdf')
+          } else if ( (form.competitionType.benchOnly || form.competitionType.fullPower) && form.photographs && !form.tshirtSelected) {
+            setFile('55.pdf')
+          } else if ( (form.competitionType.benchOnly || form.competitionType.fullPower) && !form.photographs && form.tshirtSelected) {
+            setFile('50.pdf')
+          } else {
+            setFile('35.pdf')
+          }
 
     } else {
       setMessage(t['e16']);
@@ -228,12 +232,11 @@ const CompetitionForm = ({t}) => {
   };
 
   return (
-    <div className="flex flex-row justify-center items-center gap-8 w-full">
-        <form onSubmit={handleSubmit} className="flex flex-col gap-6 w-full max-w-md">
-          <div>{message && <p>{message}</p>}</div>
+    <div className="relative flex flex-row justify-center items-center gap-8 w-full">
+        <form onSubmit={handleSubmit} className="flex flex-col gap-6 w-full max-w-3xl bg-opaque-purple bg-glow  p-4 lg:p-12 mt-24 z-10">
 
-          <p className="text-xl font-semibold">{t['h1']}</p>
-          <div>
+          <p className="text-2xl font-semibold">{t['h1']}</p>
+          <div className="flex flex-col justify-center items-start">
             <label>{t['l1']}: </label>
             <input className="mt-1"
               type="email"
@@ -241,17 +244,20 @@ const CompetitionForm = ({t}) => {
               value={form.email}
               onChange={handleInputChange}
             />
-            {errors.email && <p>{errors.email}</p>}
+            {errors.email && <p className="flex flex-row justify-start items-center gap-2 mt-2">
+                <img className="w-6 h-auto" src="/icons/warning-sign.svg" alt="WARNING" />{errors.email}</p>}
           </div>
         
-          <div>
+          <div className="flex flex-col justify-center items-start">
             <label>{t['l2']}: </label>
             <select name="gender" value={form.gender} onChange={handleInputChange} className="select mt-1">
               <option value="">{t['s1']}</option>
               <option value={t['s12']}>{t['s11']}</option>
               <option value={t['s14']}>{t['s13']}</option>
             </select>
-            {errors.gender && <p>{errors.gender}</p>}
+
+                {errors.gender && <p className="flex flex-row justify-start items-center gap-2 mt-2">
+                <img className="w-6 h-auto" src="/icons/warning-sign.svg" alt="WARNING" />{errors.gender}</p>}
           </div>
         
           <div className="flex flex-row justify-center items-center gap-4">
@@ -263,7 +269,8 @@ const CompetitionForm = ({t}) => {
                 value={form.name}
                 onChange={handleInputChange}
               />
-              {errors.name && <p>{errors.name}</p>}
+              {errors.name && <p className="flex flex-row justify-start items-center gap-2 mt-2">
+                <img className="w-6 h-auto" src="/icons/warning-sign.svg" alt="WARNING" />{errors.name}</p>}
             </div>
             
             <div className="w-full">
@@ -274,11 +281,12 @@ const CompetitionForm = ({t}) => {
                 value={form.surname}
                 onChange={handleInputChange}
               />
-              {errors.surname && <p>{errors.surname}</p>}
+              {errors.surname && <p className="flex flex-row justify-start items-center gap-2 mt-2">
+                <img className="w-6 h-auto" src="/icons/warning-sign.svg" alt="WARNING" />{errors.surname}</p>}
             </div>
           </div>
         
-          <div>
+          <div className="flex flex-col justify-center items-start">
             <label>{t['l5']}: </label>
             <input className="mt-1"
               type="number"
@@ -286,7 +294,8 @@ const CompetitionForm = ({t}) => {
               value={form.yearOfBirth}
               onChange={handleInputChange}
             />
-            {errors.yearOfBirth && <p>{errors.yearOfBirth}</p>}
+            {errors.yearOfBirth && <p className="flex flex-row justify-start items-center gap-2 mt-2">
+                <img className="w-6 h-auto" src="/icons/warning-sign.svg" alt="WARNING" />{errors.yearOfBirth}</p>}
           </div>
         
           <div>
@@ -320,14 +329,15 @@ const CompetitionForm = ({t}) => {
                 <option value="Virovitica">Virovitica</option>
                 <option value="Wild Hogs">Wild Hogs</option>
             </select>
-            {errors.club && <p>{errors.club}</p>}
+            {errors.club && <p className="flex flex-row justify-start items-center gap-2 mt-2">
+                <img className="w-6 h-auto" src="/icons/warning-sign.svg" alt="WARNING" />{errors.club}</p>}
           </div>
         
-          <p className="mt-12 text-xl font-semibold">{t['h2']}: </p>
+          <p className="mt-12 text-2xl font-semibold">{t['h2']}: </p>
           <div className="flex flex-col gap-2">
             
             <div className="flex flex-row justify-start items-center gap-4 mt-4">
-                <label htmlFor="fullPower" className="font-semibold">{t['l7']}</label>
+                <label htmlFor="fullPower" className="font-semibold text-lg">{t['l7']}</label>
                 <input className="w-min"
                   type="checkbox"
                   name="fullPower"
@@ -354,7 +364,8 @@ const CompetitionForm = ({t}) => {
                       <option value={t['s36']}>{t['s36']}</option>
                       <option value={t['s37']}>{t['s37']}</option>
                     </select>
-                    {errors.fullPowerAgeCategory && <p>{errors.fullPowerAgeCategory}</p>}
+                    {errors.fullPowerAgeCategory && <p className="flex flex-row justify-start items-center gap-2 mt-2">
+                        <img className="w-6 h-auto" src="/icons/warning-sign.svg" alt="WARNING" />{errors.fullPowerAgeCategory}</p>}
                 </div>
         
                 <div>
@@ -397,7 +408,8 @@ const CompetitionForm = ({t}) => {
                         </option>
                       ))}
                     </select>
-                    {errors.fullPowerWeightCategory && <p>{errors.fullPowerWeightCategory}</p>}
+                    {errors.fullPowerWeightCategory && <p className="flex flex-row justify-start items-center gap-2 mt-2">
+                        <img className="w-6 h-auto" src="/icons/warning-sign.svg" alt="WARNING" />{errors.fullPowerWeightCategory}</p>}
                     
                 </div>
                 <div>
@@ -415,8 +427,8 @@ const CompetitionForm = ({t}) => {
             )}
         
             
-            <div className="flex flex-row justify-start items-center gap-4 mt-4">
-                <label className="font-semibold">{t['l8']}</label>
+            <div className="flex flex-row justify-start items-center gap-4 mt-8">
+                <label className="font-semibold text-lg">{t['l8']}</label>
                 <input className="w-min"
                   type="checkbox"
                   name="benchOnly"
@@ -444,7 +456,8 @@ const CompetitionForm = ({t}) => {
                       <option value={t['s36']}>{t['s36']}</option>
                       <option value={t['s37']}>{t['s37']}</option>
                     </select>
-                    {errors.benchOnlyAgeCategory && <p>{errors.benchOnlyAgeCategory}</p>}
+                    {errors.benchOnlyAgeCategory && <p className="flex flex-row justify-start items-center gap-2 mt-2">
+                        <img className="w-6 h-auto" src="/icons/warning-sign.svg" alt="WARNING" />{errors.benchOnlyAgeCategory}</p>}
                 </div>
         
                 <div>
@@ -487,7 +500,8 @@ const CompetitionForm = ({t}) => {
                         </option>
                       ))}
                     </select>
-                    {errors.benchOnlyWeightCategory && <p>{errors.benchOnlyWeightCategory}</p>}
+                    {errors.benchOnlyWeightCategory && <p className="flex flex-row justify-start items-center gap-2 mt-2">
+                        <img className="w-6 h-auto" src="/icons/warning-sign.svg" alt="WARNING" />{errors.benchOnlyWeightCategory}</p>}
                 </div>
         
                 <div>
@@ -505,7 +519,7 @@ const CompetitionForm = ({t}) => {
             )}
           </div>
         
-          <p className="mt-12 text-xl font-semibold">{t['h3']}:</p>
+          <p className="mt-12 text-2xl font-semibold">{t['h3']}:</p>
 
           <div className="flex flex-row justify-start items-center gap-4 mt-4">
             <label>{t['l9']} </label>
@@ -542,7 +556,8 @@ const CompetitionForm = ({t}) => {
                     <option value={t['s51']}>{t['s51']}</option>
                     <option value={t['s52']}>{t['s52']}</option>
                   </select>
-                  {errors.tshirtCut && <p>{errors.tshirtCut}</p>}
+                  {errors.tshirtCut && <p className="flex flex-row justify-start items-center gap-2 mt-2">
+                    <img className="w-6 h-auto" src="/icons/warning-sign.svg" alt="WARNING" />{errors.tshirtCut}</p>}
                 </div>
                 
                 <div className="w-full">
@@ -560,7 +575,8 @@ const CompetitionForm = ({t}) => {
                     <option value="L">L</option>
                     <option value="XL">XL</option>
                   </select>
-                  {errors.tshirtSize && <p>{errors.tshirtSize}</p>}
+                  {errors.tshirtSize && <p className="flex flex-row justify-start items-center gap-2 mt-2">
+                    <img className="w-6 h-auto" src="/icons/warning-sign.svg" alt="WARNING" />{errors.tshirtSize}</p>}
                 </div>
               </div>
               <p className="italic text-sm mt-2">{t['l10-note']}</p>
@@ -568,8 +584,52 @@ const CompetitionForm = ({t}) => {
             </div>
           )}
         
-          <button type="submit" className="bg-logo-yellow md:text-lg btn-diagonal-swipe max-md:px-4 max-md:py-2 mt-8 text-white">{t['btn']}</button>
+          <button type="submit" className="bg-logo-yellow uppercase font-semibold md:text-lg border-2 border-logo-yellow rounded-sm hover:bg-black transition-all duration-400 p-4 mt-8 text-white">{t['btn']}</button>
+        
+          <div>{message && <p>{message}</p>}</div>
+
+           <div className={`${file ? 'block' : 'hidden'} mt-4`}>
+               <p className="text-lg">Please dowload the payment slip below.</p>
+               <a className={`relative m-auto mt-4 ${file ? 'block' : 'hidden'}`} href={`/docs/${file}`} download={`${file}`}>
+                        <div className="button" data-tooltip="Size: 166KB">
+                            <div className="button-wrapper">
+                              <div className="text font-semibold">
+                                <span className="mr-4">
+                                  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1.6em" height="2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 15V3m0 12l-4-4m4 4l4-4M2 17l.621 2.485A2 2 0 0 0 4.561 21h14.878a2 2 0 0 0 1.94-1.515L22 17"></path></svg>
+                                </span>{file}</div>
+
+                                <span className="icon">
+                                  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="2em" height="2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 15V3m0 12l-4-4m4 4l4-4M2 17l.621 2.485A2 2 0 0 0 4.561 21h14.878a2 2 0 0 0 1.94-1.515L22 17"></path></svg>
+                                </span>
+                            </div>
+                        </div>
+                </a>
+            </div>
         </form>
+
+        <div className='border-4 border-gold rounded-md p-4 rotate-45 absolute -left-44 -top-4 z-0 overflow-x-hidden'>
+            <div className='border-4 border-gold rounded-md p-4'>
+                <div className='border-2 border-gold rounded-md p-4'>
+                    <div className='border-2 border-gold rounded-md p-4'>
+                        <div className='border-[1px] border-gold rounded-md p-4'>
+                            <div className='border-[1px] border-gold rounded-md p-4 min-w-24 lg:min-w-32 min-h-24 lg:min-h-32'></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div className='border-4 border-gold rounded-md p-4 rotate-45 absolute -right-44 bottom-16 z-0'>
+            <div className='border-4 border-gold rounded-md p-4'>
+                <div className='border-2 border-gold rounded-md p-4'>
+                    <div className='border-2 border-gold rounded-md p-4'>
+                        <div className='border-[1px] border-gold rounded-md p-4'>
+                            <div className='border-[1px] border-gold rounded-md p-4 min-w-24 lg:min-w-32 min-h-24 lg:min-h-32'></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
   );
 };

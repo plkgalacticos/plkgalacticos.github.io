@@ -20,7 +20,7 @@ export default function Home() {
         <section className="bg-black px-4 py-24">
             <Data t={en}></Data>
         </section>
-        <section className="bg-black px-4 py-12 pb-36">
+        <section className="bg-black px-4 py-12 pb-36 overflow-hidden">
             <Competition t={en}></Competition>
         </section>
         <section className="bg-black">
@@ -35,8 +35,7 @@ export default function Home() {
         <section className="bg-black px-4 py-72">
             <Values t={en}></Values>
         </section>
-        
-        <section id='join' className="z-[1] bg-join bg-center bg-no-repeat bg-cover bg-fixed min-h-[100vh] max-h-[100vh]  items-center bg-blend-darken bg-black/70 px-4 py-12">
+        <section id='join' className="z-[1] ">
             <Join t={en}></Join>
         </section>
         <section className="bg-black px-4 py-36">

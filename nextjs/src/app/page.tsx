@@ -22,7 +22,7 @@ export default function Home() {
         <section className="bg-black px-4 py-24">
             <Data t={hr}></Data>
         </section>
-        <section className="bg-black px-4 py-12 pb-36 overflow-y-hidden">
+        <section className="bg-black px-4 py-12 pb-36 overflow-hidden">
             <Competition t={hr}></Competition>
         </section>
         <section className="bg-black">

@@ -61,7 +61,7 @@ const Competition = ({t}) => {
             </div>
         </div>
 
-        <div className='border-4 border-gold rounded-md p-4 rotate-45 absolute top-1/2 left-1/2 transform -translate-x-1/2 translate-y-[25rem] lg:translate-y-72'>
+        <div className=' border-4 border-gold rounded-md p-4 rotate-45 absolute top-1/2 left-1/2 transform -translate-x-1/2 translate-y-[25rem] lg:translate-y-72'>
             <div className='border-4 border-gold rounded-md p-4'>
                 <div className='border-2 border-gold rounded-md p-4'>
                     <div className='border-2 border-gold rounded-md p-4'>
@@ -71,6 +71,9 @@ const Competition = ({t}) => {
                     </div>
                 </div>
             </div>
+        </div>
+        <div className='absolute bottom-0 -left-4 -right-4 min-h-8 translate-y-[9rem] shadow-inset-black-bottom'>
+
         </div>
     </section>
   )

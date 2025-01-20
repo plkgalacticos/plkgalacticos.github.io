@@ -50,7 +50,8 @@ export default {
         '3xl': '0 10px 40px rgba(0, 0, 0, 0.1)',
         'inset-gray': 'inset 0px 128px 72px 0px rgba(38,38,38,1);',
         'inset-black': 'inset 0px 128px 72px 48px rgba(8,8,8,1);',
-        'inset-md-bottom': 'inset 0px -112px 48px 0px rgba(38,38,38,1);'
+        'inset-md-bottom': 'inset 0px -112px 48px 0px rgba(38,38,38,1);',
+        'inset-black-bottom': 'inset 0px -24px 12px 0px rgba(8,8,8,1);'
       },
       backgroundImage: {
         'footer': "url('/images/poly-grid-black.svg')",
@@ -65,7 +66,7 @@ export default {
         "support": "url('/images/Support.jpg')",
         "integrity": "url('/images/Integrity.jpg')",
         "health": "url('/images/Health.jpg')",
-        "join": "url('/images/Clanovi Powerlifting kluba Galacticos.jpg')"
+        "join": "url('/images/Clanovi Powerlifting kluba Galacticos2.jpg')"
       },
       screens: {
         "wide": "1440px"
