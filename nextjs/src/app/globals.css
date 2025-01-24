@@ -35,6 +35,12 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.datepicker {
+    color: white !important; /* Adjust color as necessary */
+    background-color: transparent;
+    border-radius: 2px;
+}  
+
 .burger {
     cursor: pointer;
 }

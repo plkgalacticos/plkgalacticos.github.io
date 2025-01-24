@@ -1,10 +1,20 @@
 'use client'
-import { useState } from "react";
+import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import SheetDB from 'sheetdb-js'
+import { ConfigProvider, DatePicker } from 'antd';
+import moment from 'moment';
+import 'moment/locale/hr';
+import locale from 'antd/es/locale/hr_HR';
 
-const CompetitionForm = ({t}) => {
 
+const CompetitionForm = ({t, tNav}) => {
+
+  const [startDate, setStartDate] = useState(null);
+  const [date, setDate] = useState({ 
+    startDate: null, 
+    endDate: null
+});
   const [file, setFile] = useState(null);
   const [isRegistrationSuccess, setIsRegistrationSuccess] = useState(false);
   const [form, setForm] = useState({
@@ -12,7 +22,7 @@ const CompetitionForm = ({t}) => {
     gender: "",
     name: "",
     surname: "",
-    yearOfBirth: "",
+    dateOfBirth: "",
     club: "",
     competitionType: { fullPower: false, benchOnly: false },
     fullPowerDetails: {
@@ -34,7 +44,7 @@ const CompetitionForm = ({t}) => {
         email: '',
         name: '',
         surname: '',
-        yearOfBirth: '',
+        dateOfBirth: '',
         gender: '',
         club: '',
         competitionType: '',
@@ -46,6 +56,24 @@ const CompetitionForm = ({t}) => {
         tshirtSize: ''
   });
   const [message, setMessage] = useState("");
+
+  const [showContent, setShowContent] = useState(false);
+  const togglePhotograph = () => {
+    setShowContent(!showContent);
+  };
+
+  const [showTshirtContent, setShowTshirtContent] = useState(false);
+  const toggleTshirt = () => {
+    setShowTshirtContent(!showTshirtContent);
+  };
+
+  const [captchaValue, setCaptchaValue] = useState(null);
+  const recaptchaRef = useRef<HTMLElement>(null);;
+
+  const handleCaptchaChange = (value) => {  
+    setCaptchaValue(value);
+    // Here you can handle the change, such as enabling the submit button when value is not null
+  };
 
   const fetchFile = async (filePath) => {
     const response = await fetch(filePath); // URL to your file
@@ -70,7 +98,7 @@ const CompetitionForm = ({t}) => {
         email: '',
         name: '',
         surname: '',
-        yearOfBirth: '',
+        dateOfBirth: '',
         gender: '',
         club: '',
         competitionType: '',
@@ -86,7 +114,7 @@ const CompetitionForm = ({t}) => {
     if (!emailRegex.test(form.email)) newErrors.email = t['e1'];
     if (!form.name) newErrors.name = t['e2'];
     if (!form.surname) newErrors.surname = t['e3'];
-    if (!form.yearOfBirth) newErrors.yearOfBirth = t['e4'];
+    if (!form.dateOfBirth) newErrors.dateOfBirth = t['e4'];
     if (!form.gender) newErrors.gender = t['e5'];
     if (!form.club) newErrors.club = t['e6'];
     if (!form.competitionType.fullPower && !form.competitionType.benchOnly) {
@@ -120,7 +148,7 @@ const CompetitionForm = ({t}) => {
                 gender: form.gender,
                 name: form.name,
                 surname: form.surname,
-                yearOfBirth: form.yearOfBirth,
+                dateOfBirth: form.dateOfBirth,
                 club: form.club,
                 competition_type: form.competitionType.benchOnly && form.competitionType.fullPower ? 'Full powerlifting & Bench press only' : form.competitionType.benchOnly ? 'Bench press only' : 'Full powerlifting',
                 fullPowerAgeCategory: form.competitionType.fullPower ? form.fullPowerDetails.ageCategory : '/',
@@ -144,6 +172,12 @@ const CompetitionForm = ({t}) => {
     e.preventDefault();
     setMessage("");
     setFile("");
+
+    // if (!captchaValue) {
+    //     setMessage("Please verify that you are not a robot.");
+    //     return;
+    // }
+
     if (validateForm()) {
           //sendEmail();
           const sheetForm = {
@@ -151,7 +185,7 @@ const CompetitionForm = ({t}) => {
                     "Spol": form.gender,
                     "Ime": form.name,
                     "Prezime": form.surname,
-                    "Godina rođenja": form.yearOfBirth,
+                    "Datum rođenja": form.dateOfBirth,
                     "Klub": form.club,
                     "Tip natjecanja": form.competitionType.benchOnly && form.competitionType.fullPower ? 'Full powerlifting & Bench press only' : form.competitionType.benchOnly ? 'Bench press only' : 'Full powerlifting',
                     "Full power dobna kategorija": form.competitionType.fullPower ? form.fullPowerDetails.ageCategory : '/',
@@ -234,8 +268,9 @@ const CompetitionForm = ({t}) => {
   return (
     <div className="relative flex flex-row justify-center items-center gap-8 w-full">
         <form onSubmit={handleSubmit} className="flex flex-col gap-6 w-full max-w-3xl bg-opaque-purple bg-glow  p-4 lg:p-12 mt-24 z-10">
+          <h2>{t['for1']} <a href={"/" + tNav['kup-link']} className="text-logo-yellow underline">{t['for2']}</a> {t['for3']}</h2>
 
-          <p className="text-2xl font-semibold">{t['h1']}</p>
+          <h2 className="text-2xl font-semibold mt-8">{t['h1']}</h2>
           <div className="flex flex-col justify-center items-start">
             <label>{t['l1']}: </label>
             <input className="mt-1"
@@ -288,14 +323,25 @@ const CompetitionForm = ({t}) => {
         
           <div className="flex flex-col justify-center items-start">
             <label>{t['l5']}: </label>
-            <input className="mt-1"
-              type="number"
-              name="yearOfBirth"
-              value={form.yearOfBirth}
+            {/* <input className="mt-1"
+              type="date"
+              name="dateOfBirth"
+              value={form.dateOfBirth}
               onChange={handleInputChange}
-            />
-            {errors.yearOfBirth && <p className="flex flex-row justify-start items-center gap-2 mt-2">
-                <img className="w-6 h-auto" src="/icons/warning-sign.svg" alt="WARNING" />{errors.yearOfBirth}</p>}
+            /> */}
+
+            <DatePicker className="text-white bg-black rounded-sm w-full border-2 border-logo-yellow" onChange={(date) => {setForm((prev) => ({...prev, dateOfBirth: date.toString()})); setStartDate(date)}} needConfirm />
+
+            {/* <Datepicker 
+            useRange={false}
+            asSingle={true}
+            value={date} 
+            onChange={(date) => {setForm((prev) => ({...prev, dateOfBirth: date.toString()})); setStartDate(date)}}
+        />  */}
+            {/* <DatePicker selected={startDate} showYearDropdown nextYearButtonLabel=">" previousYearButtonLabel=">"
+                        onChange={(date) => {setForm((prev) => ({...prev, dateOfBirth: date.toString()})); setStartDate(date)}} /> */}
+            {errors.dateOfBirth && <p className="flex flex-row justify-start items-center gap-2 mt-2">
+                <img className="w-6 h-auto" src="/icons/warning-sign.svg" alt="WARNING" />{errors.dateOfBirth}</p>}
           </div>
         
           <div>
@@ -333,7 +379,10 @@ const CompetitionForm = ({t}) => {
                 <img className="w-6 h-auto" src="/icons/warning-sign.svg" alt="WARNING" />{errors.club}</p>}
           </div>
         
-          <p className="mt-12 text-2xl font-semibold">{t['h2']}: </p>
+          <div>
+            <p className="mt-12 text-2xl font-semibold">{t['h2']}: </p>
+            <p className="italic text-sm mt-2">{t['h2-note']}</p>
+          </div>
           <div className="flex flex-col gap-2">
             
             <div className="flex flex-row justify-start items-center gap-4 mt-4">
@@ -517,28 +566,81 @@ const CompetitionForm = ({t}) => {
                 </div>
               </div>
             )}
-          </div>
-        
-          <p className="mt-12 text-2xl font-semibold">{t['h3']}:</p>
 
-          <div className="flex flex-row justify-start items-center gap-4 mt-4">
-            <label>{t['l9']} </label>
-            <input className="w-min"
-              type="checkbox"
-              name="photographs"
-              checked={form.photographs}
-              onChange={handleInputChange}
-            />
+{errors.competitionType && <p className="flex flex-row justify-start items-center gap-2 mt-2">
+    <img className="w-6 h-auto" src="/icons/warning-sign.svg" alt="WARNING" />{errors.competitionType}</p>}
           </div>
         
-            <div className="flex flex-row justify-start items-center gap-4">
-              <label className="">{t['l10']} </label>
-              <input className="w-min"
-                type="checkbox"
-                name="tshirt"
-                checked={form.tshirtSelected}
-                onChange={handleInputChange}
-              />
+          <h2 className="mt-12 text-2xl font-semibold">{t['h3']}:</h2>
+
+            <div>
+                <div className="flex flex-row justify-start items-center gap-4 mt-4">
+
+                  <label className="text-lg font-semibold">{t['l9']} </label>
+                  <input className="w-min"
+                    type="checkbox"
+                    name="photographs"
+                    checked={form.photographs}
+                    onChange={handleInputChange}
+                  />
+                </div>
+              <div className="mt-1 " >
+                {showContent ? (
+                  <>
+                    <div className="mt-4 border-2 border-logo-yellow p-2 rounded-sm mb-2">
+                        <h3 className="font-semibold">{t['fh1']}</h3>   
+                        <p className="mt-4">{t['fh2']}</p>
+                        <ul className="list-disc ml-6 mt-2">
+                            <li>{t['fl11']} {t['fl12']}</li>
+                            <li>{t['fl21']} {t['fl22']}</li>
+                        </ul>                   
+                        <p className="mt-4">{t['fh3']}</p>
+                        <ul className="list-disc ml-6 mt-2">
+                            <li>{t['fl3']}</li>
+                            <li>{t['fl4']}</li>
+                            <li><span className="font-semibold">{t['fl51']}</span> {t['fl52']}</li>
+                            <li><span className="font-semibold">{t['fl61']}</span> {t['fl62']} <a className="underline cursor-pointer">{t['fl63']}</a></li>
+                            <li><span className="font-semibold">{t['fl71']}</span> {t['fl72']}</li>
+                        </ul>   
+                    </div>
+                    <button className="text-logo-yellow underline cursor-pointer" onClick={togglePhotograph}>{t['less']}</button>
+                  </>
+                ) : (
+                  <button className="text-logo-yellow underline cursor-pointer" onClick={togglePhotograph}>{t['more']}</button>
+                )}
+              </div>
+            </div>
+        
+            <div>
+                <div className="flex flex-row justify-start items-center gap-4">
+                  <label className="text-lg font-semibold">{t['l10']} </label>
+                  <input className="w-min"
+                    type="checkbox"
+                    name="tshirt"
+                    checked={form.tshirtSelected}
+                    onChange={handleInputChange}
+                  />
+                </div>
+                <div className="mt-1 " >
+                    {showTshirtContent ? (
+                      <>
+                        <div className="mt-4 border-2 border-logo-yellow p-2 rounded-sm mb-2">
+                            <h3 className="font-semibold">{t['mh1']}</h3>   
+                            <p className="mt-4">{t['mp1']}</p>
+                            <p className="mt-4">{t['mp2']}</p>
+                            <ul className="list-disc ml-6 mt-2">
+                                <li>{t['ml1']}</li>
+                                <li><span className="font-semibold">{t['ml21']}</span> {t['ml22']}</li>
+                                <li><span className="font-semibold">{t['ml31']}</span> {t['ml32']}</li>
+                            </ul>                   
+                            <p className="mt-4">{t['mp6']}</p>
+                        </div>
+                        <button className="text-logo-yellow underline cursor-pointer" onClick={toggleTshirt}>{t['less']}</button>
+                      </>
+                    ) : (
+                      <button className="text-logo-yellow underline cursor-pointer" onClick={toggleTshirt}>{t['more']}</button>
+                    )}
+                  </div>
             </div>
 
           {form.tshirtSelected && (
@@ -583,13 +685,13 @@ const CompetitionForm = ({t}) => {
               
             </div>
           )}
-        
+
           <button type="submit" className="bg-logo-yellow uppercase font-semibold md:text-lg border-2 border-logo-yellow rounded-sm hover:bg-black transition-all duration-400 p-4 mt-8 text-white">{t['btn']}</button>
         
           <div>{message && <p>{message}</p>}</div>
 
            <div className={`${file ? 'block' : 'hidden'} mt-4`}>
-               <p className="text-lg">Please dowload the payment slip below.</p>
+               <p className="text-lg">{t['pay']}</p>
                <a className={`relative m-auto mt-4 ${file ? 'block' : 'hidden'}`} href={`/docs/${file}`} download={`${file}`}>
                         <div className="button" data-tooltip="Size: 166KB">
                             <div className="button-wrapper">

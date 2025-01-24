@@ -25,6 +25,7 @@ export default async function RootLayout({
       > 
         {children}
         <CookieBanner></CookieBanner>
+        <script src="https://www.google.com/recaptcha/api.js"></script>
       </body>
     </html>
   );
