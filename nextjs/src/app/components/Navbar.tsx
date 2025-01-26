@@ -49,6 +49,7 @@ const Navbar = ({t}) => {
                         <a className=' hover:scale-105' href={"/" + t['members-link']}>{t['members']}</a>
                         {/* <a className=' hover:scale-105' href={"/" + t['kup-link']}>{t['kup']}</a> */}
                         {/* <a className=' hover:scale-105' href={"/" + t['application-link']}>{t['application']}</a> */}
+                        {/* <a className=' hover:scale-105' href={"/" + t['accommodation-link']}>{t['accommodation']}</a> */}
                     </div>
                     <div className='flex flex-row justify-center items-center gap-3'>
                         <a href="https://www.instagram.com/plk.galacticos/" target="_blank"><Image className='w-8 h-auto' src={instagramIcon} alt={'Instagram ikona'}></Image></a>

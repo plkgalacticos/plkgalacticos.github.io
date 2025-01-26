@@ -7,7 +7,11 @@
       "kup": "Cibalae Open Kup",
       "kup-link": "cibalae-open-kup",
       "application": "Prijava na natjecanje",
-      "application-link": "prijava"
+      "application-link": "cibalae-open-kup/prijava",
+      "accommodation": "Smještaj",
+      "accommodation-link": "cibalae-open-kup/smjestaj",
+      "foreign": "Upute za strane natjecatelje",
+      "foreign-link": "cibalae-open-kup/upute-za-strane-natjecatelje"
     },
     "hero": {
       "h2": "Klub iznad svega",
@@ -173,8 +177,8 @@
         "l82": "Težinska kategorija",
         "l83": "Najbolji bench press (u posljednjih 12 mjeseci)",
         "l8-note": "*Ako još niste sudjelovali na natjecanju, ostavite ovu vrijednost na 0.",
-        "l9": "Želite li fotografije?",
-        "l10": "Želite li majicu s natjecanja?",
+        "l9": "Želim foto paket.",
+        "l10": "Želim naručiti službenu majicu s natjecanja.",
         "l101": "Kroj",
         "l102": "Veličina",
         "l10-note": "*Broj majica je ograničen na 1, više ih možete kupiti na samom natjecanju.",
@@ -256,8 +260,122 @@
         "for2": "upute za strane sportaše",
         "for3": "prije ispunjavanja obrasca.",
 
-        "pay": "Molimo preuzmite uplatnicu ispod."
+        "uh": "Uplata kotizacije",
+        "ul11": "Molimo preuzmite uplatnicu ispod",
+        "ul12": "i izvršite uplatu",
+        "ul13": "do 14.02.2025.",
+        "ul14": "kako biste osigurali svoje mjesto na natjecanju.",
+        "ul2": "Napomena:",
+        "ul3": "Uplata je obavezna za potvrdu sudjelovanja.",
+        "ul41": "Ako uplata ne bude izvršena do navedenog datuma,",
+        "ul42": "nećete moći sudjelovati na natjecanju.",
+        "up": "Rezervirajte svoje mjesto na vrijeme i osigurajte sudjelovanje na Cibalae Open Cup 2025!",
+
+        "file": "Uplatnica"
     },
+    "accommodation": {
+        "h1": "Službeni smještaj",
+        "h2": "Adresa",
+        "h31": "Napomena o",
+        "h32": "smještaju",
+        "h41": "Dodatne",
+        "h42": "informacije",
+
+        "p1": "Duga ulica 1, 32100 Vinkovci, Hrvatska",
+        "p2": "Za rezervaciju smještaja u Hotelu Slavonija po posebnim cijenama, potrebno je rezervaciju obaviti putem PLK Galacticos.",
+        "p3": "Kontakt za rezervaciju:",
+
+        "l11": "Sportaši, treneri i suci nisu obavezni odsjesti u službenom hotelu",
+        "l12": "ali Hotel Slavonija nud",
+        "l13": "najpovoljnije opcije",
+        "l14": "za sudionike natjecanja.",
+        "l21": "Posebne cijene",
+        "l22": "vrijede za sve sudionike natjecanja, uključujući i gledatelje.",
+        "l31": "Rezervacije po sniženim cijenama dostupne su u razdoblju od",
+        "l32": "6. do 9. ožujka 2025.",
+
+        "tableh": "Cijene noćenja po osobi",
+        "table11": "Noćenje s doručkom",
+        "table12": "Polupansion",
+        "table13": "Puni pansion",
+        "table2": "Jednokrevetna soba",
+        "table3": "Dvokrevetna soba",
+        "table4": "Trokrevetna soba",
+        "table5": "Četverokrevetna soba",
+
+        "l41": "Prijava:",
+        "l42": "Od 14:00 sati",
+        "l51": "Odjava:",
+        "l52": "Do 10:00 sati",
+        "l61": "Recepcija:",
+        "l62": "Otvorena 0-24h, osoblje govori više jezika.",
+        "l71": "Doručak:",
+        "l72": "Uključuje švedski stol, vegetarijanske opcije i doručak bez glutena.",
+        "l81": "Restoran:",
+        "l82": "Poslužuje jela hrvatske kuhinje, s dostupnim vegetarijanskim, veganskim i bezglutenskim opcijama.",
+        "l91": "Parking:",
+        "l92": "Besplatan parking na hotelskom parkiralištu uz vidljivu hotelsku parkirnu karticu.",
+        
+        "p4": "Osigurajte svoj smještaj na vrijeme i uživajte u ugodnom boravku u Hotelu Slavonija!"
+    },
+    "competition": {
+    "title": "Cibalae Open Cup 2025",
+    "date": "07.03. - 09.03.",
+    "registrationButton": "Prijava",
+    "nominationsButton": "Nominacije",
+    "description": "Natjecanje će se sastojati od kategorija Full power i Bench only. Ako natjecatelj želi, može sudjelovati u obje, ali u tom slučaju mora platiti kotizaciju za obje kategorije.",
+    "scheduleTitle": "Okvirni raspored",
+    "scheduleNote": "Dolje je naveden planirani raspored. Službeni raspored će biti objavljen nakon završetka nominacija.",
+    "schedule": [
+      {
+        "day": "Petak",
+        "events": [
+          "Bench only - Žene",
+          "Bench only - Muškarci",
+          "Full power - Žene (Sub-Junior, Junior, Masters)",
+          "Full power - Muškarci (Masters)",
+          "Seminar"
+        ]
+      },
+      {
+        "day": "Subota",
+        "events": [
+          "Full power - Žene (Open)",
+          "Full power - Muškarci (Open)"
+        ]
+      },
+      {
+        "day": "Nedjelja",
+        "events": [
+          "Full power - Muškarci (Sub-Junior, Junior)"
+        ]
+      }
+    ],
+    "costTitle": "Troškovi",
+    "costHeaders": {
+      "item": "Stavka",
+      "price": "Cijena"
+    },
+    "costs": [
+      { "item": "Kotizacija", "price": "35,00 EUR" },
+      { "item": "Paket fotografija (neobavezno)", "price": "20,00 EUR" },
+      { "item": "Majica natjecanja (neobavezno)", "price": "15,00 EUR" }
+    ],
+    "costNote": "T-shirt će se prodavati i na mjestu događaja, ali preporučuje se narudžba prilikom registracije.",
+    "seminarTitle": "Seminar",
+    "seminarDescription": "Tijekom vikenda održat će se seminar koji vodi Emil Krastev, svjetski priznati powerlifter i trener.",
+    "locationTitle": "Lokacija",
+    "location": "Vinkovci, Osnovna škola Antun Gustav Matoš, Ohridska ulica 21",
+    "transportTitle": "Prijevoz",
+    "transport": [
+      "Besplatan parking dostupan uz hotel.",
+      "Parkiralište uz dvoranu natjecanja.",
+      "Zračna luka Franjo Tuđman -> Vinkovci: autobus ili vlak."
+    ],
+    "instructionsTitle": "Upute za strane sportaše",
+    "instructionsButton": "Detaljnije informacije",
+    "instructionsLink": "link_na_upute"
+  },
     "members": {
       "h": "Galacticosi",
       "medals": "medalja",

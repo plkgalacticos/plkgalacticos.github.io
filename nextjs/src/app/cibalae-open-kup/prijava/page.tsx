@@ -1,8 +1,8 @@
 import React from 'react'
-import Navbar from '../components/Navbar'
-import Footer from '../components/Footer'
-import Application from './Application'
-import hr from '../../../messages/hr.json'
+import Navbar from '../../components/Navbar'
+import Footer from '../../components/Footer'
+import hr from '../../../../messages/hr.json'
+import Application from '@/app/sections/Application'
 
 const page = () => {
   return (

@@ -102,12 +102,12 @@ const Instructions = ({t}) => {
 
         </div>
 
-        <div className='border-4 border-gold rounded-md p-4 rotate-45 absolute -left-44 lg:-left-52 -top-36 lg:-top-0'>
+        <div className='border-4 border-gold rounded-md p-4 rotate-45 absolute -left-44 lg:-left-56 -top-36 lg:-top-0'>
             <div className='border-4 border-gold rounded-md p-4'>
                 <div className='border-2 border-gold rounded-md p-4'>
                     <div className='border-2 border-gold rounded-md p-4'>
                         <div className='border-[1px] border-gold rounded-md p-4'>
-                            <div className='border-[1px] border-gold rounded-md p-4 min-w-16 min-h-16'></div>
+                            <div className='border-[1px] border-gold rounded-md p-4 min-w-20 min-h-20  lg:min-w-32 lg:min-h-32'></div>
                         </div>
                     </div>
                 </div>
@@ -119,7 +119,7 @@ const Instructions = ({t}) => {
                 <div className='border-2 border-gold rounded-md p-4'>
                     <div className='border-2 border-gold rounded-md p-4'>
                         <div className='border-[1px] border-gold rounded-md p-4'>
-                            <div className='border-[1px] border-gold rounded-md p-4 min-w-28 min-h-28'></div>
+                            <div className='border-[1px] border-gold rounded-md p-4 min-w-32 min-h-32'></div>
                         </div>
                     </div>
                 </div>

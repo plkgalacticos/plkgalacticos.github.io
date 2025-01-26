@@ -179,7 +179,7 @@ const CompetitionForm = ({t, tNav}) => {
     // }
 
     if (validateForm()) {
-          //sendEmail();
+          sendEmail();
           const sheetForm = {
                     "Email": form.email,
                     "Spol": form.gender,
@@ -205,23 +205,23 @@ const CompetitionForm = ({t, tNav}) => {
           });
 
           setMessage(t['e14'])
-
+          const filePrefix = t['file'] + "_"
           if (form.competitionType.benchOnly && form.competitionType.fullPower && form.photographs && form.tshirtSelected) {
-            setFile('105.pdf')
+            setFile(filePrefix + '105.pdf')
           } else if (form.competitionType.benchOnly && form.competitionType.fullPower && form.photographs && !form.tshirtSelected) {
-            setFile('90.pdf')
+            setFile(filePrefix + '90.pdf')
           } else if (form.competitionType.benchOnly && form.competitionType.fullPower && !form.photographs && form.tshirtSelected) {
-            setFile('85.pdf')
+            setFile(filePrefix + '85.pdf')
           } else if (form.competitionType.benchOnly && form.competitionType.fullPower && !form.photographs && !form.tshirtSelected) {
-            setFile('70.pdf')
+            setFile(filePrefix + '70.pdf')
           } else if ( (form.competitionType.benchOnly || form.competitionType.fullPower) && form.photographs && form.tshirtSelected) {
-            setFile('70.pdf')
+            setFile(filePrefix + '70.pdf')
           } else if ( (form.competitionType.benchOnly || form.competitionType.fullPower) && form.photographs && !form.tshirtSelected) {
-            setFile('55.pdf')
+            setFile(filePrefix + '55.pdf')
           } else if ( (form.competitionType.benchOnly || form.competitionType.fullPower) && !form.photographs && form.tshirtSelected) {
-            setFile('50.pdf')
+            setFile(filePrefix + '50.pdf')
           } else {
-            setFile('35.pdf')
+            setFile(filePrefix + '35.pdf')
           }
 
     } else {
@@ -268,7 +268,7 @@ const CompetitionForm = ({t, tNav}) => {
   return (
     <div className="relative flex flex-row justify-center items-center gap-8 w-full">
         <form onSubmit={handleSubmit} className="flex flex-col gap-6 w-full max-w-3xl bg-opaque-purple bg-glow  p-4 lg:p-12 mt-24 z-10">
-          <h2>{t['for1']} <a href={"/" + tNav['kup-link']} className="text-logo-yellow underline">{t['for2']}</a> {t['for3']}</h2>
+          <h2 className="text-xl">{t['for1']} <a href={"/" + tNav['kup-link']} className="text-logo-yellow underline">{t['for2']}</a> {t['for3']}</h2>
 
           <h2 className="text-2xl font-semibold mt-8">{t['h1']}</h2>
           <div className="flex flex-col justify-center items-start">
@@ -691,9 +691,20 @@ const CompetitionForm = ({t, tNav}) => {
           <div>{message && <p>{message}</p>}</div>
 
            <div className={`${file ? 'block' : 'hidden'} mt-4`}>
-               <p className="text-lg">{t['pay']}</p>
+               <h2 className="text-xl font-semibold">{t['uh']}</h2>
+               <ul className="list-disc ml-8 mt-2">
+                    <li><span className="font-extrabold">{t['ul11']}</span> {t['ul12']} <span className="font-extrabold">{t['ul13']}</span> {t['ul14']}</li>
+                    <li className="font-semibold">{t['ul2']}</li>
+                    <li className="list-none">
+                        <ul className="list-disc ml-6">
+                            <li>{t['ul3']}</li>
+                            <li>{t['ul41']} <span className="font-extrabold">{t['ul42']}</span></li>
+                        </ul>
+                    </li>
+               </ul>
+               <p className="mt-4">{t['up']}</p>
                <a className={`relative m-auto mt-4 ${file ? 'block' : 'hidden'}`} href={`/docs/${file}`} download={`${file}`}>
-                        <div className="button" data-tooltip="Size: 166KB">
+                        <div className="button" data-tooltip="Size: 167KB">
                             <div className="button-wrapper">
                               <div className="text font-semibold">
                                 <span className="mr-4">
