@@ -10,8 +10,9 @@
       "application-link": "en/cibalae-open-cup/registration",
       "accommodation": "Accommodation",
       "accommodation-link": "en/cibalae-open-cup/accommodation",
-      "foreign": "Instructions for foreign atheletes",
-      "foreign-link": "en/cibalae-open-cup/instructions-for-foreign-athletes"
+      "foreign": "Instructions for foreign athletes",
+      "foreign-link": "en/cibalae-open-cup/instructions-for-foreign-athletes",
+      "nominations-link": "en/cibalae-open-cup/nominations"
     },
     "hero": {
       "h2": "Club above all else",
@@ -57,13 +58,13 @@
       "h3": "Integrity & Sportsmanship",
       "p3": "We uphold the highest standards of fairness and respect, fostering a trustworthy and positive environment for all competitors.",
       "h4": "Health & Wellness",
-      "p4": "We promote a holistic approach, we focus on overall health, offering guidance on nutrition, recovery, and injury prevention."
+      "p4": "We promote a holistic approach to health, offering guidance on nutrition, recovery, and injury prevention."
     },
     "comp": {
       "h1": "7th - 9th March",
       "h2": "Location",
       "btn": "Follow to stay updated",
-      "p": "For the first time in Croatia, the Cibalae Open Kup will feature competitors from over 5 countries. This is a landmark event bringing together top powerlifters from around the world."
+      "p": "For the first time in Croatia, the Cibalae Open Cup will feature competitors from over 5 countries. This is a landmark event bringing together top powerlifters from around the world."
     },
     "faq": {
       "h1": "Frequently ",
@@ -88,7 +89,7 @@
       "q9": "How do I sign up for a competition?",
       "a9": "You can sign up through the federation or the competition organizer. It’s important to note that you must be a club member to compete.",
       "q10": "What equipment do I need for competitions?",
-      "a10": "To compete, a competition singlet, cotton t-shirt, and long socks for deadlifts are mandatory. Other equipment, such as belts, knee sleeves, and wrist wraps, is optional but can be used for additional support or safety.",
+      "a10": "To compete, a competition singlet, cotton T-shirt, and long socks for deadlifts are mandatory. Other equipment, such as belts, knee sleeves, and wrist wraps, is optional but can be used for additional support or safety.",
       "q11": "When does the weigh-in take place?",
       "a11": "The weigh-in takes place 2 hours before the competition begins. It’s a mandatory process to determine your weight category. After the weigh-in, you’ll have enough time to eat, rehydrate, and get ready for the competition.",
       "q12": "What does the club’s motto 'Club Above All' mean?",
@@ -115,7 +116,7 @@
       "l13": "Cibalae Open Cup",
       "l14": "Register",
       "l21": "Statute",
-      "copy": "All right reserved."
+      "copy": "All rights reserved."
     },
     "instructions": {
         "h": "Cibalae Open Cup 2025",
@@ -171,12 +172,12 @@
         "l71": "Age Category",
         "l72": "Weight Category",
         "l73": "Best Total (in the last 12 months)",
-        "l7-note": "*If You have not yet had a competition, leave this value at 0.",
+        "l7-note": "*If You have not yet competed, leave this value at 0.",
         "l8": "Bench Only",
         "l81": "Age Category",
         "l82": "Weight Category",
         "l83": "Best Bench Press (in the last 12 months)",
-        "l8-note": "*If You have not yet had a competition, leave this value at 0.",
+        "l8-note": "*If You have not yet competed, leave this value at 0.",
         "l9": "I want photographs.",
         "l10": "I want to order an official competition T-shirt.",
         "l101": "Cut",
@@ -256,7 +257,7 @@
           "ml32": "At the competition itself, you will be able to buy more shirts, but at the standard price.",
           "mp6": "Secure your shirt in time – quantities are limited!",
 
-        "for1": "If you are a foreigh athelete, please read the",
+        "for1": "If you are a foreign athelete, please read the",
         "for2": "instructions for foreign athletes",
         "for3": "before filling the form.",
 
@@ -318,62 +319,91 @@
         "p4": "Secure your accommodation in time and enjoy a pleasant stay at Hotel Slavonija!"
     },
     "competition": {
-    "title": "Cibalae Open Cup 2025",
-    "date": "March 7th - 9th",
-    "registrationButton": "Register",
-    "nominationsButton": "Nominations",
-    "description": "The competition will feature both Full power and Bench only categories. If desired, the competitor can compete in both, but must pay the fee for both categories.",
-    "scheduleTitle": "Planned Schedule",
-    "scheduleNote": "The planned schedule is below. The official schedule will be released after final nominations.",
-    "schedule": [
-      {
-        "day": "Friday",
-        "events": [
-          "Bench only - Women",
-          "Bench only - Men",
-          "Full power - Women (Sub-Junior, Junior, Masters)",
-          "Full power - Men (Masters)",
-          "Seminar"
-        ]
-      },
-      {
-        "day": "Saturday",
-        "events": [
-          "Full power - Women (Open)",
-          "Full power - Men (Open)"
-        ]
-      },
-      {
-        "day": "Sunday",
-        "events": [
-          "Full power - Men (Sub-Junior, Junior)"
-        ]
-      }
-    ],
-    "costTitle": "Costs",
-    "costHeaders": {
-      "item": "Item",
-      "price": "Price"
-    },
-    "costs": [
-      { "item": "Participation Fee", "price": "35.00 EUR" },
-      { "item": "Photo Package (optional)", "price": "20.00 EUR" },
-      { "item": "Competition T-Shirt (optional)", "price": "15.00 EUR" }
-    ],
-    "costNote": "T-shirts will also be sold at the venue but it’s better to order during registration.",
-    "seminarTitle": "Seminar",
-    "seminarDescription": "During the weekend, a seminar hosted by Emil Krastev, a world-class powerlifter and coach, will take place.",
-    "locationTitle": "Location",
-    "location": "Vinkovci, Antun Gustav Matoš Elementary School, Ohridska Street 21",
-    "transportTitle": "Transportation",
-    "transport": [
-      "Free parking available at the hotel.",
-      "Parking available at the venue.",
-      "Franjo Tuđman Airport -> Vinkovci: bus or train."
-    ],
-    "instructionsTitle": "Instructions for Foreign Athletes",
-    "instructionsButton": "Learn More",
-    "instructionsLink": "link_to_instructions"
+        "h": "Cibalae Open Cup 2025",
+        "btn1": "Registration",
+        "btn2": "Nominations",
+        "date": "March 7th - 9th",
+        "p1": "Instructions for Foreign Athletes Competing in Croatia.",
+        
+        "h2": "Competition",
+        "p2": "The competition will feature both Full power and Bench only categories. If desired, the competitor can compete in both, but in that case he must pay the participation fee for both categories.",
+
+        "h31": "Tentative",
+        "h32": "Schedule",
+        "p3": "The planned schedule is listed below, a more detailed schedule will be released once the preliminary nominations are finalized. This is NOT an official schedule. The official schedule shall be released after the final nominations.",
+        "s1": "Friday",
+        "s11": "Bench only",
+        "s12": "Women",
+        "s13": "Men",
+        "s14": "Full power",
+        "s15": "Women - Sub-Junior, Junior, Masters",
+        "s16": "Men - Masters",
+        "s17": "Seminar",
+        "s2": "Saturday",
+        "s21": "Full power",
+        "s22": "Women - Open",
+        "s23": "Men - Open",
+        "s3": "Sunday",
+        "s31": "Full power",
+        "s32": "Men - Sub-Junior, Junior",
+
+        "h4": "Cost",
+        "th1": "Participation Fee",
+        "tp12": "35,00 EUR",
+        "tt12": "Must be paid by bank transfer to the PLK Galacticos bank account until the end of final nominations.",
+        "th2": "Photo Package (optional)",
+        "tt21": "Receive your competition photos taken by the official photographers.",
+        "tp22": "20,00 EUR",
+        "tt22": "Selected during registration, must be paid together with the participation fee.",
+        "th3": "Competition T-Shirt (optional)",
+        "tt31": "Receive a Cibalae Open Cup 2025 themed T-shirt.",
+        "tp32": "15,00 EUR",
+        "tt32": "Selected during registration, must be paid together with the participation fee.",
+        "p4": "If a competitor is competing in both Full power and Bench only categories then he must pay the participation fee for both categories. T-shirts will also be sold at the venue but the stock will be limited so it’s better to order during registration.",
+
+        "h5": "Seminar",
+        "p51": "During the course of the weekend there will also be a seminar held by a world-renowned powerlifter and coach",
+        "p52": "Emil Krastev.",
+        "p53": "Emil is a two-time silver medalist and a two-time bronze medalist at IPF Worlds and a two-time Sheffield participant which makes him one of the very few people qualified to host this seminar.",
+        "p54": "The topic of the seminar is:",
+        "p55": "What makes a world class powerlifter?",
+        "p56": "It will mainly focus on the mental aspect of being an athlete, from motivation to mindset. The seminar will be held between groups, so everyone will be able to listen, learn and ask any questions.",
+
+        "h6": "Location",
+        "cro": "Croatia",
+        "school": "Primary school",
+
+        "h7": "Sports hall",
+
+        "h81": "Official",
+        "h82": "Accommodation",
+
+        "h9": "Transportation",
+        "p9": "If you are travelling by car, free parking is available at the hotel parking lot with the hotel parking card visible in the vehicle. Parking will also be available next to the competition venue.",
+        "t8h": "Arrival Guide",
+        "t8-11": "International Airport for Arrival",
+        "t8-12": "Franjo Tuđman International Airport Zagreb",
+        "t8-21": "Airport -> Zagreb",
+        "t8-221": "City bus or taxi",
+        "t8-222": "More information",
+        "t8-223": "Route",
+        "t8-224": "using public transport to Zagreb Main Train Station",
+        "t8-225": "using public transport to Zagreb Bus Station",
+        "t8-31": "Zagreb -> Vinkovci",
+        "t8-312": "Departure from one of:",
+        "t8-313": "Zagreb Main Train Station",
+        "t8-314": "Zagreb Bus Station",
+        "t8-321": "Train ",
+        "t8-322": "Tickets",
+        "t8-323": "or bus",
+        "t8-324": "Tickets",
+        "t8-41": "Vinkovci -> Hotel Slavonija",
+        "t8-421": "Train and bus stations are next to each other",
+        "t8-422": "Route",
+        "t8-51": "Hotel Slavonija -> Venue",
+        "t8-52": "Route",
+
+        "t9": "Sponsors"
   },
     "members": {
       "h": "Galactico",

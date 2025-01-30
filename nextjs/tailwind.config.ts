@@ -67,7 +67,8 @@ export default {
         "support": "url('/images/Support.jpg')",
         "integrity": "url('/images/Integrity.jpg')",
         "health": "url('/images/Health.jpg')",
-        "join": "url('/images/Clanovi Powerlifting kluba Galacticos2.jpg')"
+        "join": "url('/images/Clanovi Powerlifting kluba Galacticos2.jpg')",
+        "icon": "url('/images/icon-bg.png')"
       },
       screens: {
         "wide": "1440px"

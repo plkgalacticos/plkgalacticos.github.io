@@ -11,7 +11,8 @@
       "accommodation": "Smještaj",
       "accommodation-link": "cibalae-open-kup/smjestaj",
       "foreign": "Upute za strane natjecatelje",
-      "foreign-link": "cibalae-open-kup/upute-za-strane-natjecatelje"
+      "foreign-link": "cibalae-open-kup/upute-za-strane-natjecatelje",
+      "nominations-link": "en/cibalae-open-cup/nominacije"
     },
     "hero": {
       "h2": "Klub iznad svega",
@@ -53,7 +54,7 @@
       "h1": "Snaga & Otpornost",
       "p1": "Gradimo mentalnu i fizičku snagu, inspiriramo članove da prevladaju granice i da neprestano napreduju.",
       "h2": "Zajednica & Podrška",
-      "p2": "Naša zajednica je temeljena na međusobnoj podršci i druženju, pozivajući liftere svih razina da zajedno rastu.",
+      "p2": "Naša zajednica temelji se na međusobnoj podršci i druženju, pozivajući liftere svih razina da zajedno rastu.",
       "h3": "Integritet & Sportsko Ponašanje",
       "p3": "Promičemo sportski fair play i stvaramo ugodno i pozitivno okruženje za sve natjecatelje.",
       "h4": "Zdravlje & Dobrobit",
@@ -86,11 +87,11 @@
       "q8": "Koje su težinske kategorije u powerliftingu?",
       "a8": "Težinske kategorije su sljedeće: <ul> <br> <li>Muškarci: 59 kg, 66 kg, 74 kg, 83 kg, 93 kg, 105 kg, 120 kg, 120+ kg </li> <li>Žene: 47 kg, 52 kg, 57 kg, 63 kg, 69 kg, 76 kg, 84 kg, 84+ kg</li> </ul>",
       "q9": "Kako se prijaviti za natjecanje?",
-      "a9": "Prijava za natjecanje obavlja se putem saveza ili organizatora natjecanja. Važno je napomenuti da morate biti član kluba kako biste se mogli natjecati.",
+      "a9": "Prijava za natjecanje vrši se putem saveza ili organizatora natjecanja. Važno je napomenuti da morate biti član kluba kako biste se mogli natjecati.",
       "q10": "Koju opremu trebam za natjecanje?",
       "a10": "Za sudjelovanje na natjecanjima obavezni su natjecateljski triko (singlet), pamučna majica i duge čarape za mrtvo dizanje. Ostala oprema, poput remena, steznika za koljena i zapešća, nije obavezna, ali se može koristiti ako želite dodatnu podršku ili sigurnost.",
-      "q11": "Kada se obavlja vaganje?",
-      "a11": "Vaganje se obavlja 2 sata prije početka natjecanja. To je obavezan proces gdje se utvrđuje vaša težinska kategorija. Nakon vaganja imate dovoljno vremena za obrok, rehidrataciju i pripremu prije početka natjecanja.",
+      "q11": "Kada se provodi vaganje?",
+      "a11": "Vaganje se provodi 2 sata prije početka natjecanja. To je obavezan proces gdje se utvrđuje vaša težinska kategorija. Nakon vaganja imate dovoljno vremena za obrok, rehidrataciju i pripremu prije početka natjecanja.",
       "q12": "Što znači moto kluba 'Klub iznad svega'?",
       "a12": "Moto 'Klub iznad svega' odražava našu filozofiju da niti jedan pojedinac nije važniji od kluba. Svi članovi podržavaju jedni druge, bodre se tijekom treninga i natjecanja te rade na tome da postanu što bolji sportaši. Snaga našeg kluba leži u zajedništvu.",
       "q13": "Kako se mogu učlaniti u klub?",
@@ -122,7 +123,7 @@
         "h1": "Upute za strane sportaše koji se natječu u Hrvatskoj",
         "h2": "Dobrodošli! Molimo pažljivo slijedite korake u nastavku kako biste bili podobni za natjecanje u Hrvatskoj:",
         "l11": "Odobrenje Vašeg nacionalnog powerlifting saveza",
-        "l12": "Pribavite pismeno odobrenje vašeg Nacionalne powerlifting saveza koje vam omogućava natjecanje u Hrvatskoj. Predložak za ovo odobrenje je priložen ispod.",
+        "l12": "Pribavite pismeno odobrenje vašeg nacionalnog powerlifting saveza koje vam omogućava natjecanje u Hrvatskoj. Predložak za ovo odobrenje je priložen ispod.",
         "l21": "Prijava za članstvo u klubu",
         "l22": "Ispunite obrazac za prijavu za članstvo u našem klubu.",
         "l31": "Registracijski i izjavni obrazac",
@@ -133,10 +134,10 @@
         "l52": "Dostavite kopiju dokumenta o državljanstvu iz vaše zemlje.",
         "h3": "Važna napomena",
         "p1": "Možete zanemariti bilo koje upute vezane za slanje fotografija.",
-        "p2": "Kada su svi dokumenti popunjeni, molimo pošaljite ih zajedno u jednom emailu na",
+        "p2": "Kada su svi dokumenti ispunjeni, molimo pošaljite ih zajedno u jednom emailu na",
         "h4": "Sažetak dokumenata za slanje emailom",
         "p3": "Molimo osigurajte da su sljedeći dokumenti priloženi vašem emailu",
-        "d1": "Pismeno odobrenje vašeg Nacionalne powerlifting saveza",
+        "d1": "Pismeno odobrenje vašeg nacionalnog powerlifting saveza",
         "d21": "Ispunjen",
         "d22": "Obrazac za prijavu u članstvo kluba",
         "d31": "Ispunjen",
@@ -213,8 +214,8 @@
         "e7": "Morate odabrati barem jednu vrstu natjecanja.",
         "e8": "Dobna kategorija za full powerlifting je obavezna.",
         "e9": "Težinska kategorija za full powerlifting je obavezna.",
-        "e10": "Dobna kategorija za samo bench je obavezna.",
-        "e11": "Težinska kategorija za samo bench je obavezna.",
+        "e10": "Dobna kategorija za Bench only je obavezna.",
+        "e11": "Težinska kategorija za Bench only je obavezna.",
         "e12": "Kroj majice je obavezan.",
         "e13": "Veličina majice je obavezna.",
         "e14": "Uspješno ste se prijavili za Cibalae Open Kup 2025. Uskoro ćete dobiti potvrdni mail. Vidimo se na platformi!",
@@ -223,8 +224,8 @@
 
         "btn": "Prijavi se",
         "email-template": "template_g7u4l6h",
-        "no": "Da",
-        "yes": "Ne",
+        "no": "Ne",
+        "yes": "Da",
         "more": "Pokaži više informacija.",
         "less": "Pokaži manje informacija.",
 
@@ -286,7 +287,7 @@
         "p3": "Kontakt za rezervaciju:",
 
         "l11": "Sportaši, treneri i suci nisu obavezni odsjesti u službenom hotelu",
-        "l12": "ali Hotel Slavonija nud",
+        "l12": "ali Hotel Slavonija nudi",
         "l13": "najpovoljnije opcije",
         "l14": "za sudionike natjecanja.",
         "l21": "Posebne cijene",
@@ -319,62 +320,91 @@
         "p4": "Osigurajte svoj smještaj na vrijeme i uživajte u ugodnom boravku u Hotelu Slavonija!"
     },
     "competition": {
-    "title": "Cibalae Open Cup 2025",
-    "date": "07.03. - 09.03.",
-    "registrationButton": "Prijava",
-    "nominationsButton": "Nominacije",
-    "description": "Natjecanje će se sastojati od kategorija Full power i Bench only. Ako natjecatelj želi, može sudjelovati u obje, ali u tom slučaju mora platiti kotizaciju za obje kategorije.",
-    "scheduleTitle": "Okvirni raspored",
-    "scheduleNote": "Dolje je naveden planirani raspored. Službeni raspored će biti objavljen nakon završetka nominacija.",
-    "schedule": [
-      {
-        "day": "Petak",
-        "events": [
-          "Bench only - Žene",
-          "Bench only - Muškarci",
-          "Full power - Žene (Sub-Junior, Junior, Masters)",
-          "Full power - Muškarci (Masters)",
-          "Seminar"
-        ]
-      },
-      {
-        "day": "Subota",
-        "events": [
-          "Full power - Žene (Open)",
-          "Full power - Muškarci (Open)"
-        ]
-      },
-      {
-        "day": "Nedjelja",
-        "events": [
-          "Full power - Muškarci (Sub-Junior, Junior)"
-        ]
-      }
-    ],
-    "costTitle": "Troškovi",
-    "costHeaders": {
-      "item": "Stavka",
-      "price": "Cijena"
-    },
-    "costs": [
-      { "item": "Kotizacija", "price": "35,00 EUR" },
-      { "item": "Paket fotografija (neobavezno)", "price": "20,00 EUR" },
-      { "item": "Majica natjecanja (neobavezno)", "price": "15,00 EUR" }
-    ],
-    "costNote": "T-shirt će se prodavati i na mjestu događaja, ali preporučuje se narudžba prilikom registracije.",
-    "seminarTitle": "Seminar",
-    "seminarDescription": "Tijekom vikenda održat će se seminar koji vodi Emil Krastev, svjetski priznati powerlifter i trener.",
-    "locationTitle": "Lokacija",
-    "location": "Vinkovci, Osnovna škola Antun Gustav Matoš, Ohridska ulica 21",
-    "transportTitle": "Prijevoz",
-    "transport": [
-      "Besplatan parking dostupan uz hotel.",
-      "Parkiralište uz dvoranu natjecanja.",
-      "Zračna luka Franjo Tuđman -> Vinkovci: autobus ili vlak."
-    ],
-    "instructionsTitle": "Upute za strane sportaše",
-    "instructionsButton": "Detaljnije informacije",
-    "instructionsLink": "link_na_upute"
+      "h": "Cibalae Open Cup 2025",
+      "btn1": "Prijava",
+      "btn2": "Nominacije",
+      "date": "7. - 9. ožujka",
+      "p1": "Upute za strane sportaše koji se natječu u Hrvatskoj.",
+
+      "h2": "Natjecanje",
+      "p2": "Natjecanje će uključivati kategorije Full power i Bench only. Ako želi, natjecatelj može sudjelovati u obje kategorije, ali u tom slučaju mora platiti kotizaciju za obje kategorije.",
+
+      "h31": "Privremeni",
+      "h32": "Raspored",
+      "p3": "Planirani raspored naveden je u nastavku, a detaljniji raspored bit će objavljen nakon završetka preliminarnih nominacija. Ovo NIJE službeni raspored. Službeni raspored bit će objavljen nakon konačnih nominacija.",
+      "s1": "Petak",
+      "s11": "Bench only",
+      "s12": "Žene",
+      "s13": "Muškarci",
+      "s14": "Full power",
+      "s15": "Žene - Sub-Junior, Junior, Masters",
+      "s16": "Muškarci - Masters",
+      "s17": "Seminar",
+      "s2": "Subota",
+      "s21": "Full power",
+      "s22": "Žene - Open",
+      "s23": "Muškarci - Open",
+      "s3": "Nedjelja",
+      "s31": "Full power",
+      "s32": "Muškarci - Sub-Junior, Junior",
+
+      "h4": "Trošak",
+      "th1": "Kotizacija",
+      "tp12": "35,00 EUR",
+      "tt12": "Mora biti plaćeno bankovnim prijenosom na račun PLK Galacticos do kraja konačnih nominacija.",
+      "th2": "Foto paket (opcionalno)",
+      "tt21": "Primite svoje natjecateljske fotografije snimljene od strane službenih fotografa.",
+      "tp22": "20,00 EUR",
+      "tt22": "Odabire se tijekom registracije, mora biti plaćeno zajedno s kotizacijom.",
+      "th3": "Natjecateljska majica (opcionalno)",
+      "tt31": "Primite majicu s motivima Cibalae Open Cup 2025.",
+      "tp32": "15,00 EUR",
+      "tt32": "Odabire se tijekom registracije, mora biti plaćeno zajedno s kotizacijom.",
+      "p4": "Ako se natjecatelj natječe u obje kategorije, Full power i samo Bench, tada mora platiti kotizaciju za obje kategorije. Majice će se također prodavati na mjestu događaja, ali zalihe će biti ograničene, stoga je bolje naručiti ih tijekom registracije.",
+
+      "h5": "Seminar",
+      "p51": "Tijekom vikenda održat će se i seminar kojeg će voditi svjetski poznati powerlifter i trener",
+      "p52": "Emil Krastev.",
+      "p53": "Emil je dvostruki srebrni i dvostruki brončani medalist na IPF Svjetskom prvenstvu te dvostruki sudionik Sheffielda, što ga čini jednim od rijetkih kvalificiranih ljudi za održavanje ovog seminara.",
+      "p54": "Tema seminara je:",
+      "p55": "Što čini vrhunskog powerliftera?",
+      "p56": "Seminar će se fokusirati uglavnom na mentalni aspekt sportaša, od motivacije do načina razmišljanja. Održavat će se između grupa, tako da će svi imati priliku slušati, učiti i postavljati pitanja.",
+
+      "h6": "Lokacija",
+      "cro": "Hrvatska",
+      "school": "Osnovna škola",
+
+      "h7": "Sportska dvorana",
+
+      "h81": "Službeni",
+      "h82": "Smještaj",
+
+      "h9": "Prijevoz",
+      "p9": "Ako putujete automobilom, besplatno parkiranje je dostupno na hotelskom parkiralištu uz vidljivu hotelsku parkirnu kartu u vozilu. Parkiranje će također biti dostupno pored mjesta natjecanja.",
+      "t8h": "Vodič za dolazak",
+      "t8-11": "Zračna luka",
+      "t8-12": "Zračna luka Franjo Tuđman Zagreb",
+      "t8-21": "Zračna luka -> Zagreb",
+      "t8-221": "Gradski autobus ili taksi",
+      "t8-222": "više informacija",
+      "t8-223": "Ruta",
+      "t8-224": "korištenjem javnog prijevoza do Glavnog željezničkog kolodvora u Zagrebu",
+      "t8-225": "korištenjem javnog prijevoza do Autobusnog kolodvora Zagreb",
+      "t8-31": "Zagreb -> Vinkovci",
+      "t8-312": "Polazak s jedne od lokacija:",
+      "t8-313": "Glavni željeznički kolodvor Zagreb",
+      "t8-314": "Autobusni kolodvor Zagreb",
+      "t8-321": "Vlak",
+      "t8-322": "karte",
+      "t8-323": "ili autobus",
+      "t8-324": "karte",
+      "t8-41": "Vinkovci -> Hotel Slavonija",
+      "t8-421": "Željeznička i autobusna stanica su jedna pored druge",
+      "t8-422": "Ruta",
+      "t8-51": "Hotel Slavonija -> Mjesto natjecanja",
+      "t8-52": "Ruta",
+
+      "t9": "Sponzori"
   },
     "members": {
       "h": "Galacticosi",

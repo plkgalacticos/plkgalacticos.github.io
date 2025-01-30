@@ -1,9 +1,13 @@
 import React from 'react'
 import Accommodation from '@/app/sections/Accommodation'
-import Navbar from '@/app/components/Navbar'
-import Footer from '@/app/components/Footer'
 import en from '../../../../../messages/en.json'
+import { Metadata } from 'next'
 
+
+export const metadata: Metadata = {
+    title: 'PLK Galacticos - Cibalae Open Cup Accommodation',
+  };
+  
 const page = () => {
   return (
     <main className=''>

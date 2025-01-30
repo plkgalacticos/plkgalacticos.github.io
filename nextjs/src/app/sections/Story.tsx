@@ -48,7 +48,7 @@ const Story = ({t}) => {
             </div> */}
 
             <div className='flex-1 relative z-[2]'>
-                <img className='object-cover lg:min-h-[100vh]' src='/images/Marko_Kuzmic.jpg' alt='Clan powerlifting kluba Galacticos radi mrtvo dizanje na natjecanju'></img>
+                <img className='object-cover lg:min-h-[100vh] min-w-full' src='/images/Marko_Kuzmic.jpg' alt='Clan powerlifting kluba Galacticos radi mrtvo dizanje na natjecanju'></img>
             </div>
 
             <div className='flex-1 w-full min-h-full flex flex-col justify-center items-start gap-8 py-24 text-lg px-4'>

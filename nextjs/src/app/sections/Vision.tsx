@@ -10,7 +10,7 @@ const Vision = ({t}) => {
   return (
     <section className='relative flex flex-col-reverse lg:flex-row justify-center items-center'>
         <div className='flex-1 relative'>
-            <img className='object-cover' src='/images/tara_deadlift.png' alt='Clan powerlifting kluba Galacticos radi mrtvo dizanje na natjecanju'></img>
+            <img className='object-cover min-w-full' src='/images/tara_deadlift.png' alt='Clan powerlifting kluba Galacticos radi mrtvo dizanje na natjecanju'></img>
         </div>
         <div className='flex-1 flex flex-col justify-center items-center'>
             <div className='px-4 py-24'>

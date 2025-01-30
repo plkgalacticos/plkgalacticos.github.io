@@ -88,6 +88,13 @@ const Accommodation = ({t}) => {
             <div>
                 <h2 className='text-lg font-semibold'>{t['p4']}</h2>
             </div>
+
+            <div className='w-full flex flex-wrap flex-col lg:flex-row justify-center items-center gap-12 z-[1]'>
+                <img className='w-full max-w-md h-auto' src="/images/hotel/hotel-slavonija-1.jpg" alt="Hotel Slavonija" />
+                <img className='w-full max-w-md h-auto' src="/images/hotel/hotel-slavonija-2.jpg" alt="Hotel Slavonija" />
+                <img className="w-full max-w-md h-auto" src="/images/hotel/hotel-slavonija-3.jpg" alt="Hotel Slavonija" />
+
+            </div>
         </div>
 
         <div className='border-4 border-gold rounded-md p-4 rotate-45 absolute -left-44 lg:-left-56 -top-10 lg:-top-0'>

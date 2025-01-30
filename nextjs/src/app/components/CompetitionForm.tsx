@@ -137,6 +137,23 @@ const CompetitionForm = ({t, tNav}) => {
     return checkErrors(newErrors);
   };
 
+  function formatDate(dateString) {
+    // Create a new Date object from the input string
+    const date = new Date(dateString);
+
+    // Get the day, month, and year from the date object
+    const day = date.getDate();
+    const month = date.getMonth() + 1; // getMonth() returns 0 for January, 1 for February, etc.
+    const year = date.getFullYear();
+
+    // Format the day and month to ensure they are always two digits
+    const formattedDay = day < 10 ? `0${day}` : day;
+    const formattedMonth = month < 10 ? `0${month}` : month;
+
+    // Return the formatted date string in dd-mm-yyyy format
+    return `${formattedDay}-${formattedMonth}-${year}`;
+}
+
   const sendEmail = () => {
           emailjs.init("uEC8I-yAYpmANa15F");
           emailjs
@@ -148,7 +165,7 @@ const CompetitionForm = ({t, tNav}) => {
                 gender: form.gender,
                 name: form.name,
                 surname: form.surname,
-                dateOfBirth: form.dateOfBirth,
+                dateOfBirth: formatDate(form.dateOfBirth),
                 club: form.club,
                 competition_type: form.competitionType.benchOnly && form.competitionType.fullPower ? 'Full powerlifting & Bench press only' : form.competitionType.benchOnly ? 'Bench press only' : 'Full powerlifting',
                 fullPowerAgeCategory: form.competitionType.fullPower ? form.fullPowerDetails.ageCategory : '/',
@@ -185,7 +202,7 @@ const CompetitionForm = ({t, tNav}) => {
                     "Spol": form.gender,
                     "Ime": form.name,
                     "Prezime": form.surname,
-                    "Datum rođenja": form.dateOfBirth,
+                    "Datum rođenja": formatDate(form.dateOfBirth),
                     "Klub": form.club,
                     "Tip natjecanja": form.competitionType.benchOnly && form.competitionType.fullPower ? 'Full powerlifting & Bench press only' : form.competitionType.benchOnly ? 'Bench press only' : 'Full powerlifting',
                     "Full power dobna kategorija": form.competitionType.fullPower ? form.fullPowerDetails.ageCategory : '/',
@@ -268,7 +285,7 @@ const CompetitionForm = ({t, tNav}) => {
   return (
     <div className="relative flex flex-row justify-center items-center gap-8 w-full">
         <form onSubmit={handleSubmit} className="flex flex-col gap-6 w-full max-w-3xl bg-opaque-purple bg-glow  p-4 lg:p-12 mt-24 z-10">
-          <h2 className="text-xl">{t['for1']} <a href={"/" + tNav['kup-link']} className="text-logo-yellow underline">{t['for2']}</a> {t['for3']}</h2>
+          <h2 className="text-xl">{t['for1']} <a href={"/" + tNav['foreign-link']} className="text-logo-yellow underline">{t['for2']}</a> {t['for3']}</h2>
 
           <h2 className="text-2xl font-semibold mt-8">{t['h1']}</h2>
           <div className="flex flex-col justify-center items-start">
