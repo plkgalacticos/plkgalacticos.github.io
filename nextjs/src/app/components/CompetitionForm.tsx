@@ -230,32 +230,32 @@ const CompetitionForm = ({t, tNav}) => {
           const filePrefix = t['file'] + "_"
           if (form.competitionType.benchOnly && form.competitionType.fullPower && form.photographs && form.tshirtSelected) {
             setFile(filePrefix + '105.pdf')
-            setPayAmount(105)
-            setPayItems(`Bench only ${t['uk']} 35 EUR, Full power ${t['uk']} 35 EUR, ${t['ufoto']} 20 EUR, ${t['utshirt']} 15EUR`)
+            setPayAmount(102)
+            setPayItems(`Bench only ${t['uk']} 35 EUR, Full power ${t['uk']} 35 EUR, ${t['ufoto']} 20 EUR, ${t['utshirt']} 12EUR`)
           } else if (form.competitionType.benchOnly && form.competitionType.fullPower && form.photographs && !form.tshirtSelected) {
             setFile(filePrefix + '90.pdf')
             setPayAmount(90)
             setPayItems(`Bench only ${t['uk']} 35 EUR, Full power ${t['uk']} 35 EUR, ${t['ufoto']} 20 EUR`)
           } else if (form.competitionType.benchOnly && form.competitionType.fullPower && !form.photographs && form.tshirtSelected) {
             setFile(filePrefix + '85.pdf')
-            setPayAmount(85)
-            setPayItems(`Bench only ${t['uk']} 35 EUR, Full power ${t['uk']} 35 EUR, ${t['utshirt']} 15EUR`)
+            setPayAmount(82)
+            setPayItems(`Bench only ${t['uk']} 35 EUR, Full power ${t['uk']} 35 EUR, ${t['utshirt']} 12EUR`)
           } else if (form.competitionType.benchOnly && form.competitionType.fullPower && !form.photographs && !form.tshirtSelected) {
             setFile(filePrefix + '70.pdf')
             setPayAmount(70)
             setPayItems(`Bench only ${t['uk']} 35 EUR, Full power ${t['uk']} 35 EUR`)
           } else if ( (form.competitionType.benchOnly || form.competitionType.fullPower) && form.photographs && form.tshirtSelected) {
             setFile(filePrefix + '70.pdf')
-            setPayAmount(70)
-            setPayItems(`1x ${t['uk']} 35 EUR ${t['ufoto']} 20 EUR, ${t['utshirt']} 15EUR`)
+            setPayAmount(67)
+            setPayItems(`1x ${t['uk']} 35 EUR ${t['ufoto']} 20 EUR, ${t['utshirt']} 12EUR`)
           } else if ( (form.competitionType.benchOnly || form.competitionType.fullPower) && form.photographs && !form.tshirtSelected) {
             setFile(filePrefix + '55.pdf')
             setPayAmount(55)
             setPayItems(`1x ${t['uk']} 35 EUR, ${t['ufoto']} 20 EUR`)
           } else if ( (form.competitionType.benchOnly || form.competitionType.fullPower) && !form.photographs && form.tshirtSelected) {
             setFile(filePrefix + '50.pdf')
-            setPayAmount(50)
-            setPayItems(`1x ${t['uk']} 35 EUR, ${t['utshirt']} 15EUR`)
+            setPayAmount(47)
+            setPayItems(`1x ${t['uk']} 35 EUR, ${t['utshirt']} 12EUR`)
           } else {
             setFile(filePrefix + '35.pdf')
             setPayAmount(35)
