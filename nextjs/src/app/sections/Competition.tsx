@@ -59,9 +59,21 @@ const Competition = ({t}) => {
                       title="Cibalae Open Kup Google Maps Location">
               </iframe>
             </div>
+
+            
         </div>
 
-        <div className=' border-4 border-gold rounded-md p-4 rotate-45 absolute top-1/2 left-1/2 transform -translate-x-1/2 translate-y-[25rem] lg:translate-y-72'>
+        <div className='flex flex-row justify-center items-center gap-24 flex-wrap mt-24 z-10'>
+                <img className='w-28 h-auto'  src="/images/sponsors/nutrition shop.png" alt="NUTRITION SHOP" />
+                <img className='w-28 h-auto'  src="/images/sponsors/smells like pr.png" alt="SMELLS LIKE PR" />
+                <img className='w-28 h-auto' src="/images/sponsors/4za.png" alt="4ZA" />
+                <img className='w-28 h-auto'  src="/images/sponsors/a7.png" alt="A7" />
+                <img className='w-28 h-auto'  src="/images/sponsors/ttigroup.png" alt="TTI-group" />
+                <img className='w-28 h-auto'  src="/images/sponsors/tz.png" alt="TZ" />
+         </div>
+
+
+        <div className=' border-4 border-gold rounded-md p-4 rotate-45 absolute top-1/2 left-1/2 transform -translate-x-1/2 translate-y-[35rem] lg:translate-y-72'>
             <div className='border-4 border-gold rounded-md p-4'>
                 <div className='border-2 border-gold rounded-md p-4'>
                     <div className='border-2 border-gold rounded-md p-4'>

@@ -20,10 +20,10 @@ const Mission = ({t}) => {
             <img className='object-cover min-w-full' src='/images/Jakov_Mrso.jpg' alt='Clan powerlifting kluba Galacticos radi mrtvo dizanje na natjecanju'></img>
         </div>
 
-        <div className='border-4 border-gold rounded-md p-2 rotate-45 absolute max-lg:-right-8 lg:-left-8 -top-4 lg:top-24 -z-10'>
+        <div className='border-4 border-gold rounded-md p-2 rotate-45 absolute max-lg:-right-16 lg:-left-16 -top-4 lg:top-24 -z-10'>
                 <div className='border-2 border-gold rounded-md p-2'>
                         <div className='border-[1px] border-gold rounded-md p-2'>
-                            <div className='border-[1px] border-gold rounded-md p-4 min-w-4 min-h-4'></div>
+                            <div className='border-[1px] border-gold rounded-md p-4 min-w-16 min-h-16'></div>
                         </div>
                 </div>
         </div>

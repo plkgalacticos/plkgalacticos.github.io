@@ -65,10 +65,10 @@ const Story = ({t}) => {
             
         </div>
 
-        <div className='border-4 border-gold rounded-md p-2 rotate-45 absolute -right-8 bottom-24 '>
+        <div className='border-4 border-gold rounded-md p-2 rotate-45 absolute -right-16 bottom-24 '>
                 <div className='border-2 border-gold rounded-md p-2'>
                         <div className='border-[1px] border-gold rounded-md p-2'>
-                            <div className='border-[1px] border-gold rounded-md p-4 min-w-4 min-h-4'></div>
+                            <div className='border-[1px] border-gold rounded-md p-4 min-w-16 min-h-16'></div>
                         </div>
                 </div>
         </div>

@@ -16,6 +16,8 @@ const CompetitionForm = ({t, tNav}) => {
     endDate: null
 });
   const [file, setFile] = useState(null);
+  const [payAmount, setPayAmount] = useState(null)
+  const [payItems, setPayItems] = useState(null)
   const [isRegistrationSuccess, setIsRegistrationSuccess] = useState(false);
   const [form, setForm] = useState({
     email: "",
@@ -37,7 +39,8 @@ const CompetitionForm = ({t, tNav}) => {
     },
     photographs: false,
     tshirtSelected: false,
-    tshirt: { cut: "", size: "" }
+    tshirt: { cut: "", size: "" },
+    isInternationCompetitor: false
   });
 
   const [errors, setErrors] = useState({
@@ -53,7 +56,7 @@ const CompetitionForm = ({t, tNav}) => {
         benchOnlyAgeCategory: '',
         benchOnlyWeightCategory: '',
         tshirtCut: '',
-        tshirtSize: ''
+        tshirtSize: '',
   });
   const [message, setMessage] = useState("");
 
@@ -107,7 +110,7 @@ const CompetitionForm = ({t, tNav}) => {
         benchOnlyAgeCategory: '',
         benchOnlyWeightCategory: '',
         tshirtCut: '',
-        tshirtSize: ''
+        tshirtSize: '',
     };
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
@@ -176,6 +179,7 @@ const CompetitionForm = ({t, tNav}) => {
                 benchOnlyBestBenchPress: form.competitionType.benchOnly ? form.benchOnlyDetails.bestBenchPress + ' kg' : '/',
                 photographs: form.photographs ? t['yes'] : t['no'],
                 tShirt : form.tshirtSelected ? form.tshirt.cut + ', ' + form.tshirt.size: '/', 
+                totalAmount: payAmount + ' EUR (' + payItems + ')', 
                 attachment: file,
               }
             )
@@ -214,7 +218,8 @@ const CompetitionForm = ({t, tNav}) => {
                     "Fotogragije": form.photographs ? 'Da' : 'Ne',
                     "Majica": form.tshirtSelected ? 'Da' : 'Ne',
                     "Kroj": form.tshirtSelected && form.tshirt.cut ? form.tshirt.cut : '/', 
-                    "Veličina": form.tshirtSelected && form.tshirt.size ? form.tshirt.size : '/' 
+                    "Veličina": form.tshirtSelected && form.tshirt.size ? form.tshirt.size : '/',
+                    "Međunarodni natjecatelj": form.isInternationCompetitor ? 'Da' : 'Ne'
           }
 
           SheetDB.write('https://sheetdb.io/api/v1/wxafnxolcqbw9', { sheet: 'Sheet1', data: sheetForm }).then(function(result){
@@ -225,20 +230,36 @@ const CompetitionForm = ({t, tNav}) => {
           const filePrefix = t['file'] + "_"
           if (form.competitionType.benchOnly && form.competitionType.fullPower && form.photographs && form.tshirtSelected) {
             setFile(filePrefix + '105.pdf')
+            setPayAmount(105)
+            setPayItems(`Bench only ${t['uk']} 35 EUR, Full power ${t['uk']} 35 EUR, ${t['ufoto']} 20 EUR, ${t['utshirt']} 15EUR`)
           } else if (form.competitionType.benchOnly && form.competitionType.fullPower && form.photographs && !form.tshirtSelected) {
             setFile(filePrefix + '90.pdf')
+            setPayAmount(90)
+            setPayItems(`Bench only ${t['uk']} 35 EUR, Full power ${t['uk']} 35 EUR, ${t['ufoto']} 20 EUR`)
           } else if (form.competitionType.benchOnly && form.competitionType.fullPower && !form.photographs && form.tshirtSelected) {
             setFile(filePrefix + '85.pdf')
+            setPayAmount(85)
+            setPayItems(`Bench only ${t['uk']} 35 EUR, Full power ${t['uk']} 35 EUR, ${t['utshirt']} 15EUR`)
           } else if (form.competitionType.benchOnly && form.competitionType.fullPower && !form.photographs && !form.tshirtSelected) {
             setFile(filePrefix + '70.pdf')
+            setPayAmount(70)
+            setPayItems(`Bench only ${t['uk']} 35 EUR, Full power ${t['uk']} 35 EUR`)
           } else if ( (form.competitionType.benchOnly || form.competitionType.fullPower) && form.photographs && form.tshirtSelected) {
             setFile(filePrefix + '70.pdf')
+            setPayAmount(70)
+            setPayItems(`1x ${t['uk']} 35 EUR ${t['ufoto']} 20 EUR, ${t['utshirt']} 15EUR`)
           } else if ( (form.competitionType.benchOnly || form.competitionType.fullPower) && form.photographs && !form.tshirtSelected) {
             setFile(filePrefix + '55.pdf')
+            setPayAmount(55)
+            setPayItems(`1x ${t['uk']} 35 EUR, ${t['ufoto']} 20 EUR`)
           } else if ( (form.competitionType.benchOnly || form.competitionType.fullPower) && !form.photographs && form.tshirtSelected) {
             setFile(filePrefix + '50.pdf')
+            setPayAmount(50)
+            setPayItems(`1x ${t['uk']} 35 EUR, ${t['utshirt']} 15EUR`)
           } else {
             setFile(filePrefix + '35.pdf')
+            setPayAmount(35)
+            setPayItems(`1x ${t['uk']} 35 EUR`)
           }
 
     } else {
@@ -266,7 +287,13 @@ const CompetitionForm = ({t, tNav}) => {
           tshirtSelected: checked,
         }));
       }
-    } else {
+      else if (name === "isInternationalCompetitor") {
+        setForm((prev) => ({
+          ...prev,
+          isInternationCompetitor: checked,
+        }));
+        }
+    }  else {
       const [section, key] = name.split(".");
       if (section === "fullPowerDetails" || section === "benchOnlyDetails" || section === "tshirt") {
         setForm((prev) => ({
@@ -286,7 +313,7 @@ const CompetitionForm = ({t, tNav}) => {
     <div className="relative flex flex-row justify-center items-center gap-8 w-full">
         <form onSubmit={handleSubmit} className="flex flex-col gap-6 w-full max-w-3xl bg-opaque-purple bg-glow  p-4 lg:p-12 mt-24 z-10">
           <h2 className="text-xl">{t['for1']} <a href={"/" + tNav['foreign-link']} className="text-logo-yellow underline">{t['for2']}</a> {t['for3']}</h2>
-
+          <p>{t['note']}</p>
           <h2 className="text-2xl font-semibold mt-8">{t['h1']}</h2>
           <div className="flex flex-col justify-center items-start">
             <label>{t['l1']}: </label>
@@ -395,6 +422,16 @@ const CompetitionForm = ({t, tNav}) => {
             {errors.club && <p className="flex flex-row justify-start items-center gap-2 mt-2">
                 <img className="w-6 h-auto" src="/icons/warning-sign.svg" alt="WARNING" />{errors.club}</p>}
           </div>
+
+          <div className="flex flex-row justify-start items-center gap-4">
+                  <label className="text-lg font-semibold">{t['l11']} </label>
+                  <input className="w-min"
+                    type="checkbox"
+                    name="isInternationalCompetitor"
+                    checked={form.isInternationCompetitor}
+                    onChange={handleInputChange}
+                  />
+            </div>
         
           <div>
             <p className="mt-12 text-2xl font-semibold">{t['h2']}: </p>
@@ -703,13 +740,17 @@ const CompetitionForm = ({t, tNav}) => {
             </div>
           )}
 
+            
+
           <button type="submit" className="bg-logo-yellow uppercase font-semibold md:text-lg border-2 border-logo-yellow rounded-sm hover:bg-black transition-all duration-400 p-4 mt-8 text-white">{t['btn']}</button>
         
           <div>{message && <p>{message}</p>}</div>
 
            <div className={`${file ? 'block' : 'hidden'} mt-4`}>
                <h2 className="text-xl font-semibold">{t['uh']}</h2>
-               <ul className="list-disc ml-8 mt-2">
+               <p className="mt-4">{t['unote']}</p>
+               <p className="mt-4"><span className="font-semibold">{t['uamount']}</span> {payAmount} EUR ({payItems})</p>
+               {/* <ul className="list-disc ml-8 mt-2">
                     <li><span className="font-extrabold">{t['ul11']}</span> {t['ul12']} <span className="font-extrabold">{t['ul13']}</span> {t['ul14']}</li>
                     <li className="font-semibold">{t['ul2']}</li>
                     <li className="list-none">
@@ -733,7 +774,7 @@ const CompetitionForm = ({t, tNav}) => {
                                 </span>
                             </div>
                         </div>
-                </a>
+                </a> */}
             </div>
         </form>
 

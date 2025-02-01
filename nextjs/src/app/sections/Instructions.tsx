@@ -4,14 +4,14 @@ const Instructions = ({t}) => {
     t = t['instructions']
 
   return (
-    <section className='relative bg-black text-white px-4 py-8 lg:px-16 lg:pb-32 lg:pt-32 flex flex-col gap-16 '>
+    <section className='relative bg-black text-white px-4 py-8 lg:px-16 pb-32 pt-32 flex flex-col gap-16 '>
         <h1 className='heading-text text-center z-10'>{t['h']}</h1>
         <div className='flex flex-col gap-8 z-10 max-container-sm'>
             <h2 className='subheading-text'>{t['h1']}</h2>
             <h3 className='text-lg'>{t['h2']}</h3>
             <ol className='flex flex-col gap-4 list-decimal ml-4'>
                 <li><p className='font-semibold text-logo-yellow'>{t['l11']}</p> {t['l12']}</li>
-                <li><p className='font-semibold text-logo-yellow'>{t['l21']}</p> {t['l22']}</li>
+                <li><p className='font-semibold text-logo-yellow'>{t['l21']}</p> {t['l22']} <a href="https://www.hpls-powerlifting.hr/kontakt/" className='text-logo-yellow underline'>{t['l22-2']}</a></li>
                 <li><p className='font-semibold text-logo-yellow'>{t['l31']}</p> {t['l32']}</li>
                 <li><p className='font-semibold text-logo-yellow'>{t['l41']}</p> {t['l42']}</li>
                 <li><p className='font-semibold text-logo-yellow'>{t['l51']}</p> {t['l52']}</li>
@@ -96,13 +96,13 @@ const Instructions = ({t}) => {
             </div>
 
             <div className='mt-8'>
-                <p>{t['p4']}</p>
+                <p>{t['p4']} <a href="mailto:plkgalacticos@gmail.com" className='text-logo-yellow underline'>{t['p4-2']}</a> {t['p4-3']} <a href="https://www.instagram.com/plk.galacticos/" target='_blank' className='text-logo-yellow underline'>{t['p4-4']}</a></p>
                 <p>{t['p5']}</p>
             </div>
 
         </div>
 
-        <div className='border-4 border-gold rounded-md p-4 rotate-45 absolute -left-44 lg:-left-56 -top-36 lg:-top-0'>
+        <div className='border-4 border-gold rounded-md p-4 rotate-45 absolute -left-56 -top-12 lg:-left-56  lg:-top-0'>
             <div className='border-4 border-gold rounded-md p-4'>
                 <div className='border-2 border-gold rounded-md p-4'>
                     <div className='border-2 border-gold rounded-md p-4'>

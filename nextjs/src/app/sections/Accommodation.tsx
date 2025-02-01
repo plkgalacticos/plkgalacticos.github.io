@@ -12,8 +12,11 @@ const Accommodation = ({t}) => {
                 <div className='flex-1'>
                     <h2 className='subheading-text'><span className='font-semibold text-logo-yellow'>{t['h2']}</span> </h2>
                     <h3 className='text-xl font-semibold mt-4'>{t['p1']}</h3>
-                    <p className='mt-4'>{t['p2']}</p>
-                    <p className='font-semibold text-lg mt-4'>{t['p3']}</p>
+                    <p className='mt-8'>{t['p2']}</p>
+                    <ul className='flex flex-col gap-2 mt-8'>
+                      <li className='flex flex-row items-start gap-4'><img className='w-6 h-auto max-sm:pt-[0.375rem]' src="/images/logo/plk-galacticos-logo-round.png" alt="" /><span><span className='font-extrabold'>{t['p2-1']}</span> {t['p2-2']} <a className='text-logo-yellow underline' href="mailto:plkgalacticos@gmail.com">email</a> {t['p2-3']}</span></li>
+                      <li className='flex flex-row items-start gap-4'><img className='w-6 h-auto max-sm:pt-[0.375rem]' src="/images/logo/plk-galacticos-logo-round.png" alt="" /><span><span className='font-extrabold'>{t['p2-4']}</span> {t['p2-5']}</span></li>
+                    </ul>
                 </div>
                 <div className='flex-1'>
                     <iframe className={`rounded-md min-w-full max-w-full h-72 md:h-96 lg:h-[450px]`}
@@ -35,42 +38,26 @@ const Accommodation = ({t}) => {
                 <table className="z-10 table-scrollbar table-auto overflow-x-scroll bg-black border-[3px] border-logo-yellow rounded-lg border-collapse border-spacing-0 mx-auto">
                     <thead>
                       <tr>
-                        <th className="subheading-text p-4" colSpan={4}>{t['tableh']}</th>
+                        <th className="subheading-text p-4" colSpan={4}>
+                            {t['tableh']}
+                        </th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr className='t-row'>
-                        <td className="t-item"></td>
                         <td className="t-item font-semibold">{t['table11']}</td>
                         <td className="t-item font-semibold">{t['table12']}</td>
                         <td className="t-item font-semibold">{t['table13']}</td>
                       </tr>
                       <tr className='t-row'>
-                        <td className="t-item font-semibold">{t['table2']}</td>
-                        <td className="t-item">51 EUR</td>
-                        <td className="t-item">63 EUR</td>
-                        <td className="t-item">73 EUR</td>
-                      </tr>
-                      <tr className='t-row'>
-                        <td className="t-item font-semibold">{t['table3']}</td>
-                        <td className="t-item">47 EUR</td>
-                        <td className="t-item">59 EUR</td>
-                        <td className="t-item">69 EUR</td>
-                      </tr>
-                      <tr className='t-row'>
-                        <td className="t-item font-semibold">{t['table4']}</td>
-                        <td className="t-item">43 EUR</td>
-                        <td className="t-item">55 EUR</td>
-                        <td className="t-item">65 EUR</td>
-                      </tr>
-                      <tr className='t-row'>
-                        <td className="t-item font-semibold">{t['table5']}</td>
-                        <td className="t-item">40 EUR</td>
-                        <td className="t-item">52 EUR</td>
-                        <td className="t-item">62 EUR</td>
+                        <td className="t-item">38 EUR</td>
+                        <td className="t-item">50 EUR</td>
+                        <td className="t-item">60 EUR</td>
                       </tr>
                     </tbody>
                     </table>
+
+                    <p className='text-sm italic mt-8'>*{t['note']}</p>
             </div>
 
             <div className='z-10'>

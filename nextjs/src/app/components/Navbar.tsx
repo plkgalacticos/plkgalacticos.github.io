@@ -16,14 +16,41 @@ const Navbar = ({t}) => {
 
   t = t['nav']
 
+  const routeTranslations = {
+    '/cibalae-open-kup': '/en/cibalae-open-cup',
+    '/cibalae-open-kup/prijava': '/en/cibalae-open-cup/registration',
+    '/cibalae-open-kup/smjestaj': '/en/cibalae-open-cup/accommodation',
+    '/cibalae-open-kup/nominacije': '/en/cibalae-open-cup/nominations',
+    '/cibalae-open-kup/upute-za-strane-natjecatelje': '/en/cibalae-open-cup/instructions-for-foreign-athletes',
+    '/clanovi': '/en/members',
+    '/': '/en',
+
+    '/en/cibalae-open-cup': '/cibalae-open-kup',
+    '/en/cibalae-open-cup/registration': '/cibalae-open-kup/prijava',
+    '/en/cibalae-open-cup/accommodation': '/cibalae-open-kup/smjestaj',
+    '/en/cibalae-open-cup/nominations': '/cibalae-open-kup/nominacije',
+    '/en/cibalae-open-cup/instructions-for-foreign-athletes': '/cibalae-open-kup/upute-za-strane-natjecatelje',
+    '/en/members': '/clanovi',
+    '/en': '/'
+  };
+
   const router = useRouter();
   const pathname = usePathname()
   let firstSegment = pathname.split('/')[1];
 
+  const getTranslatedPath = (path, lang) => {
+    console.log(path)
+    const baseRoute = path.split('/')[1]; // Get the first part of the route after the initial '/'
+    const remainingPath = path.substring(baseRoute.length + 1);
+    const translatedBaseRoute = routeTranslations[path] || path;
+    return translatedBaseRoute;
+  };
+  
   const [lang, setLang] = useState('hr');
-
-  const changeLanguage = (value: string) => {
-    router.push('/' + value);
+  
+  const changeLanguage = (newLang) => {
+    const newRoute = getTranslatedPath(pathname, newLang);
+    router.push(newRoute);
   };
 
   const handleLanguageChange = (event: React.ChangeEvent<HTMLSelectElement>) => {

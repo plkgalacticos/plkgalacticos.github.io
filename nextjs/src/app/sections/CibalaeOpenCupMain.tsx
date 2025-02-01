@@ -68,6 +68,7 @@ const CibalaeOpenCupMain = ({t}) => {
                 </div>
             </li>
           </ul>
+          <p className='mt-8 text-sm italic'>*{t['note3']}</p>
         </div>
 
         {/* Costs Table */}
@@ -87,6 +88,7 @@ const CibalaeOpenCupMain = ({t}) => {
                     <td className="t-item-md">
                       <span className='font-extrabold text-xl'>{t['th2']}</span>
                       <p className='mt-2'>{t['tt21']}</p>
+                      <a href='https://drive.google.com/drive/folders/1H8xzDgDqhvSqHtIujn-rKKzMo2Q_miTM?usp=sharing' className='mt-2 text-logo-yellow underline'>{t['tt21-2']}</a>
                     </td>
                     <td className="t-item-md">
                       <span className='font-extrabold text-xl'>{t['tp22']}</span>
@@ -111,11 +113,25 @@ const CibalaeOpenCupMain = ({t}) => {
         </div>
 
         {/* Seminar */}
-        <div className='max-container-sm'>
-            <h2 className="subheading-text">{t['h5']}</h2>
-            <p className="mt-4">{t['p51']} <span className='font-extrabold text-logo-yellow'>{t['p52']}</span> {t['p53']}</p>
-            <p className='mt-4 text-lg font-semibold'>{t['p54']} <span className=' text-logo-yellow'>{t['p55']}</span></p>
-            <p className='mt-4'>{t['p56']}</p>
+        <div className='max-container'>
+            <div className='flex flex-col lg:flex-row justify-center items-center'>
+                <div className='flex-1'>
+                    <h2 className="subheading-text">{t['h5']}</h2>
+
+                    <p className="mt-12">{t['p51']} 
+                        &nbsp;<a href='https://www.instagram.com/ekrustew/' target='_blank' className='font-extrabold text-logo-yellow underline'>{t['p52']}</a>&nbsp;
+                         {t['p53']} <span className='text-logo-yellow font-semibold'>{t['p3-2']}</span> {t['p3-3']}
+                    </p>
+                    
+                    <p className='mt-4 text-lg font-semibold'>{t['p54']} <span className=' text-logo-yellow'>{t['p55']}</span></p>
+                    <p className='mt-4'>{t['p56']}</p>
+                    
+                    <p className="mt-8 text-sm italic">*{t['note5']}</p>
+                </div>
+                <div className='flex-1 mt-12 lg:mt-0 flex flex-row justify-center lg:justify-end items-center'>
+                    <img src="/images/EmilKrastev.png" alt="Emil Krastev" />
+                </div>
+            </div>
         </div>
 
         {/* Location */}
@@ -128,7 +144,7 @@ const CibalaeOpenCupMain = ({t}) => {
                     <h3 className='uppercase font-semibold text-lg'>{t['h6']}</h3>
                     <p className='mt-2'>Vinkovci, {t['cro']}</p>
                     <div className='overflow-hidden border-white'>
-                        <iframe className='absolute bottom-[-292px] left-[6px] right-0 w-[242px] h-[180px] rounded-b-[1em] border-2' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d89861.33024828765!2d18.7910944!3d45.264643549999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475c8a8883c30259%3A0x400ad50862bceb0!2sVinkovci!5e0!3m2!1shr!2shr!4v1738249615301!5m2!1shr!2shr" width="600" height="450" allowFullScreen={true} loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe className='absolute bottom-[-292px] left-[6px] right-0 w-[242px] h-[172px] rounded-b-[1em] border-2' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d89861.33024828765!2d18.7910944!3d45.264643549999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475c8a8883c30259%3A0x400ad50862bceb0!2sVinkovci!5e0!3m2!1shr!2shr!4v1738249615301!5m2!1shr!2shr" width="600" height="450" allowFullScreen={true} loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
             </div>
@@ -137,12 +153,12 @@ const CibalaeOpenCupMain = ({t}) => {
                 <span></span>
                 <div className="content flex flex-col justify-start items-start">
                     <h3 className='uppercase font-semibold text-lg'>{t['h7']}</h3>
-                    <p className='mt-2'>{t['school']} Antun Gustav Matoš </p>
+                    <p className='mt-2'>{t['hall']} Lapovci </p>
                     <p className='mt-2'>Ohridska ulica 21</p>
                     <p>32100, Vinkovci</p>
                     <p>{t['cro']}</p>
-                    <div className='overflow-hidden border-white'>
-                        <iframe className='absolute bottom-[-188px] left-[6px] right-0 w-[242px] h-[180px] rounded-b-[1em] border-2' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2806.6986652633864!2d18.7934888!3d45.294310599999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475c8ae094d7cb09%3A0x2df59e6296b69211!2sOsnovna%20%C5%A1kola%20Antun%20Gustav%20Mato%C5%A1!5e0!3m2!1shr!2shr!4v1738250208732!5m2!1shr!2shr" width="600" height="450" allowFullScreen={true} loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+                    <div className='overflow-hidden'>
+                        <iframe className='absolute bottom-[-212px] left-[6px] right-0 w-[242px] h-[172px] rounded-b-[1em]' src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3449.9002176341305!2d18.7909139!3d45.2943143!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475c8b64fff510a5%3A0x1128897d4d4704d6!2sSportska%20dvorana%20Lapovci!5e1!3m2!1shr!2shr!4v1738415562043!5m2!1shr!2shr" width="600" height="450" allowFullScreen={true} loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
             </div>
@@ -155,8 +171,9 @@ const CibalaeOpenCupMain = ({t}) => {
                     <p className='mt-2'>Duga ulica 1</p>
                     <p>32100, Vinkovci</p>
                     <p>{t['cro']}</p>
+                    <a href={'/' + tNav['accommodation-link']} className='mt-2 text-logo-yellow underline'>{t['p6']}</a>
                     <div className='overflow-hidden border-white'>
-                        <iframe className='absolute bottom-[-190px] left-[6px] right-0 w-[242px] h-[180px] rounded-b-[1em] border-2' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2807.039689308962!2d18.8029382!3d45.2874197!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47667a16bcca35a9%3A0xa94aabc6ed8f0a55!2sHotel%20Slavonija!5e0!3m2!1shr!2shr!4v1738250299008!5m2!1shr!2shr" width="600" height="450" allowFullScreen={true} loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe className={`absolute ${t['cro'] === 'Croatia' ? 'bottom-[-158px]' : 'bottom-[-180px]'}  left-[6px] right-0 w-[242px] h-[172px] rounded-b-[1em] border-2`} src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2807.039689308962!2d18.8029382!3d45.2874197!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47667a16bcca35a9%3A0xa94aabc6ed8f0a55!2sHotel%20Slavonija!5e0!3m2!1shr!2shr!4v1738250299008!5m2!1shr!2shr" width="600" height="450" allowFullScreen={true} loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
             </div>
