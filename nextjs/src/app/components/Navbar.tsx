@@ -74,7 +74,7 @@ const Navbar = ({t}) => {
                     <div className='flex flex-row justify-center items-center gap-3'>
                         <a className=' hover:scale-105' href={"/" + t['home-link']}>{t['home']}</a>
                         <a className=' hover:scale-105' href={"/" + t['members-link']}>{t['members']}</a>
-                        {/* <a className=' hover:scale-105' href={"/" + t['kup-link']}>{t['kup']}</a> */}
+                        <a className=' hover:scale-105' href={"/" + t['kup-link']}>{t['kup']}</a>
                         {/* <a className=' hover:scale-105' href={"/" + t['application-link']}>{t['application']}</a> */}
                         {/* <a className=' hover:scale-105' href={"/" + t['accommodation-link']}>{t['accommodation']}</a> */}
                     </div>
@@ -113,7 +113,7 @@ const Navbar = ({t}) => {
                 <div className='flex flex-col justify-center items-center gap-3'>
                         <a className=' hover:scale-105' href={"/" + t['home-link']} onClick={toggleMenu}>{t['home']}</a>
                         <a className=' hover:scale-105' href={"/" + t['members-link']} onClick={toggleMenu}>{t['members']}</a>
-                        {/* <a className=' hover:scale-105' href={"/" + t['kup-link']} onClick={toggleMenu}>{t['kup']}</a> */}
+                        <a className=' hover:scale-105' href={"/" + t['kup-link']} onClick={toggleMenu}>{t['kup']}</a>
                 </div>
             </div>
         </nav>
