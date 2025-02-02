@@ -3,6 +3,7 @@ import React from 'react'
 import useInViewAnimation from '../hooks/useInViewAnimation';
 
 const Competition = ({t}) => {
+  const  tNav = t['nav']
   t = t['comp']  
 
   const [h1Ref, h1Animation] = useInViewAnimation({ threshold: 0.1 }, 'slide-top');
@@ -41,13 +42,22 @@ const Competition = ({t}) => {
                 <img className="w-14 h-auto" src="/icons/croatia.svg" alt="CROATIA" />
               </div>
 
-              <a href="https://www.instagram.com/plk.galacticos/" target="_blank"
-                className="">
-                <button ref={btnRef as React.RefObject<HTMLButtonElement>} className={`slide-right-pre ${btnAnimation} btn-primary py-3 mt-8 flex flex-row justify-center items-center gap-4 min-md:my-2`}>
-                  <img className="w-6 lg:w-8 h-auto" src="/icons/ig-white.svg" alt="INSTAGRAM" />
-                  <p className="text-base lg:text-lg font-semibold">{t['btn']}</p>
-                </button>
-              </a>
+                <div className='flex flex-col'>
+                    <a href="https://www.instagram.com/plk.galacticos/" target="_blank"
+                      className="w-full">
+                      <button ref={btnRef as React.RefObject<HTMLButtonElement>} className={`slide-right-pre ${btnAnimation} btn-primary py-3 mt-8 flex flex-row justify-center items-center gap-4 min-md:my-2`}>
+                        <img className="w-4 lg:w-5 h-auto" src="/icons/ig-white.svg" alt="INSTAGRAM" />
+                        <p className="text-base lg:text-lg font-semibold">{t['btn']}</p>
+                      </button>
+                    </a>
+                    <a href={tNav['kup-link']}
+                      className="w-full">
+                      <button ref={btnRef as React.RefObject<HTMLButtonElement>} className={`slide-right-pre ${btnAnimation} btn-secondary py-3 mt-8 flex flex-row justify-center items-center gap-4 min-md:my-2`}>
+                        <img className="w-4 lg:w-6 h-auto" src="/icons/winner.svg" alt="INSTAGRAM" />
+                        <p className="text-base lg:text-lg font-semibold">{t['btn2']}</p>
+                      </button>
+                    </a>
+                </div>
             </div>
             <div className="flex-1  max-lg:w-full">
               <h3 ref={h3Ref as React.RefObject<HTMLDivElement>} className={`slide-left-pre ${h3Animation} text-2xl lg:text-3xl font-semibold font-palanquin leading-3 mb-8 mt-24 lg:mt-0`}>

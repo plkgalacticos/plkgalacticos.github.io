@@ -4,11 +4,11 @@ const Accommodation = ({t}) => {
   t = t['accommodation']
   return (
     <section className='relative bg-black text-white py-8 pb-32 pt-32 flex flex-col justify-center items-center gap-16 overflow-x-hidden px-4 lg:px-16'>
-        <h1 className='z-10 heading-text text-center'>{t['h1']} – <span className='text-logo-yellow'>Hotel Slavonija</span></h1>
+        <h1 className='z-10 heading-text text-center'>{t['h1']} – <a href='https://srijem-slavonija.eu/hr/smjestaj/hoteli/hotel-slavonija,19.html' target='_blank' className='text-logo-yellow underline'>Hotel Slavonija</a></h1>
 
         <div className='max-container-sm flex flex-col justify-center items-start gap-24 pt-16'>
             
-            <div className='flex flex-col lg:flex-row gap-12 gradient-yellow-bl rounded-xl'>
+            <div className='flex flex-col lg:flex-row gap-12 gradient-yellow-bl rounded-xl p-2'>
                 <div className='flex-1'>
                     <h2 className='subheading-text'><span className='font-semibold text-logo-yellow'>{t['h2']}</span> </h2>
                     <h3 className='text-xl font-semibold mt-4'>{t['p1']}</h3>

@@ -64,6 +64,7 @@
       "h1": "7th - 9th March",
       "h2": "Location",
       "btn": "Follow to stay updated",
+      "btn2": "Find out more",
       "p": "For the first time in Croatia, the Cibalae Open Cup will feature competitors from over 5 countries. This is a landmark event bringing together top powerlifters from around the world."
     },
     "faq": {
@@ -123,10 +124,11 @@
         "h1": "Instructions for Foreign Athletes Competing in Croatia",
         "h2": "Welcome! Please carefully follow the steps below to ensure your eligibility to compete in Croatia:",
         "l11": "Approval from Your National Powerlifting Federation",
-        "l12": "Submit the written approval of your national powerlifting federation (which is under the auspices of the IPF) that allows you to compete in Croatia. A template for this approval is attached below.",
+        "l12": "Submit the written approval of your national powerlifting federation (which is the affiliate of the IPF) that allows you to compete in Croatia. A template for this approval is attached below.",
         "l21": "Club Membership Application",
         "l22": "Fill out the application form for membership in our club. According to Croatian law, you must be a member of one of the Croatian powerlifting clubs in order to be able to compete. You can contact any other club from this",
-        "l22-2": "list.",
+        "l22-2": "list",
+        "l22-3": "(if you want to registar with us, send us the mentioned documents).",
         "l31": "Registration and Statement Form",
         "l32": "Fill out the registration form and the statement required for competing in Croatia.",
         "l41": "Medical Examination",
@@ -166,7 +168,7 @@
         "h3": "Additional Information",
         "h2-note": "If a competitor is competing in both Full power and Bench only categories then he must pay the participation fee for both categories.",
 
-        "note": "Foreign nationals cannot break Croatian records and are not counted in the annual ranking of clubs. Foreign citizens compete in the same competition as Croatian competitors, they have the right to win medals for placement and cups for absolute ranking.",
+        "note": "Foreign citizens cannot break Croatian records and are not counted in the annual ranking of clubs. Foreign citizens compete in the same competition as Croatian competitors, they have the right to win medals for placement and cups for absolute ranking.",
 
         "l1": "Email",
         "l2": "Gender",
@@ -184,7 +186,7 @@
         "l82": "Weight Category",
         "l83": "Best Bench Press (in the last 12 months)",
         "l8-note": "*If You have not yet competed, leave this value at 0.",
-        "l9": "I want photographs.",
+        "l9": "I want a photo package.",
         "l10": "I want to order an official competition T-shirt.",
         "l101": "Cut",
         "l102": "Size",
@@ -211,6 +213,7 @@
         "s51": "Male",
         "s52": "Female",
         "s6": "Select size",
+        "s7": "Select an option",
 
         "e1": "Invalid email.",
         "e2": "Name is required.",
@@ -228,6 +231,7 @@
         "e14": "You have successfully registered for Cibalae Open Cup 2025. You will soon receive a confirmation email. See you on the platform!",
         "e15": "Error submitting the form.",
         "e16": "Please correct the highlighted errors.",
+        "e17": "Please select an option.",
 
         "btn": "Register",
         "email-template": "template_mv121lf",
@@ -264,7 +268,7 @@
           "ml32": "At the competition itself, you will be able to buy more shirts, but at the standard price.",
           "mp6": "Secure your shirt in time – quantities are limited!",
 
-        "for1": "If you are a foreign athelete, please read the",
+        "for1": "If you are a foreign athlete, please read the",
         "for2": "instructions for foreign athletes",
         "for3": "before filling the form.",
 
@@ -341,6 +345,8 @@
         "btn2": "Nominations",
         "date": "March 7th - 9th",
         "p1": "Instructions for Foreign Athletes Competing in Croatia.",
+        "p1-2": "Official accommodation instructions.",
+
         
         "h2": "Competition",
         "p2": "The competition will feature both Full power and Bench only categories. If desired, the competitor can compete in both, but in that case he must pay the participation fee for both categories.",
@@ -368,7 +374,7 @@
         "h4": "Cost",
         "th1": "Participation Fee",
         "tp12": "35,00 EUR",
-        "tt12": "Must be paid by bank transfer to the PLK Galacticos bank account until the end of final nominations. Domestic competitors pay through the clubs, and international players who are members of PLK Galacticos pay to our account.",
+        "tt12": "Must be paid by bank transfer to the PLK Galacticos bank account until the end of final nominations. Domestic competitors pay through the clubs, and international competitors who are members of PLK Galacticos pay to our account.",
         "th2": "Photo Package (optional)",
         "tt21": "Receive your competition photos taken by the official photographers.",
         "tt21-2": "Example photos.",
@@ -376,7 +382,7 @@
         "tt22": "Selected during registration, must be paid together with the participation fee.",
         "th3": "Competition T-Shirt (optional)",
         "tt31": "Receive a Cibalae Open Cup 2025 themed T-shirt.",
-        "tp32": "15,00 EUR",
+        "tp32": "12,00 EUR",
         "tt32": "Selected during registration, must be paid together with the participation fee.",
         "p4": "If a competitor is competing in both Full power and Bench only categories then he must pay the participation fee for both categories. T-shirts will also be sold at the venue but the stock will be limited so it’s better to order during registration.",
 
@@ -425,7 +431,8 @@
         "t8-51": "Hotel Slavonija -> Venue",
         "t8-52": "Route",
 
-        "t9": "Sponsors"
+        "t9": "Sponsors",
+        "p10": "We would like to thank our sponsors who believe in our vision"
   },
   "nominations": {
     "h": "Nominations",
@@ -498,7 +505,7 @@
     "l22-2": "...",
 
     "l23-1": "Detailed competition schedule, including groups, timing, and judging schedule, will be published",
-    "l23-2": "no later than 48 hours before the start of the competition.",
+    "l23-2": "48 hours after the final nominations end.",
     "l24-1": "Last schedule change:",
     "l24-2": "...",
 

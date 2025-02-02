@@ -64,6 +64,7 @@
       "h1": "7. - 9. ožujka",
       "h2": "Lokacija",
       "btn": "Ostanite informirani",
+      "btn2": "Saznajte više",
       "p": "Po prvi puta u Hrvatskoj, Cibalae Open Kup će ugostiti natjecatelje iz više od 5 zemalja. Ovo natjecanje će dići standarde natjecanja u Hrvatskoj i podići ljestvicu za sve buduće događaje ovog tipa."
     },
     "faq": {
@@ -126,7 +127,8 @@
         "l12": "Dostavite pismeno odobrenje vašeg nacionalnog powerlifting saveza (koji je pod okriljem IPF-a) koje vam omogućava natjecanje u Hrvatskoj. Predložak za ovo odobrenje je priložen ispod.",
         "l21": "Prijava za članstvo u klubu",
         "l22": "Ispunite obrazac za prijavu za članstvo u našem klubu. Po hrvatskom zakonu morate biti član jednog od hrvatskih powerlifting klubova kako biste se mogli natjecati. Možete se javiti bilo kojem drugom klubu sa ovog",
-        "l22-2": "popisa.",
+        "l22-2": "popisa",
+        "l22-3": "(ukoliko se želite registrirati kod nas, pošaljite nam navedene dokumente).",
         "l31": "Registracijski i izjavni obrazac",
         "l32": "Ispunite registracijski obrazac i izjavu potrebnu za natjecanje u Hrvatskoj.",
         "l41": "Liječnički pregled",
@@ -210,6 +212,7 @@
         "s51": "Muški",
         "s52": "Ženski",
         "s6": "Odaberite veličinu",
+        "s7": "Odaberite opciju",
 
         "e1": "Neispravan email.",
         "e2": "Ime je obavezno.",
@@ -227,6 +230,7 @@
         "e14": "Uspješno ste se prijavili za Cibalae Open Kup 2025. Uskoro ćete dobiti potvrdni mail. Vidimo se na platformi!",
         "e15": "Greška pri slanju obrasca.",
         "e16": "Molimo ispravite označene greške.",
+        "e17": "Molimo odaberite jednu opciju.",
 
         "btn": "Prijavi se",
         "email-template": "template_g7u4l6h",
@@ -341,6 +345,7 @@
       "btn2": "Nominacije",
       "date": "7. - 9. ožujka",
       "p1": "Upute za strane sportaše koji se natječu u Hrvatskoj.",
+      "p1-2": "Upute za službeni smještaj natjecanja.",
 
       "h2": "Natjecanje",
       "p2": "Natjecanje će uključivati kategorije Full power i Bench only. Ako želi, natjecatelj može sudjelovati u obje kategorije, ali u tom slučaju mora platiti kotizaciju za obje kategorije.",
@@ -376,7 +381,7 @@
       "tt22": "Odabire se tijekom registracije, mora biti plaćeno zajedno s kotizacijom.",
       "th3": "Natjecateljska majica (opcionalno)",
       "tt31": "Osigurajte svoju majicu s motivima Cibalae Open Cup 2025.",
-      "tp32": "15,00 EUR",
+      "tp32": "12,00 EUR",
       "tt32": "Odabire se tijekom registracije, mora biti plaćeno zajedno s kotizacijom.",
       "p4": "Ako se natjecatelj natječe u obje kategorije, Full power i Bench only, tada mora platiti kotizaciju za obje kategorije. Majice će se također prodavati na mjestu događaja, ali zalihe će biti ograničene, stoga je bolje prednaručiti ih tijekom registracije.",
 
@@ -426,7 +431,8 @@
       "t8-51": "Hotel Slavonija -> Mjesto natjecanja",
       "t8-52": "Ruta",
 
-      "t9": "Sponzori"
+      "t9": "Sponzori",
+      "p10": "Zahvaljujemo se našim sponzorima koji vjeruju u našu viziju"
   },
   "nominations": {
     "h": "Nominacije",
@@ -460,7 +466,7 @@
     "l5": "Do istog roka potrebno je:",
     "l61": "Poslati",
     "l62": "važeće liječničke preglede",
-    "l63": "za sve prijavljene natjecatelje isključivo e-mailom na3",
+    "l63": "za sve prijavljene natjecatelje isključivo e-mailom na",
     "l71": "Uplatiti",
     "l72": "kotizaciju",
     "l73": "za sve natjecatelje.",

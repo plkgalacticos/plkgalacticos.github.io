@@ -11,7 +11,7 @@ const Instructions = ({t}) => {
             <h3 className='text-lg'>{t['h2']}</h3>
             <ol className='flex flex-col gap-4 list-decimal ml-4'>
                 <li><p className='font-semibold text-logo-yellow'>{t['l11']}</p> {t['l12']}</li>
-                <li><p className='font-semibold text-logo-yellow'>{t['l21']}</p> {t['l22']} <a href="https://www.hpls-powerlifting.hr/kontakt/" className='text-logo-yellow underline'>{t['l22-2']}</a></li>
+                <li><p className='font-semibold text-logo-yellow'>{t['l21']}</p> {t['l22']} <a href="https://www.hpls-powerlifting.hr/kontakt/" className='text-logo-yellow underline'>{t['l22-2']}</a> {t['l22-3']}</li>
                 <li><p className='font-semibold text-logo-yellow'>{t['l31']}</p> {t['l32']}</li>
                 <li><p className='font-semibold text-logo-yellow'>{t['l41']}</p> {t['l42']}</li>
                 <li><p className='font-semibold text-logo-yellow'>{t['l51']}</p> {t['l52']}</li>

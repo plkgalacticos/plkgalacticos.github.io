@@ -21,8 +21,9 @@ const CibalaeOpenCupMain = ({t}) => {
           </a>
         </div>
 
-        <div className='max-container-sm'>
+        <div className='max-container-sm flex flex-col'>
             <a href={'/' + tNav['foreign-link']} className='text-logo-yellow underline font-semibold text-xl'><p>{t['p1']}</p></a>
+            <a href={'/' + tNav['accommodation-link']} className='text-logo-yellow underline font-semibold text-xl pt-4'><p>{t['p1-2']}</p></a>
         </div>
 
         {/* Competition */}
@@ -239,6 +240,17 @@ const CibalaeOpenCupMain = ({t}) => {
             </div>
 
         {/* Sponsors */}
+        <div className='max-container pt-16 z-10'>
+            <h2 className='subheading-text text-center'>{t['p10']}</h2>
+            <div className='flex flex-row justify-center items-center gap-24 flex-wrap mt-24 z-10'>
+                <img className='w-28 h-auto'  src="/images/sponsors/nutrition shop.png" alt="NUTRITION SHOP" />
+                <img className='w-28 h-auto'  src="/images/sponsors/smells like pr.png" alt="SMELLS LIKE PR" />
+                <img className='w-28 h-auto' src="/images/sponsors/4za.png" alt="4ZA" />
+                <img className='w-28 h-auto'  src="/images/sponsors/a7.png" alt="A7" />
+                <img className='w-28 h-auto'  src="/images/sponsors/ttigroup.png" alt="TTI-group" />
+                <img className='w-28 h-auto'  src="/images/sponsors/tz.png" alt="TZ" />
+         </div>
+        </div>
        
       </div>
 
