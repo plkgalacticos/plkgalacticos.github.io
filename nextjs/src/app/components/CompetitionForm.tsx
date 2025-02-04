@@ -259,7 +259,7 @@ const CompetitionForm = ({t, tNav}) => {
                     "Bench only dobna kategorija": form.competitionType.benchOnly ? form.benchOnlyDetails.ageCategory : '/',
                     "Bench only težinska kategorija": form.competitionType.benchOnly ? form.benchOnlyDetails.weightCategory + ' kg' : '/',
                     "Najbolji bench press": form.competitionType.benchOnly ? form.benchOnlyDetails.bestBenchPress + ' kg' : '/',
-                    "Fotogragije": form.photographs ? 'Da' : 'Ne',
+                    "Fotografije": form.photographs ? 'Da' : 'Ne',
                     "Majica": form.tshirtSelected ? 'Da' : 'Ne',
                     "Kroj": form.tshirtSelected && form.tshirt.cut ? form.tshirt.cut : '/', 
                     "Veličina": form.tshirtSelected && form.tshirt.size ? form.tshirt.size : '/',

@@ -74,16 +74,30 @@ const Competition = ({t}) => {
         </div>
 
         <div className='flex flex-row justify-center items-center gap-24 flex-wrap mt-24 z-10'>
-                <img className='w-28 h-auto'  src="/images/sponsors/nutrition shop.png" alt="NUTRITION SHOP" />
-                <img className='w-28 h-auto'  src="/images/sponsors/smells like pr.png" alt="SMELLS LIKE PR" />
-                <img className='w-28 h-auto' src="/images/sponsors/4za.png" alt="4ZA" />
-                <img className='w-28 h-auto'  src="/images/sponsors/a7.png" alt="A7" />
-                <img className='w-28 h-auto'  src="/images/sponsors/ttigroup.png" alt="TTI-group" />
-                <img className='w-28 h-auto'  src="/images/sponsors/tz.png" alt="TZ" />
+                <a href="https://www.a7europe.com/" target='_blank' className='relative gradient-silver p-4 rounded-md'>
+                    <img className='h-12 w-auto'  src="/images/sponsors/a7.png" alt="A7" />
+                </a>
+                <a href="https://visitvinkovci.com/" target='_blank' className='relative gradient-bronze p-4 rounded-md'>
+                    <img className='h-12 w-auto'  src="/images/sponsors/tz.png" alt="TZ" />
+                    {/* <div className='absolute -top-6 -right-8 w-6 h-6 medal-bronze rounded-full'></div> */}
+                </a>
+                <a href="https://smellslikepr.com/" target='_blank' className='relative gradient-bronze p-4 rounded-md'>
+                    <img className='h-12 w-auto'  src="/images/sponsors/smells like pr.png" alt="SMELLS LIKE PR" />
+                </a>
+                <a href="https://www.4za.uk/" target='_blank' className='relative gradient-bronze p-4 rounded-md'>
+                    <img className='h-12 w-auto' src="/images/sponsors/4za.png" alt="4ZA" />
+                </a>
+                <a href="https://nutrition-shop.hr/" target='_blank' className='relative gradient-bronze p-4 rounded-md'>
+                    <img className='h-12 w-auto'  src="/images/sponsors/nutrition shop.png" alt="NUTRITION SHOP" />
+                </a>
+                <a href='https://tti-group.com/' target='_blank' className='relative gradient-bronze p-4 rounded-md'>
+                    <img className='h-12 w-auto'  src="/images/sponsors/ttigroup.png" alt="TTI-group" />
+                </a>
+                
          </div>
 
 
-        <div className=' border-4 border-gold rounded-md p-4 rotate-45 absolute top-1/2 left-1/2 transform -translate-x-1/2 translate-y-[35rem] lg:translate-y-72'>
+        <div className=' border-4 border-gold rounded-md p-4 rotate-45 absolute top-1/2 left-1/2 transform -translate-x-1/2 translate-y-[40rem] lg:translate-y-72'>
             <div className='border-4 border-gold rounded-md p-4'>
                 <div className='border-2 border-gold rounded-md p-4'>
                     <div className='border-2 border-gold rounded-md p-4'>
