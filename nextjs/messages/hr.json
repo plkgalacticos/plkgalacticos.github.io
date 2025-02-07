@@ -231,6 +231,7 @@
         "e15": "Greška pri slanju obrasca.",
         "e16": "Molimo ispravite označene greške.",
         "e17": "Molimo odaberite jednu opciju.",
+        "e18": "Hvala vam na interesu! Nažalost, prijave za ovo natjecanje su zatvorene. Cijenimo vaš entuzijazam i nadamo se da ćemo vidjeti vašu podršku na natjecanju.",
 
         "btn": "Prijavi se",
         "email-template": "template_g7u4l6h",
@@ -287,7 +288,8 @@
         "ufoto": "foto paket",
         "uamount": "Ukupan iznos:",
 
-        "file": "Uplatnica"
+        "file": "Uplatnica",
+        "reg-closed": "Prijave zatvorene"
     },
     "accommodation": {
         "h1": "Službeni smještaj",

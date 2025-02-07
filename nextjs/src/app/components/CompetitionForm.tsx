@@ -267,13 +267,14 @@ const CompetitionForm = ({t, tNav}) => {
                     "Cijena": payAmount
           }
 
-          SheetDB.write('https://sheetdb.io/api/v1/wxafnxolcqbw9', { sheet: 'Sheet1', data: sheetForm }).then(function(result){
-          }, function(error){
-          });
+        //   SheetDB.write('https://sheetdb.io/api/v1/wxafnxolcqbw9', { sheet: 'Sheet1', data: sheetForm }).then(function(result){
+        //   }, function(error){
+        //   });
 
-          setMessage(t['e14'])
+        //   setMessage(t['e14'])
           
-          sendEmail(payAmount, payItems);
+        //   sendEmail(payAmount, payItems);
+
           reloadForm();
     } else {
       setMessage(t['e16']);
@@ -799,9 +800,11 @@ const CompetitionForm = ({t, tNav}) => {
           <div>{message && <p>{message}</p>}</div>
 
            <div className={`${file ? 'block' : 'hidden'} mt-4`}>
-               <h2 className="text-xl font-semibold">{t['uh']}</h2>
+               <h2 className="text-xl font-semibold">{t['reg-closed']}</h2>
+               <p className="mt-4">{t['e18']}</p>
+               {/* <h2 className="text-xl font-semibold">{t['uh']}</h2>
                <p className="mt-4">{t['unote']}</p>
-               <p className="mt-4"><span className="font-semibold">{t['uamount']}</span> {payAmountS} EUR ({payItemsS})</p>
+               <p className="mt-4"><span className="font-semibold">{t['uamount']}</span> {payAmountS} EUR ({payItemsS})</p> */}
                {/* <ul className="list-disc ml-8 mt-2">
                     <li><span className="font-extrabold">{t['ul11']}</span> {t['ul12']} <span className="font-extrabold">{t['ul13']}</span> {t['ul14']}</li>
                     <li className="font-semibold">{t['ul2']}</li>

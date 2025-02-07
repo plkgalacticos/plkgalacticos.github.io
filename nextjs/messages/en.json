@@ -232,6 +232,7 @@
         "e15": "Error submitting the form.",
         "e16": "Please correct the highlighted errors.",
         "e17": "Please select an option.",
+        "e18": "Thank you for your interest! Unfortunately, registrations for this competition are now closed. We appreciate your enthusiasm and hope to see your support at the competition.",
 
         "btn": "Register",
         "email-template": "template_mv121lf",
@@ -288,7 +289,8 @@
         "ufoto": "photo package",
         "uamount": "Total amount:",
 
-        "file": "Payment_slip"
+        "file": "Payment_slip",
+        "reg-closed": "Registration closed"
     },
     "accommodation": {
         "h1": "Official Accommodation",
