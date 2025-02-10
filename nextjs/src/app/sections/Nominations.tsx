@@ -20,6 +20,7 @@ const Nominations = ({t}) => {
                     <li className='flex flex-row items-center gap-4'><img className='w-6 h-auto' src="/images/logo/plk-galacticos-logo-round.png" alt="" /><p>{t['l11']} <span className='font-semibold text-logo-yellow'>{t['l12']}</span> {t['l13']} <span className='font-semibold text-logo-yellow'>{t['l14']}</span> {t['l15']}</p></li>
                     <li className='flex flex-row items-center gap-4'><img className='w-6 h-auto' src="/images/logo/plk-galacticos-logo-round.png" alt="" /><p><span className='font-semibold text-logo-yellow'>{t['l21']}</span> {t['l22']} </p></li>
                     <li className='flex flex-row items-center gap-4'><img className='w-6 h-auto' src="/images/logo/plk-galacticos-logo-round.png" alt="" /><p><span className='font-semibold text-logo-yellow'>{t['l31']}</span> {t['l32']} <span className='font-semibold text-logo-yellow'>{t['l33']}</span> {t['l34']} <span className='font-semibold text-logo-yellow'>{t['l35']}</span></p></li>
+                    <li className='flex flex-row items-center gap-4'><img className='w-6 h-auto' src="/images/logo/plk-galacticos-logo-round.png" alt="" /><p>{t['l3-date']} {t['l3-date2']}</p></li>
                 </ol>
                 
                 <h3 className='text-lg font-semibold'>{t['h13']}</h3>

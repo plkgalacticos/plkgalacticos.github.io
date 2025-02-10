@@ -32,6 +32,7 @@ export const nominations: {} = {
                 ],
                 93: [
                     {"name": "Leon Piskač", "yearOfBirth": "2002", "club": "Štanga", "total": "655", "country": "croatia"},
+                    {"name": "Pavel Ivanov", "yearOfBirth": "2002", "club": "Galacticos", "total": "620", "country": "bulgaria"},
                     {"name": "Váry Zalán", "yearOfBirth": "2002", "club": "Galacticos", "total": "575", "country": "hungary"},
                     {"name": "Ban Bartol", "yearOfBirth": "2006", "club": "Galacticos", "total": "455", "country": "croatia"},
                     {"name": "Endi Smoković", "yearOfBirth": "2005", "club": "Ultimate", "total": "0", "country": "croatia"},

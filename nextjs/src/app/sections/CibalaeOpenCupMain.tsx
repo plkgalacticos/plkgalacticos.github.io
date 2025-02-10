@@ -91,7 +91,7 @@ const CibalaeOpenCupMain = ({t}) => {
 
                     <div className='flex flex-col md:flex-row justify-center items-start w-full'>
                         <div className='flex-1'>
-                            <h3 className='font-semibold text-lg mt-4'>{t['A']} (13 {t['comp']})</h3>
+                            <h3 className='font-semibold text-lg mt-4'>{t['A']} (14 {t['comp']})</h3>
                             <p className='flex flex-row items-center gap-4 mt-2'><img className='w-4 h-auto' src="/images/logo/plk-galacticos-logo-round.png" alt="" />{t['sub-junior']} -66, -93, {t['junior']} -83</p>
                             <p className='flex flex-row items-center gap-4 mt-2'><img className='w-4 h-auto' src="/images/logo/plk-galacticos-logo-round.png" alt="" />{t['junior']} -93, -105</p>
                         
