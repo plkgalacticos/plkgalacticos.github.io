@@ -73,25 +73,34 @@ const Competition = ({t}) => {
             
         </div>
 
-        <div className='flex flex-row justify-center items-center gap-24 flex-wrap mt-24 z-10'>
+        <div className='max-container-sm flex flex-row justify-center items-center gap-20 flex-wrap pt-24 z-10'>
+                <a href="http://www.grad-vinkovci.hr/" target='_blank' className='relative'>
+                    <img className='h-16 w-auto'  src="/images/sponsors/grad vinkovci.png" alt="GRAD VINKOVCI" />
+                </a>
                 <a href="https://www.a7europe.com/" target='_blank' className='relative'>
                     <img className='h-12 w-auto'  src="/images/sponsors/a7.png" alt="A7" />
                 </a>
+                <a href="https://www.eluir.hr/" target='_blank' className='relative'>
+                    <img className='h-12 w-auto'  src="/images/sponsors/eluir.png" alt="ELUIR" />
+                </a>
                 <a href="https://visitvinkovci.com/" target='_blank' className='relative'>
-                    <img className='h-12 w-auto'  src="/images/sponsors/tz.png" alt="TZ" />
+                    <img className='h-14 w-auto'  src="/images/sponsors/tz.png" alt="TZ" />
                     {/* <div className='absolute -top-6 -right-8 w-6 h-6 medal-bronze rounded-full'></div> */}
                 </a>
                 <a href="https://smellslikepr.com/" target='_blank' className='relative'>
-                    <img className='h-12 w-auto'  src="/images/sponsors/smells like pr.png" alt="SMELLS LIKE PR" />
+                    <img className='h-14 w-auto'  src="/images/sponsors/smells like pr.png" alt="SMELLS LIKE PR" />
                 </a>
                 <a href="https://www.4za.uk/" target='_blank' className='relative'>
-                    <img className='h-12 w-auto' src="/images/sponsors/4za.png" alt="4ZA" />
+                    <img className='h-14 w-auto' src="/images/sponsors/4za.png" alt="4ZA" />
+                </a>
+                <a href="https://4rce.hr/" target='_blank' className='relative'>
+                    <img className='h-12 w-auto' src="/images/sponsors/4rce.png" alt="4RCE" />
                 </a>
                 <a href="https://nutrition-shop.hr/" target='_blank' className='relative'>
                     <img className='h-12 w-auto'  src="/images/sponsors/nutrition shop.png" alt="NUTRITION SHOP" />
                 </a>
                 <a href='https://tti-group.com/' target='_blank' className='relative'>
-                    <img className='h-12 w-auto'  src="/images/sponsors/ttigroup.png" alt="TTI-group" />
+                    <img className='h-14 w-auto'  src="/images/sponsors/ttigroup.png" alt="TTI-group" />
                 </a>
                 
          </div>

@@ -35,6 +35,10 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+th,td {
+    @apply p-2;
+}
+
 .datepicker {
     color: white !important; /* Adjust color as necessary */
     background-color: transparent;
@@ -91,6 +95,11 @@ body {
     .gradient-yellow {
         background: rgb(8,8,8);
         background: linear-gradient(-33deg, rgba(8,8,8,1) 0%, rgba(255,193,0,1) 0%, rgba(8,8,8,1) 33%);
+    }
+
+    .gradient-yellow-sm {
+        background: rgb(8,8,8);
+        background: linear-gradient(-33deg, rgba(8,8,8,1) 0%, rgba(255,193,0,1) 0%, rgba(8,8,8,1) 13%);
     }
 
     .gradient-yellow-bl {
@@ -288,12 +297,16 @@ box-shadow: 0px 0px 24px 4px rgba(136,136,136,0.9);
       width: 160%;
     }
 
+    .btn {
+        @apply bg-logo-yellow md:text-lg  max-md:px-4 max-md:py-2 text-white px-[24px] py-[12px] uppercase border-2 border-logo-yellow cursor-pointer font-semibold relative overflow-hidden
+    }
+
     .btn-primary {
-        @apply bg-logo-yellow md:text-lg slide-top btn-diagonal-swipe max-md:px-4 max-md:py-2 text-white
+        @apply bg-logo-yellow md:text-lg  animation btn-diagonal-swipe max-md:px-4 max-md:py-2 text-white
     }
 
     .btn-secondary {
-        @apply bg-black md:text-lg slide-top btn-diagonal-swipe-secondary max-md:px-4 max-md:py-2 text-white
+        @apply bg-black md:text-lg animation btn-diagonal-swipe-secondary max-md:px-4 max-md:py-2 text-white
     }
 
     .button {
@@ -458,6 +471,11 @@ box-shadow: 0px 0px 24px 4px rgba(136,136,136,0.9);
       }
       
       
+}
+
+.animation {
+    -webkit-animation: slide-top 0s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-top 0s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 

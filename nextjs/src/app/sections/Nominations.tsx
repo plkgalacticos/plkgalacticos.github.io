@@ -1,4 +1,5 @@
 import React from 'react'
+import NominationTable from '../components/NominationTable'
 
 const Nominations = ({t}) => {
   const tNav = t['nav']
@@ -6,8 +7,10 @@ const Nominations = ({t}) => {
   return (
     <section className='relative bg-black text-white px-4 py-8 lg:px-16 pb-32 pt-32 flex flex-col gap-16 overflow-hidden'>
         <h1 className='heading-text text-center z-10'>{t['h']}</h1>
+
+        <NominationTable t={t}></NominationTable>
+
         <div className='flex flex-col gap-12 z-10 max-container-sm'>
-            
             
             <div className='flex flex-col gap-8'>
                 <h2 className='subheading-text'>{t['h1']}</h2>
