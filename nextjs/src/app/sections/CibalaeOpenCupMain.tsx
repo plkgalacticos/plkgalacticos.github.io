@@ -76,7 +76,7 @@ const CibalaeOpenCupMain = ({t}) => {
             <div className='gradient-yellow-bl rounded-md flex flex-col lg:flex-row justify-between items-start'>
                 <div>
                     <h2 className='subheading-text'>{t['friday']} 7.3.2025.</h2>
-                    <h3 className='font-semibold text-lg mt-4 text-logo-yellow underline'><a href='/cibalae-open-kup#seminar'>Seminar Emil Krastev</a></h3>
+                    <h3 className='font-semibold text-lg mt-4 text-logo-yellow underline'><a href='https://plkgalacticos.hr/cibalae-open-kup#seminar'>Seminar Emil Krastev</a></h3>
                     <p>19:00 - 21:00</p>
                 </div>
                 <div>
