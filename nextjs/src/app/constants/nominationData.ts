@@ -83,6 +83,7 @@ export const nominations: {} = {
                 120: [
                     {"name": "Sebastijan Špoljarić", "yearOfBirth": "2000", "club": "Galacticos", "total": "735", "country": "croatia"},
                     {"name": "Marko Mikešić", "yearOfBirth": "1994", "club": "Rebel Warrior", "total": "720", "country": "croatia"},
+                    {"name": "Marin Štambuk", "yearOfBirth": "2000", "club": "Liftaonica", "total": "712.5", "country": "croatia"},
                     {"name": "Miloš Sekulović", "yearOfBirth": "2001", "club": "Štanga", "total": "692.5", "country": "serbia"},
                     {"name": "Slaven Bilić", "yearOfBirth": "2000", "club": "Rebel Warrior", "total": "682.5", "country": "croatia"},
                     {"name": "Josip Torić", "yearOfBirth": "1997", "club": "Nabildani Mozak", "total": "680", "country": "croatia"},
@@ -90,7 +91,6 @@ export const nominations: {} = {
                     {"name": "Josip Šarić", "yearOfBirth": "2002", "club": "Rebel Warrior", "total": "595", "country": "croatia"},
                 ],
                 '120+': [
-                    {"name": "Marin Štambuk", "yearOfBirth": "2000", "club": "Liftaonica", "total": "712.5", "country": "croatia"},
                     {"name": "Rok Didaković", "yearOfBirth": "1999", "club": "Ultimate", "total": "0", "country": "croatia"},
                 ]
             },

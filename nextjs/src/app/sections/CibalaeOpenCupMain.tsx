@@ -73,16 +73,7 @@ const CibalaeOpenCupMain = ({t}) => {
         </div> */}
 
         <div className='max-container-sm flex flex-col gap-16 py-12'>
-            <div className='gradient-yellow-bl rounded-md flex flex-col lg:flex-row justify-between items-start'>
-                <div>
-                    <h2 className='subheading-text'>{t['friday']} 7.3.2025.</h2>
-                    <h3 className='font-semibold text-lg mt-4 text-logo-yellow underline'><a href='https://plkgalacticos.hr/cibalae-open-kup#seminar'>Seminar Emil Krastev</a></h3>
-                    <p>19:00 - 21:00</p>
-                </div>
-                <div>
-                    <img className='w-full max-w-md rounded-md max-md:mt-8' src="/images/emil_krustev_deadlift.jpg" alt="EMIL KRASTEV DEADLIFT" />
-                </div>
-            </div>
+            
             <div className='gradient-yellow-bl py-4 p-4 rounded-md'>
                 <h2 className='subheading-text'>{t['saturday']} 8.3.2025.</h2>
 
@@ -92,21 +83,21 @@ const CibalaeOpenCupMain = ({t}) => {
                     <div className='flex flex-col md:flex-row justify-center items-start w-full'>
                         <div className='flex-1'>
                             <h3 className='font-semibold text-lg mt-4'>{t['A']} (14 {t['comp']})</h3>
-                            <p className='flex flex-row items-center gap-4 mt-2'><img className='w-4 h-auto' src="/images/logo/plk-galacticos-logo-round.png" alt="" />{t['sub-junior']} -66, -93, {t['junior']} -83</p>
-                            <p className='flex flex-row items-center gap-4 mt-2'><img className='w-4 h-auto' src="/images/logo/plk-galacticos-logo-round.png" alt="" />{t['junior']} -93, -105</p>
+                            <p className='flex flex-row items-center gap-4 mt-2'><img className='w-4 h-auto' src="/images/logo/plk-galacticos-logo-round.png" alt="" />{t['sub-junior']} -66, -83, -93</p>
+                            <p className='flex flex-row items-center gap-4 mt-2'><img className='w-4 h-auto' src="/images/logo/plk-galacticos-logo-round.png" alt="" />{t['junior']} -83, -93, -105</p>
                         
                             <h3 className='font-semibold text-lg mt-4'>{t['B']} (14 {t['comp']})</h3>
                             <p className='flex flex-row items-center gap-4 mt-2'><img className='w-4 h-auto' src="/images/logo/plk-galacticos-logo-round.png" alt="" />Open -66, -74, -83, Master I -93</p>
                         </div>
                         <div className='flex-1 max-sm:mt-4'>
                             <h3 className='font-semibold text-lg mt-4'>{t['sch-p1']}</h3>
-                            <p>9:00 - 10:30</p>
+                            <p>7:00 - 8:30</p>
 
                             <h3 className='font-semibold text-lg mt-4'>{t['sch-p2']} {t['group']} A {t['and']} B</h3>
-                            <p>11:00 - 15:00</p>
+                            <p>9:00 - 13:00</p>
 
                             <h3 className='font-semibold text-lg mt-4'>{t['sch-p3']}</h3>
-                            <p>15:15 - 15:30</p>
+                            <p>13:00 - 13:15</p>
                         </div>
                     </div>
                 </div>
@@ -114,25 +105,31 @@ const CibalaeOpenCupMain = ({t}) => {
                 <div className='flex flex-col items-start'>
                     <h3 className='font-semibold text-xl mt-8 text-logo-yellow'>Session 2</h3>
 
-                    <div className='flex flex-col lg:flex-row justify-center items-start w-full'>
+                    <div className='flex flex-col md:flex-row justify-center items-start w-full'>
                         <div className='flex-1'>
                             <h3 className='font-semibold text-lg mt-4'>{t['C']} (14 {t['comp']})</h3>
                             <p className='flex flex-row items-center gap-4 mt-2'><img className='w-4 h-auto' src="/images/logo/plk-galacticos-logo-round.png" alt="" />Open -93, -105</p>
-                            <p className='flex flex-row items-center gap-4 mt-2'><img className='w-4 h-auto' src="/images/logo/plk-galacticos-logo-round.png" alt="" />{t['sub-junior']} -83</p>
                         
                             <h3 className='font-semibold text-lg mt-4'>{t['D']} (9 {t['comp']})</h3>
                             <p className='flex flex-row items-center gap-4 mt-2'><img className='w-4 h-auto' src="/images/logo/plk-galacticos-logo-round.png" alt="" />Open -120, 120+</p>
                         </div>
                         <div className='flex-1 max-sm:mt-4'>
                             <h3 className='font-semibold text-lg mt-4'>{t['sch-p1']}</h3>
-                            <p>14:00 - 15:30</p>
+                            <p>12:00 - 13:30</p>
 
                             <h3 className='font-semibold text-lg mt-4'>{t['sch-p2']} {t['group']} C {t['and']} D</h3>
-                            <p>16:00 - 20:00</p>
+                            <p>14:00 - 18:00</p>
 
                             <h3 className='font-semibold text-lg mt-4'>{t['sch-p3']}</h3>
-                            <p>20:15 - 20:45</p>
+                            <p>18:00 - 18:30</p>
                         </div>
+                    </div>
+                    <div className='flex flex-col md:flex-row justify-between items-start w-full mt-12'>
+                        <div>
+                            <h3 className='font-semibold text-lg mt-4 underline'><a href='https://plkgalacticos.hr/cibalae-open-kup#seminar'>Seminar Emil Krastev</a></h3>
+                            <p className='mt-2 font-semibold'>20:00 </p>
+                        </div>
+                        
                     </div>
                 </div>
             </div>
@@ -173,7 +170,7 @@ const CibalaeOpenCupMain = ({t}) => {
                 <div className='flex flex-col items-start'>
                     <h3 className='font-semibold text-xl mt-8 text-logo-yellow'>Session 2 - Bench Press</h3>
 
-                    <div className='flex flex-col lg:flex-row justify-center items-start w-full'>
+                    <div className='flex flex-col md:flex-row justify-center items-start w-full'>
                         <div className='flex-1'>
                             <h3 className='font-semibold text-lg mt-4'>{t['A']} (16 {t['comp']})</h3>
                             <p className='flex flex-row items-center gap-4 mt-2'><img className='w-4 h-auto' src="/images/logo/plk-galacticos-logo-round.png" alt="" />{t['women']}</p>
