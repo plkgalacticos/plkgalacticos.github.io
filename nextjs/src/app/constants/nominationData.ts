@@ -31,7 +31,6 @@ export const nominations: {} = {
                     {"name": "Leon Batelka", "yearOfBirth": "2005", "club": "Virovitica", "total": "0", "country": "croatia"}
                 ],
                 93: [
-                    {"name": "Leon Piskač", "yearOfBirth": "2002", "club": "Štanga", "total": "655", "country": "croatia"},
                     {"name": "Pavel Ivanov", "yearOfBirth": "2002", "club": "Galacticos", "total": "620", "country": "bulgaria"},
                     {"name": "Váry Zalán", "yearOfBirth": "2002", "club": "Galacticos", "total": "575", "country": "hungary"},
                     {"name": "Ban Bartol", "yearOfBirth": "2006", "club": "Galacticos", "total": "455", "country": "croatia"},
@@ -65,6 +64,7 @@ export const nominations: {} = {
                 ],
                 93: [
                     {"name": "Gabriel Višek", "yearOfBirth": "2002", "club": "Galacticos", "total": "697.5", "country": "croatia"},
+                    {"name": "Leon Piskač", "yearOfBirth": "2002", "club": "Štanga", "total": "655", "country": "croatia"},
                     {"name": "Nikola Zgrebec", "yearOfBirth": "2006", "club": "Galacticos", "total": "642.5", "country": "croatia"},
                     {"name": "Aleksandar Kačavenda", "yearOfBirth": "2005", "club": "Štanga", "total": "640", "country": "serbia"},
                     {"name": "Matej Belak", "yearOfBirth": "1999", "club": "Osijek 031", "total": "602.5", "country": "croatia"},

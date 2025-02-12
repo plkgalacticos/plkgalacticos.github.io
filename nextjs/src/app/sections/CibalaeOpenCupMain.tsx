@@ -103,6 +103,11 @@ const CibalaeOpenCupMain = ({t}) => {
                 </div>
 
                 <div className='flex flex-col items-start'>
+                    <h3 className='font-semibold text-xl mt-8 text-logo-yellow'>{t['opening']}</h3>
+                    <p className='mt-4'>13:30 - 14:00</p>
+                </div>
+
+                <div className='flex flex-col items-start'>
                     <h3 className='font-semibold text-xl mt-8 text-logo-yellow'>Session 2</h3>
 
                     <div className='flex flex-col md:flex-row justify-center items-start w-full'>
