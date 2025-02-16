@@ -17,7 +17,9 @@ export const nominations: {} = {
                     {"name": "Jakov Sirovica", "yearOfBirth": "2007", "club": "Štanga", "total": "364", "country": "croatia"}
                 ],
                 83: [ 
-                    {"name": "Juraj Kostelić", "yearOfBirth": "2009", "club": "Galacticos", "total": "535", "country": "croatia"}
+                    {"name": "Juraj Kostelić", "yearOfBirth": "2009", "club": "Galacticos", "total": "535", "country": "croatia"},
+                    {"name": "Luka Filjak", "yearOfBirth": "2008", "club": "Ultimate", "total": "100", "country": "croatia"},
+
                 ],
                 93: [
                     {"name": "Mihael Bogdan", "yearOfBirth": "2009", "club": "Ultimate", "total": "0", "country": "croatia"}
@@ -82,7 +84,6 @@ export const nominations: {} = {
                 ],
                 120: [
                     {"name": "Sebastijan Špoljarić", "yearOfBirth": "2000", "club": "Galacticos", "total": "735", "country": "croatia"},
-                    {"name": "Marko Mikešić", "yearOfBirth": "1994", "club": "Rebel Warrior", "total": "720", "country": "croatia"},
                     {"name": "Marin Štambuk", "yearOfBirth": "2000", "club": "Liftaonica", "total": "712.5", "country": "croatia"},
                     {"name": "Miloš Sekulović", "yearOfBirth": "2001", "club": "Štanga", "total": "692.5", "country": "serbia"},
                     {"name": "Slaven Bilić", "yearOfBirth": "2000", "club": "Rebel Warrior", "total": "682.5", "country": "croatia"},
@@ -131,11 +132,11 @@ export const nominations: {} = {
                     {"name": "Tara Baće", "yearOfBirth": "2002", "club": "Galacticos", "total": "471", "country": "croatia"},
                     {"name": "Mathilde Coquille", "yearOfBirth": "1996", "club": "Štanga", "total": "405", "country": "france"},
                     {"name": "Martina Marjanović", "yearOfBirth": "1994", "club": "Maksimum", "total": "342.5", "country": "croatia"},
-                    {"name": "Marina Kunac", "yearOfBirth": "1996", "club": "Rebel Warrior", "total": "332.5", "country": "croatia"},
                 ],
                 '84+': [
                     {"name": "Anita Černevšek", "yearOfBirth": "1998", "club": "Galacticos", "total": "432.5", "country": "slovenia"},
                     {"name": "Jelena Ivančić", "yearOfBirth": "1993", "club": "Štanga", "total": "412.5", "country": "croatia"},
+                    {"name": "Marina Kunac", "yearOfBirth": "1996", "club": "Rebel Warrior", "total": "332.5", "country": "croatia"},
                 ] 
             },
             'master-i': {
@@ -154,7 +155,6 @@ export const nominations: {} = {
                 ],
                 83: [ 
                     {"name": "Juraj Kostelić", "yearOfBirth": "2009", "club": "Galacticos", "total": "130", "country": "croatia"},
-                    {"name": "Luka Filjak", "yearOfBirth": "2008", "club": "Ultimate", "total": "100", "country": "croatia"},
                 ],
                 93: [
                     {"name": "Matej Bračko", "yearOfBirth": "2009", "club": "Pozoj", "total": "117.5", "country": "croatia"},
@@ -186,6 +186,7 @@ export const nominations: {} = {
                     {"name": "Leon Rozman", "yearOfBirth": "1996", "club": "Nabildani Mozak", "total": "130", "country": "croatia"},
                 ],
                 83: [
+                    {"name": "Goran Karamarković", "yearOfBirth": "1979", "club": "Pozoj", "total": "167.5", "country": "croatia"},
                     {"name": "Filip Novotny", "yearOfBirth": "2001", "club": "Galacticos", "total": "0", "country": "croatia"},
                 ],
                 93: [
@@ -210,9 +211,6 @@ export const nominations: {} = {
                 ]
             },
             'master-i': {
-                83: [
-                    {"name": "Goran Karamarković", "yearOfBirth": "1979", "club": "Pozoj", "total": "167.5", "country": "croatia"},
-                ],
                 93: [
                     {"name": "Mate Maleš", "yearOfBirth": "1984", "club": "Rebel Warrior", "total": "140", "country": "croatia"},
                 ]
@@ -229,9 +227,6 @@ export const nominations: {} = {
                 57: [ 
                     {"name": "Anamarija Mamić", "yearOfBirth": "2009", "club": "Rebel Warrior", "total": "66.5", "country": "croatia"},
                 ],
-                69: [ 
-                    {"name": "Dora Fažon", "yearOfBirth": "2007", "club": "Pozoj", "total": "57.5", "country": "croatia"},
-                ]
             },
             'junior': {
                 52: [
@@ -265,6 +260,8 @@ export const nominations: {} = {
                 ],
                 84: [
                     {"name": "Tara Baće", "yearOfBirth": "2002", "club": "Galacticos", "total": "102.5", "country": "croatia"},
+                ],
+                '84+': [
                     {"name": "Marina Kunac", "yearOfBirth": "1996", "club": "Rebel Warrior", "total": "60", "country": "croatia"},
                 ]
             },

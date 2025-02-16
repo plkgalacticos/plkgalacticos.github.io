@@ -83,11 +83,12 @@ const CibalaeOpenCupMain = ({t}) => {
                     <div className='flex flex-col md:flex-row justify-center items-start w-full'>
                         <div className='flex-1'>
                             <h3 className='font-semibold text-lg mt-4'>{t['A']} (14 {t['comp']})</h3>
-                            <p className='flex flex-row items-center gap-4 mt-2'><img className='w-4 h-auto' src="/images/logo/plk-galacticos-logo-round.png" alt="" />{t['sub-junior']} -66, -83, -93</p>
+                            <p className='flex flex-row items-center gap-4 mt-2'><img className='w-4 h-auto' src="/images/logo/plk-galacticos-logo-round.png" alt="" />{t['sub-junior']} -66, -83</p>
                             <p className='flex flex-row items-center gap-4 mt-2'><img className='w-4 h-auto' src="/images/logo/plk-galacticos-logo-round.png" alt="" />{t['junior']} -83, -93, -105</p>
                         
                             <h3 className='font-semibold text-lg mt-4'>{t['B']} (14 {t['comp']})</h3>
-                            <p className='flex flex-row items-center gap-4 mt-2'><img className='w-4 h-auto' src="/images/logo/plk-galacticos-logo-round.png" alt="" />Open -66, -74, -83, Master I -93</p>
+                            <p className='flex flex-row items-center gap-4 mt-2'><img className='w-4 h-auto' src="/images/logo/plk-galacticos-logo-round.png" alt="" />{t['sub-junior']} -93</p>
+                            <p className='flex flex-row items-center gap-4 mt-2'><img className='w-4 h-auto' src="/images/logo/plk-galacticos-logo-round.png" alt="" />Open -66, -74, -83</p>
                         </div>
                         <div className='flex-1 max-sm:mt-4'>
                             <h3 className='font-semibold text-lg mt-4'>{t['sch-p1']}</h3>
@@ -117,6 +118,7 @@ const CibalaeOpenCupMain = ({t}) => {
                         
                             <h3 className='font-semibold text-lg mt-4'>{t['D']} (9 {t['comp']})</h3>
                             <p className='flex flex-row items-center gap-4 mt-2'><img className='w-4 h-auto' src="/images/logo/plk-galacticos-logo-round.png" alt="" />Open -120, 120+</p>
+                            <p className='flex flex-row items-center gap-4 mt-2'><img className='w-4 h-auto' src="/images/logo/plk-galacticos-logo-round.png" alt="" />Master I -93</p>
                         </div>
                         <div className='flex-1 max-sm:mt-4'>
                             <h3 className='font-semibold text-lg mt-4'>{t['sch-p1']}</h3>
@@ -185,10 +187,11 @@ const CibalaeOpenCupMain = ({t}) => {
                             <p className='flex flex-row items-center gap-4 mt-2'><img className='w-4 h-auto' src="/images/logo/plk-galacticos-logo-round.png" alt="" />Master I - II</p>
 
                             <h3 className='font-semibold text-lg mt-4'>{t['C']} (10 {t['comp']})</h3>
-                            <p className='flex flex-row items-center gap-4 mt-2'><img className='w-4 h-auto' src="/images/logo/plk-galacticos-logo-round.png" alt="" />{t['junior']}</p>
+                            <p className='flex flex-row items-center gap-4 mt-2'><img className='w-4 h-auto' src="/images/logo/plk-galacticos-logo-round.png" alt="" />{t['junior']} -93, -105, -120</p>
+                            <p className='flex flex-row items-center gap-4 mt-2'><img className='w-4 h-auto' src="/images/logo/plk-galacticos-logo-round.png" alt="" />Open -74, -83</p>
 
                             <h3 className='font-semibold text-lg mt-4'>{t['D']} (15 {t['comp']})</h3>
-                            <p className='flex flex-row items-center gap-4 mt-2'><img className='w-4 h-auto' src="/images/logo/plk-galacticos-logo-round.png" alt="" />Open</p>
+                            <p className='flex flex-row items-center gap-4 mt-2'><img className='w-4 h-auto' src="/images/logo/plk-galacticos-logo-round.png" alt="" />Open -93, -105, -120, 120+</p>
                         </div>
                         <div className='flex-1 max-sm:mt-4'>
                             <h3 className='font-semibold text-lg mt-4'>{t['sch-p1']}</h3>
