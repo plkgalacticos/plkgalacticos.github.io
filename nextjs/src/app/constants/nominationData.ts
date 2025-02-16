@@ -18,7 +18,7 @@ export const nominations: {} = {
                 ],
                 83: [ 
                     {"name": "Juraj Kostelić", "yearOfBirth": "2009", "club": "Galacticos", "total": "535", "country": "croatia"},
-                    {"name": "Luka Filjak", "yearOfBirth": "2008", "club": "Ultimate", "total": "100", "country": "croatia"},
+                    {"name": "Luka Filjak", "yearOfBirth": "2008", "club": "Ultimate", "total": "400", "country": "croatia"},
 
                 ],
                 93: [
