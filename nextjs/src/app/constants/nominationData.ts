@@ -202,9 +202,9 @@ export const nominations: {} = {
                     {"name": "Rino Čala", "yearOfBirth": "1998", "club": "Nabildani Mozak", "total": "142.5", "country": "croatia"},
                 ],
                 120: [
-                    {"name": "Sebastijan Špoljarić", "yearOfBirth": "2000", "club": "Galacticos", "total": "175", "country": "croatia"},
                     {"name": "Goran Šimić", "yearOfBirth": "1984", "club": "Šibenik", "total": "190", "country": "croatia"},
                     {"name": "Josip Torić", "yearOfBirth": "1997", "club": "Nabildani Mozak", "total": "185", "country": "croatia"},
+                    {"name": "Sebastijan Špoljarić", "yearOfBirth": "2000", "club": "Galacticos", "total": "175", "country": "croatia"},
                 ],
                 '120+': [
                     {"name": "Josip Jureta", "yearOfBirth": "1998", "club": "Rebel Warrior", "total": "180", "country": "croatia"},

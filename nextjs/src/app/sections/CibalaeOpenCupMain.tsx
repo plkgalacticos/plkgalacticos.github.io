@@ -179,10 +179,10 @@ const CibalaeOpenCupMain = ({t}) => {
 
                     <div className='flex flex-col md:flex-row justify-center items-start w-full'>
                         <div className='flex-1'>
-                            <h3 className='font-semibold text-lg mt-4'>{t['A']} (16 {t['comp']})</h3>
+                            <h3 className='font-semibold text-lg mt-4'>{t['A']} (15 {t['comp']})</h3>
                             <p className='flex flex-row items-center gap-4 mt-2'><img className='w-4 h-auto' src="/images/logo/plk-galacticos-logo-round.png" alt="" />{t['women']}</p>
                         
-                            <h3 className='font-semibold text-lg mt-4'>{t['B']} (9 {t['comp']})</h3>
+                            <h3 className='font-semibold text-lg mt-4'>{t['B']} (10 {t['comp']})</h3>
                             <p className='flex flex-row items-center gap-4 mt-2'><img className='w-4 h-auto' src="/images/logo/plk-galacticos-logo-round.png" alt="" />{t['sub-junior']}</p>
                             <p className='flex flex-row items-center gap-4 mt-2'><img className='w-4 h-auto' src="/images/logo/plk-galacticos-logo-round.png" alt="" />Master I - II</p>
 
@@ -190,7 +190,7 @@ const CibalaeOpenCupMain = ({t}) => {
                             <p className='flex flex-row items-center gap-4 mt-2'><img className='w-4 h-auto' src="/images/logo/plk-galacticos-logo-round.png" alt="" />{t['junior']} -93, -105, -120</p>
                             <p className='flex flex-row items-center gap-4 mt-2'><img className='w-4 h-auto' src="/images/logo/plk-galacticos-logo-round.png" alt="" />Open -74, -83</p>
 
-                            <h3 className='font-semibold text-lg mt-4'>{t['D']} (15 {t['comp']})</h3>
+                            <h3 className='font-semibold text-lg mt-4'>{t['D']} (12 {t['comp']})</h3>
                             <p className='flex flex-row items-center gap-4 mt-2'><img className='w-4 h-auto' src="/images/logo/plk-galacticos-logo-round.png" alt="" />Open -93, -105, -120, 120+</p>
                         </div>
                         <div className='flex-1 max-sm:mt-4'>
