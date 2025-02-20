@@ -84,7 +84,7 @@ const CibalaeOpenCupMain = ({t}) => {
                         <div className='flex-1'>
                             <h3 className='font-semibold text-lg mt-4'>{t['A']} (14 {t['comp']})</h3>
                             <p className='flex flex-row items-center gap-4 mt-2'><img className='w-4 h-auto' src="/images/logo/plk-galacticos-logo-round.png" alt="" />{t['sub-junior']} -66, -83</p>
-                            <p className='flex flex-row items-center gap-4 mt-2'><img className='w-4 h-auto' src="/images/logo/plk-galacticos-logo-round.png" alt="" />{t['junior']} -83, -93, -105</p>
+                            <p className='flex flex-row items-center gap-4 mt-2'><img className='w-4 h-auto' src="/images/logo/plk-galacticos-logo-round.png" alt="" />Junior -83, -93, -105</p>
                         
                             <h3 className='font-semibold text-lg mt-4'>{t['B']} (14 {t['comp']})</h3>
                             <p className='flex flex-row items-center gap-4 mt-2'><img className='w-4 h-auto' src="/images/logo/plk-galacticos-logo-round.png" alt="" />{t['sub-junior']} -93</p>
@@ -169,10 +169,10 @@ const CibalaeOpenCupMain = ({t}) => {
                     </div>
                 </div>
 
-                <div className='flex flex-col items-start'>
+                {/* <div className='flex flex-col items-start'>
                     <h3 className='font-semibold text-xl mt-8 text-logo-yellow'>{t['assembly']}</h3>
                     <p className='mt-4'>12:30 - 15:00</p>
-                </div>
+                </div> */}
 
                 <div className='flex flex-col items-start'>
                     <h3 className='font-semibold text-xl mt-8 text-logo-yellow'>Session 2 - Bench Press</h3>
@@ -183,7 +183,7 @@ const CibalaeOpenCupMain = ({t}) => {
                             <p className='flex flex-row items-center gap-4 mt-2'><img className='w-4 h-auto' src="/images/logo/plk-galacticos-logo-round.png" alt="" />{t['women']}</p>
                         
                             <h3 className='font-semibold text-lg mt-4'>{t['B']} (10 {t['comp']})</h3>
-                            <p className='flex flex-row items-center gap-4 mt-2'><img className='w-4 h-auto' src="/images/logo/plk-galacticos-logo-round.png" alt="" />{t['sub-junior']}</p>
+                            <p className='flex flex-row items-center gap-4 mt-2'><img className='w-4 h-auto' src="/images/logo/plk-galacticos-logo-round.png" alt="" />{t['sub-junior']}, {t['junior']} -83</p>
                             <p className='flex flex-row items-center gap-4 mt-2'><img className='w-4 h-auto' src="/images/logo/plk-galacticos-logo-round.png" alt="" />Master I - II</p>
 
                             <h3 className='font-semibold text-lg mt-4'>{t['C']} (10 {t['comp']})</h3>
@@ -195,22 +195,22 @@ const CibalaeOpenCupMain = ({t}) => {
                         </div>
                         <div className='flex-1 max-sm:mt-4'>
                             <h3 className='font-semibold text-lg mt-4'>{t['sch-p1']}</h3>
-                            <p>13:00 - 14:30</p>
+                            <p>11:00 - 12:30</p>
 
                             <h3 className='font-semibold text-lg mt-4'>{t['sch-p2']} {t['group']} A</h3>
-                            <p>15:00 - 16:00</p>
+                            <p>13:00 - 14:00</p>
 
                             <h3 className='font-semibold text-lg mt-4'>{t['sch-p2']} {t['group']} B</h3>
-                            <p>16:00 - 16:45</p>
+                            <p>14:00 - 14:45</p>
 
                             <h3 className='font-semibold text-lg mt-4'>{t['sch-p2']} {t['group']} C</h3>
-                            <p>16:45 - 17:30</p>
+                            <p>14:45 - 15:30</p>
 
                             <h3 className='font-semibold text-lg mt-4'>{t['sch-p2']} {t['group']} D</h3>
-                            <p>17:30 - 18:30</p>
+                            <p>15:30 - 16:30</p>
 
                             <h3 className='font-semibold text-lg mt-4'>{t['sch-p3']}</h3>
-                            <p>18:45 - 19:15</p>
+                            <p>16:45 - 17:15</p>
                         </div>
                     </div>
                 </div>
