@@ -73,7 +73,7 @@ const Competition = ({t}) => {
             
         </div>
 
-        <div className='max-container-sm flex flex-row justify-center items-center gap-20 flex-wrap pt-24 z-10'>
+        <div className='max-container lg:px-16 flex flex-row justify-center items-center gap-20 flex-wrap pt-24 z-10'>
                 <a href="http://www.grad-vinkovci.hr/" target='_blank' className='relative'>
                     <img className='h-16 w-auto'  src="/images/sponsors/grad vinkovci.png" alt="GRAD VINKOVCI" />
                 </a>
@@ -102,11 +102,14 @@ const Competition = ({t}) => {
                 <a href='https://tti-group.com/' target='_blank' className='relative'>
                     <img className='h-14 w-auto'  src="/images/sponsors/ttigroup.png" alt="TTI-group" />
                 </a>
+                <a href='https://nutriteka.hr/' target='_blank' className='relative'>
+                    <img className='h-20 w-auto'  src="/images/sponsors/NUTRITEKA.svg" alt="NUTRITEKA" />
+                </a>
                 
          </div>
 
 
-        <div className=' border-4 border-gold rounded-md p-4 rotate-45 absolute top-1/2 left-1/2 transform -translate-x-1/2 translate-y-[40rem] lg:translate-y-72'>
+        <div className=' border-4 border-gold rounded-md p-4 rotate-45 absolute top-1/2 left-1/2 transform -translate-x-1/2 translate-y-[48rem] md:translate-y-[40rem] lg:translate-y-72'>
             <div className='border-4 border-gold rounded-md p-4'>
                 <div className='border-2 border-gold rounded-md p-4'>
                     <div className='border-2 border-gold rounded-md p-4'>

@@ -416,6 +416,9 @@ const CibalaeOpenCupMain = ({t}) => {
                 <a href='https://tti-group.com/' target='_blank' className='relative'>
                     <img className='h-14 w-auto'  src="/images/sponsors/ttigroup.png" alt="TTI-group" />
                 </a>
+                <a href='https://nutriteka.hr/' target='_blank' className='relative'>
+                    <img className='h-20 w-auto'  src="/images/sponsors/NUTRITEKA.svg" alt="NUTRITEKA" />
+                </a>
                 
             </div>
         </div>
