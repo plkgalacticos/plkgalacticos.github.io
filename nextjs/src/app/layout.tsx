@@ -135,10 +135,10 @@ export default async function RootLayout({
   return (
     <html lang="hr">
       <head>
-        <meta name="description" content="Naš klub je zajednica sportaša diljem Hrvatske strastvenih za powerlifting. Težimo biti najjači i najtrofejniji powerlifting klub." />
-        <script type="application/ld+json">
-          {JSON.stringify(orgSchema)}
-        </script>
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(orgSchema) }}
+          />
       </head>
       <GoogleAnalytics GA_MEASUREMENT_ID={"G-FFR9TEZ4BF"}></GoogleAnalytics>
       <body
