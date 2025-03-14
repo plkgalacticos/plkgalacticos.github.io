@@ -35,7 +35,7 @@ const Footer = ({t}) => {
   return (
     <footer className='flex flex-col justify-end py-8 bg-footer bg-no-repeat bg-cover bg-blend-darken bg-black/90 text-white px-4  shadow-inset-black'>
         <div className='max-container flex flex-col justify-center items-center'>
-            <div><img className='max-w-64 lg:max-w-96' src='/images/logo/plk-galacticos-logo-bright.png' alt='PLK Galacticos logo'></img></div>
+            <div><img className='max-w-64 lg:max-w-96' src='/images/logo/plk-galacticos-logo-bright.png' alt='PLK Galacticos logo' loading='lazy'></img></div>
             <div className='flex flex-col md:flex-row justify-start md:justify-evenly items-start w-full'>
                 <div className='pt-16'>
                     <h2 className='font-semibold text-xl pb-4'>{t['h1']}</h2>
@@ -52,7 +52,7 @@ const Footer = ({t}) => {
                     <a className='link'></a>
                     <div className="cursor-pointer">
                        <a className="flex flex-row justify-start items-center gap-4" href="https://drive.google.com/file/d/16YUQ_Z4-4CFqka4kyYpcMGQHbenAAczY/view?usp=sharing" target="_blank">
-                         <img className="w-8 h-auto" src="/icons/pdf.svg" alt="PDF icon"/>
+                         <img className="w-8 h-auto" src="/icons/pdf.svg" alt="PDF icon" loading='lazy'/>
                          <p className="link">{t['l21']}</p>
                        </a>
                     </div>
@@ -61,13 +61,13 @@ const Footer = ({t}) => {
                 <div className="flex flex-col justify-start items-start pt-16">
                   <h2 className="font-semibold text-xl">{t['h3']}</h2>
                   <div className="flex flex-row justify-center items-start gap-8 pt-4">
-                    <a href="https://www.instagram.com/plk.galacticos/" target="_blank"><img className="w-10 h-auto" src="/icons/ig-white.svg" alt="Instagram white icon" /></a>
-                    <a href="https://www.tiktok.com/@plk.galacticos" target="_blank"><img className="w-10 h-auto" src="/icons/tt-white.svg" alt="Tik Tok white icon" /></a>
-                    <a href="https://www.youtube.com/@PLKGalacticos" target="_blank"><img className="w-10 h-auto" src="/icons/yt-white.svg" alt="YouTube white icon" /></a>
+                    <a href="https://www.instagram.com/plk.galacticos/" target="_blank"><img className="w-10 h-auto" src="/icons/ig-white.svg" alt="Instagram white icon" loading='lazy' /></a>
+                    <a href="https://www.tiktok.com/@plk.galacticos" target="_blank"><img className="w-10 h-auto" src="/icons/tt-white.svg" alt="Tik Tok white icon" loading='lazy' /></a>
+                    <a href="https://www.youtube.com/@PLKGalacticos" target="_blank"><img className="w-10 h-auto" src="/icons/yt-white.svg" alt="YouTube white icon" loading='lazy' /></a>
                   </div>
                   <div className='pt-4'>
                     <a className="flex flex-row justify-center items-center" href="mailto:plkgalacticos@gmail.com">
-                      <img className="w-12 h-auto pr-2" src="/icons/mail-white.svg" alt="Mail white icon" />
+                      <img className="w-12 h-auto pr-2" src="/icons/mail-white.svg" alt="Mail white icon"  loading='lazy'/>
                       plkgalacticos&#64;gmail.com
                     </a>
                   </div>
@@ -79,9 +79,9 @@ const Footer = ({t}) => {
 
         <div className='pt-2 w-full flex flex-col justify-center items-center'>
           <div className="w-full max-container flex flex-row justify-center items-center gap-4 pt-4 border-t-2 border-logo-yellow">
-            <a href="https://www.powerlifting.sport/" target="_blank"><img className="w-16 h-auto" src="/images/ipf_logo.png" alt="Internation Powerligting Federation logo"/></a>
-            <a href="https://www.europowerlifting.org/" target="_blank"><img className="w-16 h-auto" src="/images/epf_logo.png" alt="European Powerlifting Federation logo"/></a>
-            <a href="https://www.hpls-powerlifting.hr/" target="_blank"><img className="w-16 h-auto rounded-md" src="/images/hpls_logo_t.png" alt="Croatian Powerlifting Federation logo"/></a>
+            <a href="https://www.powerlifting.sport/" target="_blank"><img className="w-16 h-auto" src="/images/ipf_logo.png" alt="Internation Powerligting Federation logo" loading='lazy'/></a>
+            <a href="https://www.europowerlifting.org/" target="_blank"><img className="w-16 h-auto" src="/images/epf_logo.png" alt="European Powerlifting Federation logo" loading='lazy'/></a>
+            <a href="https://www.hpls-powerlifting.hr/" target="_blank"><img className="w-16 h-auto rounded-md" src="/images/hpls_logo_t.png" alt="Croatian Powerlifting Federation logo" loading='lazy'/></a>
           </div>
 
           <div className="w-full flex flex-col md:flex-row justify-center items-center gap-4 md:gap-12 mt-8 text-sm">

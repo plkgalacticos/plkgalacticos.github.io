@@ -4,6 +4,7 @@ import { Roboto_Mono } from "next/font/google";
 import GoogleAnalytics from "./components/GoogleAnalytics";
 import CookieBanner from "./components/CookieBanner";
 import hr from '../../messages/hr.json'
+import Head from "next/head";
 
 const robotoMono = Roboto_Mono({subsets: ['latin']})
 
@@ -24,6 +25,7 @@ export default async function RootLayout({
         "url": "https://www.plkgalacticos.hr",
         "logo": "https://www.plkgalacticos.hr/images/logo/plk-galacticos-logo-bright.png",
         "description": "Naš klub je zajednica sportaša diljem Hrvatske strastvenih za powerlifting. Težimo biti najjači i najtrofejniji powerlifting klub.",
+        "image": "https://www.plkgalacticos.hr/images/logo/plk-galacticos-logo-bright.png",
         "foundingDate": "2024-08-01",
         "location": {
           "@type": "Place",
@@ -135,6 +137,9 @@ export default async function RootLayout({
   return (
     <html lang="hr">
       <head>
+          <meta property="og:title" content="PLK Galacticos" />
+          <meta property="og:description" content="Naš klub je zajednica sportaša diljem Hrvatske strastvenih za powerlifting. Težimo biti najjači i najtrofejniji powerlifting klub." />
+          <meta property="og:image" content="https://www.plkgalacticos.hr/images/logo/plk-galacticos-logo-bright.png" />
           <script
             type="application/ld+json"
             dangerouslySetInnerHTML={{ __html: JSON.stringify(orgSchema) }}
@@ -146,7 +151,6 @@ export default async function RootLayout({
       > 
         {children}
         <CookieBanner></CookieBanner>
-        <script src="https://www.google.com/recaptcha/api.js"></script>
       </body>
     </html>
   );

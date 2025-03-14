@@ -21,48 +21,48 @@ const Competition = ({t}) => {
 
         <div className="flex flex-col lg:flex-row justify-between items-start gap-4 mt-24 max-container z-[1]">
             <div className="flex-1 mx-auto">
-              <h3 ref={h2Ref as React.RefObject<HTMLHeadingElement>} className={`slide-right-pre ${h2Animation} text-2xl lg:text-3xl font-semibold font-palanquin leading-3`}>
+              <h2 ref={h2Ref as React.RefObject<HTMLHeadingElement>} className={`slide-right-pre ${h2Animation} text-2xl lg:text-3xl font-semibold font-palanquin leading-3`}>
                 {t['h1']}
-              </h3>
+              </h2>
               <p ref={pRef as React.RefObject<HTMLParagraphElement>} className={`slide-top-pre ${pAnimation} info-text font-montserrat leading-normal max-w-md mt-4 lg:mt-8`}>
                 {t['p']}
               </p>
 
               <div ref={img1Ref  as React.RefObject<HTMLDivElement>} className={`slide-top-pre ${img1Animation} flex flex-row justify-start items-center gap-4 flex-wrap mt-4`}>
-                <img className="w-14 h-auto" src="/icons/germany.svg" alt="GERMANY" />
-                <img className="w-14 h-auto" src="/icons/france.svg" alt="FRANCE" />
-                <img className="w-14 h-auto" src="/icons/hungary.svg" alt="HUNGARY" />
-                <img className="w-14 h-auto" src="/icons/slovenia.svg" alt="SLOVENIA" />
+                <img className="w-14 h-auto" src="/icons/germany.svg" alt="GERMANY" loading='lazy'/>
+                <img className="w-14 h-auto" src="/icons/france.svg" alt="FRANCE" loading='lazy' />
+                <img className="w-14 h-auto" src="/icons/hungary.svg" alt="HUNGARY" loading='lazy' />
+                <img className="w-14 h-auto" src="/icons/slovenia.svg" alt="SLOVENIA" loading='lazy' />
               </div>
 
               <div ref={img2Ref  as React.RefObject<HTMLDivElement>} className={`slide-top-pre ${img2Animation} flex flex-row justify-start items-center gap-4 flex-wrap mt-4`}>
-                <img className="w-14 h-auto" src="/icons/serbia.svg" alt="SERBIA" />
-                <img className="w-14 h-auto" src="/icons/bulgaria.svg" alt="BULGARIA" />
-                <img className="w-14 h-auto" src="/icons/greece.svg" alt="GREECE" />
-                <img className="w-14 h-auto" src="/icons/croatia.svg" alt="CROATIA" />
+                <img className="w-14 h-auto" src="/icons/serbia.svg" alt="SERBIA" loading='lazy' />
+                <img className="w-14 h-auto" src="/icons/bulgaria.svg" alt="BULGARIA" loading='lazy' />
+                <img className="w-14 h-auto" src="/icons/greece.svg" alt="GREECE" loading='lazy' />
+                <img className="w-14 h-auto" src="/icons/croatia.svg" alt="CROATIA" loading='lazy' />
               </div>
 
                 <div className='flex flex-col'>
                     <a href="https://www.instagram.com/plk.galacticos/" target="_blank"
                       className="w-full">
                       <button ref={btnRef as React.RefObject<HTMLButtonElement>} className={`slide-right-pre ${btnAnimation} btn-primary py-3 mt-8 flex flex-row justify-center items-center gap-4 min-md:my-2`}>
-                        <img className="w-4 lg:w-5 h-auto" src="/icons/ig-white.svg" alt="INSTAGRAM" />
+                        <img className="w-4 lg:w-5 h-auto" src="/icons/ig-white.svg" alt="INSTAGRAM" loading='lazy' />
                         <p className="text-base lg:text-lg font-semibold">{t['btn']}</p>
                       </button>
                     </a>
                     <a href={tNav['kup-link']}
                       className="w-full">
                       <button ref={btnRef as React.RefObject<HTMLButtonElement>} className={`slide-right-pre ${btnAnimation} btn-secondary py-3 mt-8 flex flex-row justify-center items-center gap-4 min-md:my-2`}>
-                        <img className="w-4 lg:w-6 h-auto" src="/icons/winner.svg" alt="INSTAGRAM" />
+                        <img className="w-4 lg:w-6 h-auto" src="/icons/winner.svg" alt="INSTAGRAM" loading='lazy' />
                         <p className="text-base lg:text-lg font-semibold">{t['btn2']}</p>
                       </button>
                     </a>
                 </div>
             </div>
             <div className="flex-1  max-lg:w-full">
-              <h3 ref={h3Ref as React.RefObject<HTMLDivElement>} className={`slide-left-pre ${h3Animation} text-2xl lg:text-3xl font-semibold font-palanquin leading-3 mb-8 mt-24 lg:mt-0`}>
+              <h2 ref={h3Ref as React.RefObject<HTMLDivElement>} className={`slide-left-pre ${h3Animation} text-2xl lg:text-3xl font-semibold font-palanquin leading-3 mb-8 mt-24 lg:mt-0`}>
                 {t['h2']}
-              </h3>
+              </h2>
               <iframe  ref={mapRef as React.RefObject<HTMLIFrameElement>} className={`scale-in-center-pre ${mapAnimation} rounded-md min-w-full h-72 md:h-96 lg:h-[450px]`}
                       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2806.698479927844!2d18.790913875918918!3d45.294314344758305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475c8ae094d7cb09%3A0x2df59e6296b69211!2sElementary%20school%20Antun%20Gustav%20Matos!5e0!3m2!1sen!2shr!4v1730482835010!5m2!1sen!2shr"
                       loading="lazy" referrerPolicy="no-referrer-when-downgrade"
@@ -75,35 +75,35 @@ const Competition = ({t}) => {
 
         <div className='max-container lg:px-16 flex flex-row justify-center items-center gap-20 flex-wrap pt-24 z-10'>
                 <a href="http://www.grad-vinkovci.hr/" target='_blank' className='relative'>
-                    <img className='h-16 w-auto'  src="/images/sponsors/grad vinkovci.png" alt="GRAD VINKOVCI" />
+                    <img className='h-16 w-auto'  src="/images/sponsors/grad vinkovci.png" alt="GRAD VINKOVCI" loading='lazy' />
                 </a>
                 <a href="https://www.a7europe.com/" target='_blank' className='relative'>
-                    <img className='h-12 w-auto'  src="/images/sponsors/a7.png" alt="A7" />
+                    <img className='h-12 w-auto'  src="/images/sponsors/a7.png" alt="A7" loading='lazy' />
                 </a>
                 <a href="https://www.eluir.hr/" target='_blank' className='relative'>
-                    <img className='h-12 w-auto'  src="/images/sponsors/eluir.png" alt="ELUIR" />
+                    <img className='h-12 w-auto'  src="/images/sponsors/eluir.png" alt="ELUIR" loading='lazy' />
                 </a>
                 <a href="https://visitvinkovci.com/" target='_blank' className='relative'>
-                    <img className='h-14 w-auto'  src="/images/sponsors/tz.png" alt="TZ" />
+                    <img className='h-14 w-auto'  src="/images/sponsors/tz.png" alt="TZ" loading='lazy' />
                     {/* <div className='absolute -top-6 -right-8 w-6 h-6 medal-bronze rounded-full'></div> */}
                 </a>
                 <a href="https://smellslikepr.com/" target='_blank' className='relative'>
-                    <img className='h-14 w-auto'  src="/images/sponsors/smells like pr.png" alt="SMELLS LIKE PR" />
+                    <img className='h-14 w-auto'  src="/images/sponsors/smells like pr.png" alt="SMELLS LIKE PR" loading='lazy' />
                 </a>
                 <a href="https://www.4za.uk/" target='_blank' className='relative'>
-                    <img className='h-14 w-auto' src="/images/sponsors/4za.png" alt="4ZA" />
+                    <img className='h-14 w-auto' src="/images/sponsors/4za.png" alt="4ZA" loading='lazy' />
                 </a>
                 <a href="https://4rce.hr/" target='_blank' className='relative'>
-                    <img className='h-12 w-auto' src="/images/sponsors/4rce.png" alt="4RCE" />
+                    <img className='h-12 w-auto' src="/images/sponsors/4rce.png" alt="4RCE" loading='lazy' />
                 </a>
                 <a href="https://nutrition-shop.hr/" target='_blank' className='relative'>
-                    <img className='h-12 w-auto'  src="/images/sponsors/nutrition shop.png" alt="NUTRITION SHOP" />
+                    <img className='h-12 w-auto'  src="/images/sponsors/nutrition shop.png" alt="NUTRITION SHOP" loading='lazy' />
                 </a>
                 <a href='https://tti-group.com/' target='_blank' className='relative'>
-                    <img className='h-14 w-auto'  src="/images/sponsors/ttigroup.png" alt="TTI-group" />
+                    <img className='h-14 w-auto'  src="/images/sponsors/ttigroup.png" alt="TTI-group" loading='lazy' />
                 </a>
                 <a href='https://nutriteka.hr/' target='_blank' className='relative'>
-                    <img className='h-20 w-auto'  src="/images/sponsors/NUTRITEKA.svg" alt="NUTRITEKA" />
+                    <img className='h-20 w-auto'  src="/images/sponsors/NUTRITEKA.svg" alt="NUTRITEKA" loading='lazy' />
                 </a>
                 
          </div>

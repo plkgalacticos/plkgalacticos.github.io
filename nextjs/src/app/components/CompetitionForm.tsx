@@ -72,14 +72,6 @@ const CompetitionForm = ({t, tNav}) => {
     setShowTshirtContent(!showTshirtContent);
   };
 
-  const [captchaValue, setCaptchaValue] = useState(null);
-  const recaptchaRef = useRef<HTMLElement>(null);;
-
-  const handleCaptchaChange = (value) => {  
-    setCaptchaValue(value);
-    // Here you can handle the change, such as enabling the submit button when value is not null
-  };
-
   const fetchFile = async (filePath) => {
     const response = await fetch(filePath); // URL to your file
     const blob = await response.blob();
@@ -237,11 +229,6 @@ const CompetitionForm = ({t, tNav}) => {
           }
     setPayAmountS(payAmount)
     setPayItemsS(payItems)
-
-    // if (!captchaValue) {
-    //     setMessage("Please verify that you are not a robot.");
-    //     return;
-    // }
 
     if (validateForm()) {
         setFile('file')
@@ -802,34 +789,6 @@ const CompetitionForm = ({t, tNav}) => {
            <div className={`${file ? 'block' : 'hidden'} mt-4`}>
                <h2 className="text-xl font-semibold">{t['reg-closed']}</h2>
                <p className="mt-4">{t['e18']}</p>
-               {/* <h2 className="text-xl font-semibold">{t['uh']}</h2>
-               <p className="mt-4">{t['unote']}</p>
-               <p className="mt-4"><span className="font-semibold">{t['uamount']}</span> {payAmountS} EUR ({payItemsS})</p> */}
-               {/* <ul className="list-disc ml-8 mt-2">
-                    <li><span className="font-extrabold">{t['ul11']}</span> {t['ul12']} <span className="font-extrabold">{t['ul13']}</span> {t['ul14']}</li>
-                    <li className="font-semibold">{t['ul2']}</li>
-                    <li className="list-none">
-                        <ul className="list-disc ml-6">
-                            <li>{t['ul3']}</li>
-                            <li>{t['ul41']} <span className="font-extrabold">{t['ul42']}</span></li>
-                        </ul>
-                    </li>
-               </ul>
-               <p className="mt-4">{t['up']}</p>
-               <a className={`relative m-auto mt-4 ${file ? 'block' : 'hidden'}`} href={`/docs/${file}`} download={`${file}`}>
-                        <div className="button" data-tooltip="Size: 167KB">
-                            <div className="button-wrapper">
-                              <div className="text font-semibold">
-                                <span className="mr-4">
-                                  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1.6em" height="2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 15V3m0 12l-4-4m4 4l4-4M2 17l.621 2.485A2 2 0 0 0 4.561 21h14.878a2 2 0 0 0 1.94-1.515L22 17"></path></svg>
-                                </span>{file}</div>
-
-                                <span className="icon">
-                                  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="2em" height="2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 15V3m0 12l-4-4m4 4l4-4M2 17l.621 2.485A2 2 0 0 0 4.561 21h14.878a2 2 0 0 0 1.94-1.515L22 17"></path></svg>
-                                </span>
-                            </div>
-                        </div>
-                </a> */}
             </div>
         </form>
 

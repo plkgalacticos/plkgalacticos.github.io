@@ -97,8 +97,8 @@ const Navbar = ({t}) => {
             <div className='flex flex-row justify-between items-center bg-plk-black py-4 z-50 bg-black pointer-events-auto'>
                 <div className='ml-2'>
                     <select className='bg-black cursor-pointer' value={lang} onChange={handleLanguageChange}>
-                      <option className='' value="en">EN</option>
-                      <option className='' value="hr">HR</option>
+                      <option className='' value="en" label='EN'>EN</option>
+                      <option className='' value="hr" label='HR'>HR</option>
                     </select>
                 </div>
                 <div><a href={"/" + t['home-link']}><img className='max-w-32' src={'/images/logo/plk-galacticos-logo-bright.png'} alt={'PLK Galacticos logo'}></img></a></div>

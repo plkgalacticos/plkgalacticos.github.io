@@ -48,7 +48,7 @@ export default function CookieBanner(){
                          bg-logo-black rounded-lg shadow text-white `}>
 
             <div className='text-center'>
-                <a href="/info/cookies"><p>{t['p1']}<span className='font-bold'>{t['p2']}</span>{t['p3']}.</p></a>
+                <p>{t['p1']}<span className='font-bold'>{t['p2']}</span>{t['p3']}.</p>
             </div>
 
             
