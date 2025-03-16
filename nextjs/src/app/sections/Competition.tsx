@@ -74,42 +74,52 @@ const Competition = ({t}) => {
         </div>
 
         <div className='max-container lg:px-16 flex flex-row justify-center items-center gap-20 flex-wrap pt-24 z-10'>
-                <a href="http://www.grad-vinkovci.hr/" target='_blank' className='relative'>
-                    <img className='h-16 w-auto'  src="/images/sponsors/grad vinkovci.png" alt="GRAD VINKOVCI" loading='lazy' />
+        <a href="http://www.grad-vinkovci.hr/" target='_blank' className='relative'>
+                    <img className='h-16 w-auto'  src="/images/sponsors/grad vinkovci.png" alt="GRAD VINKOVCI" />
                 </a>
                 <a href="https://www.a7europe.com/" target='_blank' className='relative'>
-                    <img className='h-12 w-auto'  src="/images/sponsors/a7.png" alt="A7" loading='lazy' />
+                    <img className='h-12 w-auto'  src="/images/sponsors/a7.png" alt="A7" />
                 </a>
                 <a href="https://www.eluir.hr/" target='_blank' className='relative'>
-                    <img className='h-12 w-auto'  src="/images/sponsors/eluir.png" alt="ELUIR" loading='lazy' />
+                    <img className='h-12 w-auto'  src="/images/sponsors/eluir.png" alt="ELUIR" />
                 </a>
+                <a href='https://avancus.com/' target='_blank' className='relative'>
+                    <img className='h-28 w-auto'  src="/images/sponsors/Avancus.png" alt="AVANCUS" />
+                </a>
+                
                 <a href="https://visitvinkovci.com/" target='_blank' className='relative'>
-                    <img className='h-14 w-auto'  src="/images/sponsors/tz.png" alt="TZ" loading='lazy' />
+                    <img className='h-14 w-auto'  src="/images/sponsors/tz.png" alt="TZ" />
                     {/* <div className='absolute -top-6 -right-8 w-6 h-6 medal-bronze rounded-full'></div> */}
                 </a>
                 <a href="https://smellslikepr.com/" target='_blank' className='relative'>
-                    <img className='h-14 w-auto'  src="/images/sponsors/smells like pr.png" alt="SMELLS LIKE PR" loading='lazy' />
+                    <img className='h-14 w-auto'  src="/images/sponsors/smells like pr.png" alt="SMELLS LIKE PR" />
                 </a>
                 <a href="https://www.4za.uk/" target='_blank' className='relative'>
-                    <img className='h-14 w-auto' src="/images/sponsors/4za.png" alt="4ZA" loading='lazy' />
+                    <img className='h-14 w-auto' src="/images/sponsors/4za.png" alt="4ZA" />
                 </a>
                 <a href="https://4rce.hr/" target='_blank' className='relative'>
-                    <img className='h-12 w-auto' src="/images/sponsors/4rce.png" alt="4RCE" loading='lazy' />
+                    <img className='h-12 w-auto' src="/images/sponsors/4rce.png" alt="4RCE" />
                 </a>
                 <a href="https://nutrition-shop.hr/" target='_blank' className='relative'>
-                    <img className='h-12 w-auto'  src="/images/sponsors/nutrition shop.png" alt="NUTRITION SHOP" loading='lazy' />
-                </a>
-                <a href='https://tti-group.com/' target='_blank' className='relative'>
-                    <img className='h-14 w-auto'  src="/images/sponsors/ttigroup.png" alt="TTI-group" loading='lazy' />
+                    <img className='h-12 w-auto'  src="/images/sponsors/nutrition shop.png" alt="NUTRITION SHOP" />
                 </a>
                 <a href='https://nutriteka.hr/' target='_blank' className='relative'>
-                    <img className='h-20 w-auto'  src="/images/sponsors/NUTRITEKA.svg" alt="NUTRITEKA" loading='lazy' />
+                    <img className='h-20 w-auto'  src="/images/sponsors/NUTRITEKA.svg" alt="NUTRITEKA" />
+                </a>
+                <a href='https://tti-group.com/' target='_blank' className='relative'>
+                    <img className='h-14 w-auto'  src="/images/sponsors/ttigroup.png" alt="TTI-group" />
+                </a>
+                <a href='https://www.jurcakdesign.com/' target='_blank' className='relative'>
+                    <img className='h-12 w-auto'  src="/images/sponsors/Jurcak Design.png" alt="JURCAK DESIGN" />
+                </a>
+                <a href='https://www.emajstor.hr/keramika_babic_vl_marko_babic' target='_blank' className='relative'>
+                    <img className='h-20 w-auto'  src="/images/sponsors/Keramika Babic.png" alt="KERAMIKA BABIC" />
                 </a>
                 
          </div>
 
 
-        <div className=' border-4 border-gold rounded-md p-4 rotate-45 absolute top-1/2 left-1/2 transform -translate-x-1/2 translate-y-[48rem] md:translate-y-[40rem] lg:translate-y-72'>
+        <div className=' border-4 border-gold rounded-md p-4 rotate-45 absolute top-1/2 left-1/2 transform -translate-x-1/2 translate-y-[56rem] md:translate-y-[48rem] lg:translate-y-[24rem]'>
             <div className='border-4 border-gold rounded-md p-4'>
                 <div className='border-2 border-gold rounded-md p-4'>
                     <div className='border-2 border-gold rounded-md p-4'>

@@ -130,6 +130,18 @@ export default async function RootLayout({
             "@type": "Organization",
             "name": "Nutriteka",
             "url": "https://nutriteka.hr/"
+          }, {
+            "@type": "Organization",
+            "name": "Avancus",
+            "url": "https://avancus.com/"
+          }, {
+            "@type": "Organization",
+            "name": "Jurcak Design",
+            "url": "https://www.jurcakdesign.com/"
+          }, {
+            "@type": "Organization",
+            "name": "Keramika Babić",
+            "url": "https://www.emajstor.hr/keramika_babic_vl_marko_babic"
           }]
          
     }]

@@ -397,6 +397,10 @@ const CibalaeOpenCupMain = ({t}) => {
                 <a href="https://www.eluir.hr/" target='_blank' className='relative'>
                     <img className='h-12 w-auto'  src="/images/sponsors/eluir.png" alt="ELUIR" />
                 </a>
+                <a href='https://avancus.com/' target='_blank' className='relative'>
+                    <img className='h-28 w-auto'  src="/images/sponsors/Avancus.png" alt="AVANCUS" />
+                </a>
+                
                 <a href="https://visitvinkovci.com/" target='_blank' className='relative'>
                     <img className='h-14 w-auto'  src="/images/sponsors/tz.png" alt="TZ" />
                     {/* <div className='absolute -top-6 -right-8 w-6 h-6 medal-bronze rounded-full'></div> */}
@@ -413,11 +417,17 @@ const CibalaeOpenCupMain = ({t}) => {
                 <a href="https://nutrition-shop.hr/" target='_blank' className='relative'>
                     <img className='h-12 w-auto'  src="/images/sponsors/nutrition shop.png" alt="NUTRITION SHOP" />
                 </a>
+                <a href='https://nutriteka.hr/' target='_blank' className='relative'>
+                    <img className='h-20 w-auto'  src="/images/sponsors/NUTRITEKA.svg" alt="NUTRITEKA" />
+                </a>
                 <a href='https://tti-group.com/' target='_blank' className='relative'>
                     <img className='h-14 w-auto'  src="/images/sponsors/ttigroup.png" alt="TTI-group" />
                 </a>
-                <a href='https://nutriteka.hr/' target='_blank' className='relative'>
-                    <img className='h-20 w-auto'  src="/images/sponsors/NUTRITEKA.svg" alt="NUTRITEKA" />
+                <a href='https://www.jurcakdesign.com/' target='_blank' className='relative'>
+                    <img className='h-12 w-auto'  src="/images/sponsors/Jurcak Design.png" alt="JURCAK DESIGN" />
+                </a>
+                <a href='https://www.emajstor.hr/keramika_babic_vl_marko_babic' target='_blank' className='relative'>
+                    <img className='h-20 w-auto'  src="/images/sponsors/Keramika Babic.png" alt="KERAMIKA BABIC" />
                 </a>
                 
             </div>
