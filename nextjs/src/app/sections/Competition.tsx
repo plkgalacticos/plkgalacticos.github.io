@@ -110,7 +110,7 @@ const Competition = ({t}) => {
                     <img className='h-14 w-auto'  src="/images/sponsors/ttigroup.png" alt="TTI-group" />
                 </a>
                 <a href='https://www.jurcakdesign.com/' target='_blank' className='relative'>
-                    <img className='h-12 w-auto'  src="/images/sponsors/Jurcak Design.png" alt="JURCAK DESIGN" />
+                    <img className='h-12 w-auto'  src="/images/sponsors/Jurcak design.png" alt="JURCAK DESIGN" />
                 </a>
                 <a href='https://www.emajstor.hr/keramika_babic_vl_marko_babic' target='_blank' className='relative'>
                     <img className='h-20 w-auto'  src="/images/sponsors/Keramika Babic.png" alt="KERAMIKA BABIC" />
