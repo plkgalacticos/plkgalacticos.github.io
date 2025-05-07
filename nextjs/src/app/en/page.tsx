@@ -8,7 +8,7 @@ import Values from "../sections/Values";
 import Join from "../sections/Join";
 import FAQ from "../sections/FAQ";
 import en from '../../../messages/en.json'
-import Competition from "../sections/Competition";
+import Competition from "../sections/CompetitionReview";
 
 export default function Home() {
     
@@ -20,9 +20,7 @@ export default function Home() {
         <section className="bg-black px-4 py-24">
             <Data t={en}></Data>
         </section>
-        <section className="bg-black px-4 py-12 pb-36 overflow-hidden">
-            <Competition t={en}></Competition>
-        </section>
+        
         <section className="bg-black">
             <Story t={en}></Story>
         </section>
@@ -34,6 +32,9 @@ export default function Home() {
         </section>
         <section className="bg-black px-4 py-72">
             <Values t={en}></Values>
+        </section>
+        <section className="bg-black px-4 py-12 pb-36 overflow-hidden">
+            <Competition t={en}></Competition>
         </section>
         <section id='join' className="z-[1] ">
             <Join t={en}></Join>
