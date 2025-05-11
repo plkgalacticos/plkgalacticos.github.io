@@ -16,12 +16,12 @@ const Data = ({t}) => {
         </div>
 
         <div className='w-full max-w-64 min-h-32 rounded-md gradient-yellow'>
-            <p className='text-3xl lg:text-4xl font-extrabold'><Counter targetValue={17}></Counter></p>
+            <p className='text-3xl lg:text-4xl font-extrabold'><Counter targetValue={13}></Counter></p>
             <p className='text-xl lg:text-2xl'>{t['h3']}</p>
         </div>
 
         <div className='w-full max-w-64 min-h-32 rounded-md gradient-yellow'>
-            <p className='text-3xl lg:text-4xl font-extrabold'><Counter targetValue={13}></Counter></p>
+            <p className='text-3xl lg:text-4xl font-extrabold'><Counter targetValue={17}></Counter></p>
             <p className='text-xl lg:text-2xl'>{t['h4']}</p>
         </div>
     </section>
