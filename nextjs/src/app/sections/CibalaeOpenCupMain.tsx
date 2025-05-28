@@ -426,7 +426,7 @@ const CibalaeOpenCupMain = ({t}) => {
                 <a href='https://www.jurcakdesign.com/' target='_blank' className='relative'>
                     <img className='h-12 w-auto'  src="/images/sponsors/Jurcak design.png" alt="JURCAK DESIGN" />
                 </a>
-                <a href='https://www.emajstor.hr/keramika_babic_vl_marko_babic' target='_blank' className='relative'>
+                <a href='https://www.poslovna.hr/lite/keramika-babic,-vl-vjekoslav-babic/1687162/subjekti.aspx' target='_blank' className='relative'>
                     <img className='h-20 w-auto'  src="/images/sponsors/Keramika Babic.png" alt="KERAMIKA BABIC" />
                 </a>
                 
