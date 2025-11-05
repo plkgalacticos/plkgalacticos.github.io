@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import Members from "./Members";
 
 export const metadata: Metadata = {
-    title: 'PLK Galacticos - Members',
+    title: 'Powerlifting klub Galacticos - Members',
   };
 
 const MembersPage = () => {

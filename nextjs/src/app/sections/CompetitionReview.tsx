@@ -2,6 +2,7 @@
 import React from 'react'
 import useInViewAnimation from '../hooks/useInViewAnimation';
 import TextImageContainer from '../components/TextImageContainer';
+import Image from 'next/image';
 
 const Competition = ({t}) => {
   const  tNav = t['nav']
@@ -31,45 +32,45 @@ const Competition = ({t}) => {
 
         <div className='relative max-container lg:px-16 flex flex-row justify-center items-center gap-20 flex-wrap pt-24 z-10'>
                 <a href="http://www.grad-vinkovci.hr/" target='_blank' className='relative'>
-                    <img className='h-16 w-auto'  src="/images/sponsors/grad vinkovci.png" alt="GRAD VINKOVCI" />
+                    <Image className='h-16 w-auto'  src="/images/sponsors/grad-vinkovci.png" alt="GRAD VINKOVCI" loading='lazy' width={257} height={384} />
                 </a>
                 <a href="https://www.a7europe.com/" target='_blank' className='relative'>
-                    <img className='h-12 w-auto'  src="/images/sponsors/a7.png" alt="A7" />
+                    <Image className='h-12 w-auto'  src="/images/sponsors/a7.png" alt="A7" loading='lazy' width={447} height={222} />
                 </a>
                 <a href="https://www.eluir.hr/" target='_blank' className='relative'>
-                    <img className='h-12 w-auto'  src="/images/sponsors/eluir.png" alt="ELUIR" />
+                    <Image className='h-12 w-auto'  src="/images/sponsors/eluir.png" alt="ELUIR" loading='lazy' width={695} height={168} />
                 </a>
                 <a href='https://avancus.com/' target='_blank' className='relative'>
-                    <img className='h-28 w-auto'  src="/images/sponsors/Avancus.png" alt="AVANCUS" />
+                    <Image className='h-28 w-auto'  src="/images/sponsors/Avancus.png" alt="AVANCUS" loading='lazy' width={1440} height={1440} />
                 </a>
                 
                 <a href="https://visitvinkovci.com/" target='_blank' className='relative'>
-                    <img className='h-14 w-auto'  src="/images/sponsors/tz.png" alt="TZ" />
+                    <Image className='h-14 w-auto'  src="/images/sponsors/tz.png" alt="TZ" loading='lazy' width={695} height={224} />
                     {/* <div className='absolute -top-6 -right-8 w-6 h-6 medal-bronze rounded-full'></div> */}
                 </a>
                 <a href="https://smellslikepr.com/" target='_blank' className='relative'>
-                    <img className='h-14 w-auto'  src="/images/sponsors/smells like pr.png" alt="SMELLS LIKE PR" />
+                    <Image className='h-14 w-auto'  src="/images/sponsors/smells-like-pr.png" alt="SMELLS LIKE PR" loading='lazy' width={762} height={377} />
                 </a>
                 <a href="https://www.4za.uk/" target='_blank' className='relative'>
-                    <img className='h-14 w-auto' src="/images/sponsors/4za.png" alt="4ZA" />
+                    <Image className='h-14 w-auto' src="/images/sponsors/4za.png" alt="4ZA" loading='lazy' width={529} height={302} />
                 </a>
                 <a href="https://4rce.hr/" target='_blank' className='relative'>
-                    <img className='h-12 w-auto' src="/images/sponsors/4rce.png" alt="4RCE" />
+                    <Image className='h-12 w-auto' src="/images/sponsors/4rce.png" alt="4RCE" loading='lazy' width={633} height={142} />
                 </a>
                 <a href="https://nutrition-shop.hr/" target='_blank' className='relative'>
-                    <img className='h-12 w-auto'  src="/images/sponsors/nutrition shop.png" alt="NUTRITION SHOP" />
+                    <Image className='h-12 w-auto'  src="/images/sponsors/nutrition-shop.png" alt="NUTRITION SHOP" loading='lazy' width={639} height={176} />
                 </a>
                 <a href='https://nutriteka.hr/' target='_blank' className='relative'>
-                    <img className='h-20 w-auto'  src="/images/sponsors/NUTRITEKA.svg" alt="NUTRITEKA" />
+                    <img className='h-20 w-auto'  src="/images/sponsors/NUTRITEKA.svg" alt="NUTRITEKA" loading='lazy' />
                 </a>
                 <a href='https://tti-group.com/' target='_blank' className='relative'>
-                    <img className='h-14 w-auto'  src="/images/sponsors/ttigroup.png" alt="TTI-group" />
+                    <Image className='h-14 w-auto'  src="/images/sponsors/ttigroup.png" alt="TTI-group" loading='lazy' width={1433} height={397} />
                 </a>
                 <a href='https://www.jurcakdesign.com/' target='_blank' className='relative'>
-                    <img className='h-12 w-auto'  src="/images/sponsors/Jurcak design.png" alt="JURCAK DESIGN" />
+                    <Image className='h-12 w-auto'  src="/images/sponsors/Jurcak-design.png" alt="JURCAK DESIGN" loading='lazy' width={736} height={113} />
                 </a>
                 <a href='https://www.poslovna.hr/lite/keramika-babic,-vl-vjekoslav-babic/1687162/subjekti.aspx' target='_blank' className='relative'>
-                    <img className='h-20 w-auto'  src="/images/sponsors/Keramika Babic.png" alt="KERAMIKA BABIC" />
+                    <Image className='h-20 w-auto'  src="/images/sponsors/Keramika-Babic.png" alt="KERAMIKA BABIC" loading='lazy' width={488} height={247} />
                 </a>
 
                 <div className=' border-4 border-gold rounded-md p-4 rotate-45 absolute top-1/2 -translate-y-1/2 left-1/2 transform -translate-x-1/2 -z-10'>

@@ -4,7 +4,7 @@ import Application from '@/app/sections/Application'
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'PLK Galacticos - Cibalae Open Cup Registration',
+    title: 'Powerlifting klub Galacticos - Cibalae Open Cup Registration',
   };
   
 const page = () => {

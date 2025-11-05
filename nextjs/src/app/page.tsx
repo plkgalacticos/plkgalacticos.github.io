@@ -21,7 +21,7 @@ export default function Home() {
         <Hero t={hr} />
       </section>
       
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<div></div>}>
         <section className="bg-black px-4 py-24">
           <Data t={hr} />
         </section>

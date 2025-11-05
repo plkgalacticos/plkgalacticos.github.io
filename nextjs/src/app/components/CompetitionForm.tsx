@@ -1,12 +1,7 @@
 'use client'
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
-import SheetDB from 'sheetdb-js'
 import { ConfigProvider, DatePicker } from 'antd';
-import moment from 'moment';
-import 'moment/locale/hr';
-import locale from 'antd/es/locale/hr_HR';
-
 
 const CompetitionForm = ({t, tNav}) => {
 
@@ -354,7 +349,7 @@ const CompetitionForm = ({t, tNav}) => {
               onChange={handleInputChange}
             />
             {errors.email && <p className="flex flex-row justify-start items-center gap-2 mt-2">
-                <img className="w-6 h-auto" src="/icons/warning-sign.svg" alt="WARNING" />{errors.email}</p>}
+                <img className="w-6 h-auto" src="/icons/warning-sign.svg" alt="WARNING" loading="lazy" />{errors.email}</p>}
           </div>
         
           <div className="flex flex-col justify-center items-start">
@@ -366,7 +361,7 @@ const CompetitionForm = ({t, tNav}) => {
             </select>
 
                 {errors.gender && <p className="flex flex-row justify-start items-center gap-2 mt-2">
-                <img className="w-6 h-auto" src="/icons/warning-sign.svg" alt="WARNING" />{errors.gender}</p>}
+                <img className="w-6 h-auto" src="/icons/warning-sign.svg" alt="WARNING" loading="lazy" />{errors.gender}</p>}
           </div>
         
           <div className="flex flex-row justify-center items-center gap-4">
@@ -379,7 +374,7 @@ const CompetitionForm = ({t, tNav}) => {
                 onChange={handleInputChange}
               />
               {errors.name && <p className="flex flex-row justify-start items-center gap-2 mt-2">
-                <img className="w-6 h-auto" src="/icons/warning-sign.svg" alt="WARNING" />{errors.name}</p>}
+                <img className="w-6 h-auto" src="/icons/warning-sign.svg" alt="WARNING" loading="lazy" />{errors.name}</p>}
             </div>
             
             <div className="w-full">
@@ -391,7 +386,7 @@ const CompetitionForm = ({t, tNav}) => {
                 onChange={handleInputChange}
               />
               {errors.surname && <p className="flex flex-row justify-start items-center gap-2 mt-2">
-                <img className="w-6 h-auto" src="/icons/warning-sign.svg" alt="WARNING" />{errors.surname}</p>}
+                <img className="w-6 h-auto" src="/icons/warning-sign.svg" alt="WARNING" loading="lazy" />{errors.surname}</p>}
             </div>
           </div>
         
@@ -415,7 +410,7 @@ const CompetitionForm = ({t, tNav}) => {
             {/* <DatePicker selected={startDate} showYearDropdown nextYearButtonLabel=">" previousYearButtonLabel=">"
                         onChange={(date) => {setForm((prev) => ({...prev, dateOfBirth: date.toString()})); setStartDate(date)}} /> */}
             {errors.dateOfBirth && <p className="flex flex-row justify-start items-center gap-2 mt-2">
-                <img className="w-6 h-auto" src="/icons/warning-sign.svg" alt="WARNING" />{errors.dateOfBirth}</p>}
+                <img className="w-6 h-auto" src="/icons/warning-sign.svg" alt="WARNING" loading="lazy" />{errors.dateOfBirth}</p>}
           </div>
         
           <div>
@@ -450,7 +445,7 @@ const CompetitionForm = ({t, tNav}) => {
                 <option value="Wild Hogs">Wild Hogs</option>
             </select>
             {errors.club && <p className="flex flex-row justify-start items-center gap-2 mt-2">
-                <img className="w-6 h-auto" src="/icons/warning-sign.svg" alt="WARNING" />{errors.club}</p>}
+                <img className="w-6 h-auto" src="/icons/warning-sign.svg" alt="WARNING" loading="lazy" />{errors.club}</p>}
           </div>
 
           {/* <div className="flex flex-row justify-start items-center gap-4">
@@ -472,7 +467,7 @@ const CompetitionForm = ({t, tNav}) => {
             </select>
 
                 {errors.isIntComp && <p className="flex flex-row justify-start items-center gap-2 mt-2">
-                <img className="w-6 h-auto" src="/icons/warning-sign.svg" alt="WARNING" />{errors.isIntComp}</p>}
+                <img className="w-6 h-auto" src="/icons/warning-sign.svg" alt="WARNING" loading="lazy" />{errors.isIntComp}</p>}
           </div>
         
           <div>
@@ -510,7 +505,7 @@ const CompetitionForm = ({t, tNav}) => {
                       <option value={t['s37']}>{t['s37']}</option>
                     </select>
                     {errors.fullPowerAgeCategory && <p className="flex flex-row justify-start items-center gap-2 mt-2">
-                        <img className="w-6 h-auto" src="/icons/warning-sign.svg" alt="WARNING" />{errors.fullPowerAgeCategory}</p>}
+                        <img className="w-6 h-auto" src="/icons/warning-sign.svg" alt="WARNING" loading="lazy" />{errors.fullPowerAgeCategory}</p>}
                 </div>
         
                 <div>
@@ -554,7 +549,7 @@ const CompetitionForm = ({t, tNav}) => {
                       ))}
                     </select>
                     {errors.fullPowerWeightCategory && <p className="flex flex-row justify-start items-center gap-2 mt-2">
-                        <img className="w-6 h-auto" src="/icons/warning-sign.svg" alt="WARNING" />{errors.fullPowerWeightCategory}</p>}
+                        <img className="w-6 h-auto" src="/icons/warning-sign.svg" alt="WARNING" loading="lazy" />{errors.fullPowerWeightCategory}</p>}
                     
                 </div>
                 <div>
@@ -601,7 +596,7 @@ const CompetitionForm = ({t, tNav}) => {
                       <option value={t['s37']}>{t['s37']}</option>
                     </select>
                     {errors.benchOnlyAgeCategory && <p className="flex flex-row justify-start items-center gap-2 mt-2">
-                        <img className="w-6 h-auto" src="/icons/warning-sign.svg" alt="WARNING" />{errors.benchOnlyAgeCategory}</p>}
+                        <img className="w-6 h-auto" src="/icons/warning-sign.svg" alt="WARNING" loading="lazy" />{errors.benchOnlyAgeCategory}</p>}
                 </div>
         
                 <div>
@@ -645,7 +640,7 @@ const CompetitionForm = ({t, tNav}) => {
                       ))}
                     </select>
                     {errors.benchOnlyWeightCategory && <p className="flex flex-row justify-start items-center gap-2 mt-2">
-                        <img className="w-6 h-auto" src="/icons/warning-sign.svg" alt="WARNING" />{errors.benchOnlyWeightCategory}</p>}
+                        <img className="w-6 h-auto" src="/icons/warning-sign.svg" alt="WARNING" loading="lazy" />{errors.benchOnlyWeightCategory}</p>}
                 </div>
         
                 <div>
@@ -662,7 +657,7 @@ const CompetitionForm = ({t, tNav}) => {
             )}
 
 {errors.competitionType && <p className="flex flex-row justify-start items-center gap-2 mt-2">
-    <img className="w-6 h-auto" src="/icons/warning-sign.svg" alt="WARNING" />{errors.competitionType}</p>}
+    <img className="w-6 h-auto" src="/icons/warning-sign.svg" alt="WARNING" loading="lazy" />{errors.competitionType}</p>}
           </div>
         
           <h2 className="mt-12 text-2xl font-semibold">{t['h3']}:</h2>
@@ -753,7 +748,7 @@ const CompetitionForm = ({t, tNav}) => {
                     <option value={t['s52']}>{t['s52']}</option>
                   </select>
                   {errors.tshirtCut && <p className="flex flex-row justify-start items-center gap-2 mt-2">
-                    <img className="w-6 h-auto" src="/icons/warning-sign.svg" alt="WARNING" />{errors.tshirtCut}</p>}
+                    <img className="w-6 h-auto" src="/icons/warning-sign.svg" alt="WARNING" loading="lazy" />{errors.tshirtCut}</p>}
                 </div>
                 
                 <div className="w-full">
@@ -772,7 +767,7 @@ const CompetitionForm = ({t, tNav}) => {
                     <option value="XL">XL</option>
                   </select>
                   {errors.tshirtSize && <p className="flex flex-row justify-start items-center gap-2 mt-2">
-                    <img className="w-6 h-auto" src="/icons/warning-sign.svg" alt="WARNING" />{errors.tshirtSize}</p>}
+                    <img className="w-6 h-auto" src="/icons/warning-sign.svg" alt="WARNING" loading="lazy" />{errors.tshirtSize}</p>}
                 </div>
               </div>
               <p className="italic text-sm mt-2">{t['l10-note']}</p>

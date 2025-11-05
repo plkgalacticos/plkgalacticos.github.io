@@ -1,6 +1,7 @@
 'use client'
 import React from 'react'
 import useInViewAnimation from '../hooks/useInViewAnimation';
+import Image from 'next/image';
 
 const Story = ({t}) => {
     const tNav = t['nav']
@@ -13,42 +14,10 @@ const Story = ({t}) => {
 
   return (
     <section className={`relative flex flex-col lg:flex-col `}>
-        {/* <div className={`flex flex-col justify-center items-start gap-8`}>
-            <h1 ref={h1Ref} className={`heading-text slide-right-pre ${h1Animation}`}>{t['h2']}</h1>
-            <p ref={p1Ref} className={`slide-top-pre ${p1Animation} max-w-md`}>{t['p1']}</p>
-            <p ref={p2Ref} className={`slide-top-pre ${p2Animation} max-w-md`}>{t['p2']}</p>
-            <p ref={p3Ref} className={`slide-top-pre ${p3Animation} max-w-md`}>{t['p3']}</p>
-            <button ref={btnRef} className={` scale-in-center-pre ${btnAnimation} btn-primary`}>{t['btn']}</button>
-        </div> */}
-
-        {/* <div className='w-full max-container flex flex-row justify-center pb-24'>
-            <h1 ref={h1Ref} className={`heading-text slide-right-pre ${h1Animation}`}>{t['h2']}</h1>
-            
-        </div>
-
-        <div className='w-full max-container flex flex-row justify-start'>
-            <p ref={p1Ref} className={`slide-top-pre ${p1Animation} max-w-md`}>{t['p1']}</p>
-        </div>
-
-        <div className='w-full max-container flex flex-row justify-center'>
-            <p ref={p1Ref} className={`slide-top-pre ${p1Animation} max-w-md`}>{t['p2']}</p>
-        </div>
-
-        <div className='w-full max-container flex flex-row justify-end'>
-            <p ref={p1Ref} className={`slide-top-pre ${p1Animation} max-w-md`}>{t['p3']}</p>
-        </div>
-        <div className='w-full max-container flex flex-row justify-center pt-24'>
-        <button ref={btnRef} className={` scale-in-center-pre ${btnAnimation} btn-primary`}>{t['btn']}</button>
-        </div> */}
-
         <div className={`flex flex-col-reverse lg:flex-row justify-center items-start`}>
 
-            {/* <div className='flex-1 relative min-h- lg:min-h-[100vh] w-full bg-hero bg-center bg-no-repeat bg-cover'>
-                <img className='absolute inset-0 object-cover' src="/images/sebo_squat_darken.png" alt="Cucanj" />
-            </div> */}
-
             <div className='flex-1 relative z-[2]'>
-                <img className='object-cover lg:min-h-[100vh] min-w-full' src='/images/Marko_Kuzmic.jpg' alt='Clan powerlifting kluba Galacticos radi mrtvo dizanje na natjecanju' loading='lazy'></img>
+                <Image className='object-cover lg:min-h-[100vh] min-w-full' src='/images/Marko_Kuzmic.jpg' alt='Clan powerlifting kluba Galacticos radi mrtvo dizanje na natjecanju' width={1024} height={682}></Image>
             </div>
 
             <div className='flex-1 w-full min-h-full flex flex-col justify-center items-start gap-8 py-24 text-lg px-4'>

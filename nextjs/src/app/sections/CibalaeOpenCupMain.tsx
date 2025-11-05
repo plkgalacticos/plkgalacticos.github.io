@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react'
 
 const CibalaeOpenCupMain = ({t}) => {
@@ -32,46 +33,6 @@ const CibalaeOpenCupMain = ({t}) => {
           <p className="max-w-2xl font-semibold mt-4">{t['p2']}</p>
         </div>
 
-        {/* Schedule */}
-        {/* <div className='max-container-sm'>
-          <h2 className="subheading-text">{t['h31']} <span className='text-logo-yellow'>{t['h32']}</span></h2>
-          <p className="mt-4">{t['p3']}</p>
-          <ul className="mt-16 flex flex-row justify-center md:justify-between items-start flex-wrap gap-12">
-            <li className='flex flex-col justify-start items-start gap-6 gradient-yellow p-2 rounded-md min-h-80 w-64'>
-                <p className='font-semibold text-lg'>{t['s1']}</p>
-                <div>
-                    <p>{t['s11']}</p>
-                    <p className='flex flex-row items-center gap-4 mt-2'><img className='w-4 h-auto' src="/images/logo/plk-galacticos-logo-round.png" alt="" /><span>{t['s12']}</span></p>
-                    <p className='flex flex-row items-center gap-4'><img className='w-4 h-auto' src="/images/logo/plk-galacticos-logo-round.png" alt="" /><span>{t['s13']}</span></p>
-                </div>
-                <div>
-                    <p>{t['s14']}</p>
-                    <p className='flex flex-row items-center gap-4 mt-2'><img className='w-4 h-auto' src="/images/logo/plk-galacticos-logo-round.png" alt="" /><span>{t['s15']}</span></p>
-                    <p className='flex flex-row items-center gap-4'><img className='w-4 h-auto' src="/images/logo/plk-galacticos-logo-round.png" alt="" /><span>{t['s16']}</span></p>
-                </div>
-                <div>
-                    <p>{t['s17']}</p>
-                </div>
-            </li>
-            <li className='flex flex-col justify-start items-start gap-6 gradient-yellow p-2 rounded-md min-h-80 w-64'>
-                <p className='font-semibold text-lg'>{t['s2']}</p>
-                <div>
-                    <p>{t['s21']}</p>
-                    <p className='flex flex-row items-center gap-4 mt-2'><img className='w-4 h-auto' src="/images/logo/plk-galacticos-logo-round.png" alt="" /><span>{t['s22']}</span></p>
-                    <p className='flex flex-row items-center gap-4'><img className='w-4 h-auto' src="/images/logo/plk-galacticos-logo-round.png" alt="" /><span>{t['s23']}</span></p>
-                </div>
-            </li>
-            <li className='flex flex-col justify-start items-start gap-6 gradient-yellow p-2 rounded-md min-h-80 w-64'>
-                <p className='font-semibold text-lg'>{t['s3']}</p>
-                <div>
-                    <p>{t['s31']}</p>
-                    <p className='flex flex-row items-center gap-4'><img className='w-4 h-auto' src="/images/logo/plk-galacticos-logo-round.png" alt="" /><span>{t['s32']}</span></p>
-                </div>
-            </li>
-          </ul>
-          <p className='mt-8 text-sm italic'>*{t['note3']}</p>
-        </div> */}
-
         <div className='max-container-sm flex flex-col gap-16 py-12'>
             
             <div className='gradient-yellow-bl py-4 p-4 rounded-md'>
@@ -83,12 +44,12 @@ const CibalaeOpenCupMain = ({t}) => {
                     <div className='flex flex-col md:flex-row justify-center items-start w-full'>
                         <div className='flex-1'>
                             <h3 className='font-semibold text-lg mt-4'>{t['A']} (14 {t['comp']})</h3>
-                            <p className='flex flex-row items-center gap-4 mt-2'><img className='w-4 h-auto' src="/images/logo/plk-galacticos-logo-round.png" alt="" />{t['sub-junior']} -66, -83</p>
-                            <p className='flex flex-row items-center gap-4 mt-2'><img className='w-4 h-auto' src="/images/logo/plk-galacticos-logo-round.png" alt="" />Junior -83, -93, -105</p>
+                            <p className='flex flex-row items-center gap-4 mt-2'><img className='w-4 h-auto' src="/images/logo/plk-galacticos-logo-round.png" alt="" loading='lazy' />{t['sub-junior']} -66, -83</p>
+                            <p className='flex flex-row items-center gap-4 mt-2'><img className='w-4 h-auto' src="/images/logo/plk-galacticos-logo-round.png" alt="" loading='lazy' />Junior -83, -93, -105</p>
                         
                             <h3 className='font-semibold text-lg mt-4'>{t['B']} (14 {t['comp']})</h3>
-                            <p className='flex flex-row items-center gap-4 mt-2'><img className='w-4 h-auto' src="/images/logo/plk-galacticos-logo-round.png" alt="" />{t['sub-junior']} -93</p>
-                            <p className='flex flex-row items-center gap-4 mt-2'><img className='w-4 h-auto' src="/images/logo/plk-galacticos-logo-round.png" alt="" />Open -66, -74, -83</p>
+                            <p className='flex flex-row items-center gap-4 mt-2'><img className='w-4 h-auto' src="/images/logo/plk-galacticos-logo-round.png" alt="" loading='lazy' />{t['sub-junior']} -93</p>
+                            <p className='flex flex-row items-center gap-4 mt-2'><img className='w-4 h-auto' src="/images/logo/plk-galacticos-logo-round.png" alt="" loading='lazy' />Open -66, -74, -83</p>
                         </div>
                         <div className='flex-1 max-sm:mt-4'>
                             <h3 className='font-semibold text-lg mt-4'>{t['sch-p1']}</h3>
@@ -114,11 +75,11 @@ const CibalaeOpenCupMain = ({t}) => {
                     <div className='flex flex-col md:flex-row justify-center items-start w-full'>
                         <div className='flex-1'>
                             <h3 className='font-semibold text-lg mt-4'>{t['C']} (14 {t['comp']})</h3>
-                            <p className='flex flex-row items-center gap-4 mt-2'><img className='w-4 h-auto' src="/images/logo/plk-galacticos-logo-round.png" alt="" />Open -93, -105</p>
+                            <p className='flex flex-row items-center gap-4 mt-2'><img className='w-4 h-auto' src="/images/logo/plk-galacticos-logo-round.png" alt="" loading='lazy' />Open -93, -105</p>
                         
                             <h3 className='font-semibold text-lg mt-4'>{t['D']} (9 {t['comp']})</h3>
-                            <p className='flex flex-row items-center gap-4 mt-2'><img className='w-4 h-auto' src="/images/logo/plk-galacticos-logo-round.png" alt="" />Open -120, 120+</p>
-                            <p className='flex flex-row items-center gap-4 mt-2'><img className='w-4 h-auto' src="/images/logo/plk-galacticos-logo-round.png" alt="" />Master I -93</p>
+                            <p className='flex flex-row items-center gap-4 mt-2'><img className='w-4 h-auto' src="/images/logo/plk-galacticos-logo-round.png" alt="" loading='lazy' />Open -120, 120+</p>
+                            <p className='flex flex-row items-center gap-4 mt-2'><img className='w-4 h-auto' src="/images/logo/plk-galacticos-logo-round.png" alt="" loading='lazy' />Master I -93</p>
                         </div>
                         <div className='flex-1 max-sm:mt-4'>
                             <h3 className='font-semibold text-lg mt-4'>{t['sch-p1']}</h3>
@@ -150,11 +111,11 @@ const CibalaeOpenCupMain = ({t}) => {
                     <div className='flex flex-col md:flex-row justify-center items-start w-full'>
                         <div className='flex-1'>
                             <h3 className='font-semibold text-lg mt-4'>{t['A']} (7 {t['comp']})</h3>
-                            <p className='flex flex-row items-center gap-4 mt-2'><img className='w-4 h-auto' src="/images/logo/plk-galacticos-logo-round.png" alt="" />{t['sub-junior-w']} -57, Junior -69, -76, -84</p>
-                            <p className='flex flex-row items-center gap-4 mt-2'><img className='w-4 h-auto' src="/images/logo/plk-galacticos-logo-round.png" alt="" />Open -47, Master I -52</p>
+                            <p className='flex flex-row items-center gap-4 mt-2'><img className='w-4 h-auto' src="/images/logo/plk-galacticos-logo-round.png" alt="" loading='lazy' />{t['sub-junior-w']} -57, Junior -69, -76, -84</p>
+                            <p className='flex flex-row items-center gap-4 mt-2'><img className='w-4 h-auto' src="/images/logo/plk-galacticos-logo-round.png" alt="" loading='lazy' />Open -47, Master I -52</p>
                         
                             <h3 className='font-semibold text-lg mt-4'>{t['B']} (8 {t['comp']})</h3>
-                            <p className='flex flex-row items-center gap-4 mt-2'><img className='w-4 h-auto' src="/images/logo/plk-galacticos-logo-round.png" alt="" />Open -69, -84, 84+</p>
+                            <p className='flex flex-row items-center gap-4 mt-2'><img className='w-4 h-auto' src="/images/logo/plk-galacticos-logo-round.png" alt="" loading='lazy' />Open -69, -84, 84+</p>
                         </div>
                         <div className='flex-1 max-sm:mt-4'>
                             <h3 className='font-semibold text-lg mt-4'>{t['sch-p1']}</h3>
@@ -180,18 +141,18 @@ const CibalaeOpenCupMain = ({t}) => {
                     <div className='flex flex-col md:flex-row justify-center items-start w-full'>
                         <div className='flex-1'>
                             <h3 className='font-semibold text-lg mt-4'>{t['A']} (15 {t['comp']})</h3>
-                            <p className='flex flex-row items-center gap-4 mt-2'><img className='w-4 h-auto' src="/images/logo/plk-galacticos-logo-round.png" alt="" />{t['women']}</p>
+                            <p className='flex flex-row items-center gap-4 mt-2'><img className='w-4 h-auto' src="/images/logo/plk-galacticos-logo-round.png" alt="" loading='lazy' />{t['women']}</p>
                         
                             <h3 className='font-semibold text-lg mt-4'>{t['B']} (10 {t['comp']})</h3>
-                            <p className='flex flex-row items-center gap-4 mt-2'><img className='w-4 h-auto' src="/images/logo/plk-galacticos-logo-round.png" alt="" />{t['sub-junior']}, {t['junior']} -83</p>
-                            <p className='flex flex-row items-center gap-4 mt-2'><img className='w-4 h-auto' src="/images/logo/plk-galacticos-logo-round.png" alt="" />Master I - II</p>
+                            <p className='flex flex-row items-center gap-4 mt-2'><img className='w-4 h-auto' src="/images/logo/plk-galacticos-logo-round.png" alt="" loading='lazy' />{t['sub-junior']}, {t['junior']} -83</p>
+                            <p className='flex flex-row items-center gap-4 mt-2'><img className='w-4 h-auto' src="/images/logo/plk-galacticos-logo-round.png" alt="" loading='lazy' />Master I - II</p>
 
                             <h3 className='font-semibold text-lg mt-4'>{t['C']} (10 {t['comp']})</h3>
-                            <p className='flex flex-row items-center gap-4 mt-2'><img className='w-4 h-auto' src="/images/logo/plk-galacticos-logo-round.png" alt="" />{t['junior']} -93, -105, -120</p>
-                            <p className='flex flex-row items-center gap-4 mt-2'><img className='w-4 h-auto' src="/images/logo/plk-galacticos-logo-round.png" alt="" />Open -74, -83</p>
+                            <p className='flex flex-row items-center gap-4 mt-2'><img className='w-4 h-auto' src="/images/logo/plk-galacticos-logo-round.png" alt="" loading='lazy' />{t['junior']} -93, -105, -120</p>
+                            <p className='flex flex-row items-center gap-4 mt-2'><img className='w-4 h-auto' src="/images/logo/plk-galacticos-logo-round.png" alt="" loading='lazy' />Open -74, -83</p>
 
                             <h3 className='font-semibold text-lg mt-4'>{t['D']} (12 {t['comp']})</h3>
-                            <p className='flex flex-row items-center gap-4 mt-2'><img className='w-4 h-auto' src="/images/logo/plk-galacticos-logo-round.png" alt="" />Open -93, -105, -120, 120+</p>
+                            <p className='flex flex-row items-center gap-4 mt-2'><img className='w-4 h-auto' src="/images/logo/plk-galacticos-logo-round.png" alt="" loading='lazy' />Open -93, -105, -120, 120+</p>
                         </div>
                         <div className='flex-1 max-sm:mt-4'>
                             <h3 className='font-semibold text-lg mt-4'>{t['sch-p1']}</h3>
@@ -388,8 +349,8 @@ const CibalaeOpenCupMain = ({t}) => {
         <div className='max-container pt-16 z-10'>
             <h2 className='subheading-text text-center'>{t['p10']}</h2>
             <div className='flex flex-row justify-center items-center gap-24 flex-wrap mt-24 z-10'>
-                <a href="http://www.grad-vinkovci.hr/" target='_blank' className='relative'>
-                    <img className='h-16 w-auto'  src="/images/sponsors/grad vinkovci.png" alt="GRAD VINKOVCI" />
+                <a href="http://www.grad-vinkovci.hr/" target='_blank' className='relative h-16 w-auto'>
+                    <img className='w-full object-cover'  src="/images/sponsors/grad-vinkovci.png" alt="GRAD VINKOVCI" />
                 </a>
                 <a href="https://www.a7europe.com/" target='_blank' className='relative'>
                     <img className='h-12 w-auto'  src="/images/sponsors/a7.png" alt="A7" />
@@ -406,7 +367,7 @@ const CibalaeOpenCupMain = ({t}) => {
                     {/* <div className='absolute -top-6 -right-8 w-6 h-6 medal-bronze rounded-full'></div> */}
                 </a>
                 <a href="https://smellslikepr.com/" target='_blank' className='relative'>
-                    <img className='h-14 w-auto'  src="/images/sponsors/smells like pr.png" alt="SMELLS LIKE PR" />
+                    <img className='h-14 w-auto'  src="/images/sponsors/smells-like-pr.png" alt="SMELLS LIKE PR" />
                 </a>
                 <a href="https://www.4za.uk/" target='_blank' className='relative'>
                     <img className='h-14 w-auto' src="/images/sponsors/4za.png" alt="4ZA" />
@@ -415,7 +376,7 @@ const CibalaeOpenCupMain = ({t}) => {
                     <img className='h-12 w-auto' src="/images/sponsors/4rce.png" alt="4RCE" />
                 </a>
                 <a href="https://nutrition-shop.hr/" target='_blank' className='relative'>
-                    <img className='h-12 w-auto'  src="/images/sponsors/nutrition shop.png" alt="NUTRITION SHOP" />
+                    <img className='h-12 w-auto'  src="/images/sponsors/nutrition-shop.png" alt="NUTRITION SHOP" />
                 </a>
                 <a href='https://nutriteka.hr/' target='_blank' className='relative'>
                     <img className='h-20 w-auto'  src="/images/sponsors/NUTRITEKA.svg" alt="NUTRITEKA" />
@@ -424,10 +385,10 @@ const CibalaeOpenCupMain = ({t}) => {
                     <img className='h-14 w-auto'  src="/images/sponsors/ttigroup.png" alt="TTI-group" />
                 </a>
                 <a href='https://www.jurcakdesign.com/' target='_blank' className='relative'>
-                    <img className='h-12 w-auto'  src="/images/sponsors/Jurcak design.png" alt="JURCAK DESIGN" />
+                    <img className='h-12 w-auto'  src="/images/sponsors/Jurcak-design.png" alt="JURCAK DESIGN" />
                 </a>
                 <a href='https://www.poslovna.hr/lite/keramika-babic,-vl-vjekoslav-babic/1687162/subjekti.aspx' target='_blank' className='relative'>
-                    <img className='h-20 w-auto'  src="/images/sponsors/Keramika Babic.png" alt="KERAMIKA BABIC" />
+                    <img className='h-20 w-auto'  src="/images/sponsors/Keramika-Babic.png" alt="KERAMIKA BABIC" />
                 </a>
                 
             </div>

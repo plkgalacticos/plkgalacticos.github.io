@@ -1,41 +1,44 @@
 'use client';
 import React from 'react'
 import Image from 'next/image'
-import Swal from 'sweetalert2'
 
 const Footer = ({t}) => {
+  const tSwal = t['swal'];
   const tNav = t['nav']
-  const tSwal = t['swal']
   t = t['footer']
   
-  const showAlert = () => {
-    Swal.fire({
-      title: tSwal['h'],
-      html: `<p class="text-left">${tSwal['p']}</p>
-            <div class="mt-4 mb-4">
-              <ul class="list-disc ml-5">
-                <li class="text-left">${tSwal['l11']}
-                  <a href="${tSwal['a']}" target="_blank" class="text-blue-500 hover:underline">
-                    ${tSwal['l12']}.
-                  </a>
-                </li>
-                <li class="text-left">${tSwal['l21']}
-                  <a href="https://www.instagram.com/plk.galacticos/" target="_blank" class="text-blue-500 hover:underline">
-                    Instagram.
-                  </a>
-                  ${tSwal['l22']}
-                </li>
-              </ul>
-            </div>`,
-        icon: "info",
-        confirmButtonText: "Ide gas"
-    });
+  const showAlert = async () => {
+    const Swal = (await import('sweetalert2')).default;
+
+    if (Swal) {
+        Swal.fire({
+          title: tSwal['h'],
+          html: `<p class="text-left">${tSwal['p']}</p>
+                <div class="mt-4 mb-4">
+                  <ul class="list-disc ml-5">
+                    <li class="text-left">${tSwal['l11']}
+                      <a href="${tSwal['a']}" target="_blank" class="text-blue-500 hover:underline">
+                        ${tSwal['l12']}.
+                      </a>
+                    </li>
+                    <li class="text-left">${tSwal['l21']}
+                      <a href="https://www.instagram.com/plk.galacticos/" target="_blank" class="text-blue-500 hover:underline">
+                        Instagram.
+                      </a>
+                      ${tSwal['l22']}
+                    </li>
+                  </ul>
+                </div>`,
+            icon: "info",
+            confirmButtonText: "Ide gas"
+        });
+    }
   };
   
   return (
     <footer className='flex flex-col justify-end py-8 bg-footer bg-no-repeat bg-cover bg-blend-darken bg-black/90 text-white px-4  shadow-inset-black'>
         <div className='max-container flex flex-col justify-center items-center'>
-            <div><img className='max-w-64 lg:max-w-96' src='/images/logo/plk-galacticos-logo-bright.png' alt='PLK Galacticos logo' loading='lazy'></img></div>
+            <div><Image className='max-w-64 lg:max-w-96' src='/images/logo/plk-galacticos-logo-bright.png' alt='PLK Galacticos logo' loading='lazy' width={1030} height={308}></Image></div>
             <div className='flex flex-col md:flex-row justify-start md:justify-evenly items-start w-full'>
                 <div className='pt-16'>
                     <h2 className='font-semibold text-xl pb-4'>{t['h1']}</h2>
@@ -43,7 +46,7 @@ const Footer = ({t}) => {
                         <li><a href={"/" + tNav['home-link']} className='link'>{t['l11']}</a></li>
                         <li><a href={"/" + tNav['members-link']} className='link'>{t['l12']}</a></li>
                         {/* <li><a href={"/" + tNav['kup-link']} className='link'>{t['l13']}</a></li> */}
-                        <li><a onClick={showAlert} className='link'>{t['l14']}</a></li>
+                        <li><span onClick={showAlert} className='link cursor-pointer'>{t['l14']}</span></li>
                     </ul>
                 </div>
 

@@ -6,7 +6,7 @@ import Footer from '@/app/components/Footer';
 import Instructions from '@/app/sections/Instructions';
 
 export const metadata: Metadata = {
-    title: 'PLK Galacticos - Cibalae Open Kup',
+    title: 'Powerlifting klub Galacticos - Cibalae Open Kup',
   };
 
 const CibalaeOpenKup = () => {

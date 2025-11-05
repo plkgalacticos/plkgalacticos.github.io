@@ -58,7 +58,7 @@ const NominationTable = ({t}) => {
                                               <td>{competitor.yearOfBirth}</td>
                                               <td>{competitor.club}</td>
                                               <td>{competitor.total}</td>
-                                              <td className='rounded-sm'><img className='w-9 h-auto' src={`/icons/${competitor.country}.svg`} alt={competitor.country} /></td>
+                                              <td className='rounded-sm'><img className='w-9 h-auto' src={`/icons/${competitor.country}.svg`} alt={competitor.country} loading='lazy' /></td>
                                             </tr>
                                         ))}
                                     </>

@@ -302,7 +302,11 @@ box-shadow: 0px 0px 24px 4px rgba(136,136,136,0.9);
     }
 
     .btn-primary {
-        @apply bg-logo-yellow md:text-lg  animation btn-diagonal-swipe max-md:px-4 max-md:py-2 text-white
+        @apply bg-yellow-800 md:text-lg  animation btn-diagonal-swipe max-md:px-4 max-md:py-2 text-white
+    }
+
+    .btn-primary-dark {
+        @apply bg-yellow-800 md:text-lg  animation btn-diagonal-swipe max-md:px-4 max-md:py-2 text-white
     }
 
     .btn-secondary {

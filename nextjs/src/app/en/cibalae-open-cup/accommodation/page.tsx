@@ -5,7 +5,7 @@ import { Metadata } from 'next'
 
 
 export const metadata: Metadata = {
-    title: 'PLK Galacticos - Cibalae Open Cup Accommodation',
+    title: 'Powerlifting klub Galacticos - Cibalae Open Cup Accommodation',
   };
   
 const page = () => {

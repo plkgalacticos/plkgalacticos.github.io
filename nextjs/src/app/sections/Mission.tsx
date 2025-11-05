@@ -1,6 +1,7 @@
 'use client'
 import React from 'react'
 import useInViewAnimation from '../hooks/useInViewAnimation';
+import Image from 'next/image';
 
 const Mission = ({t}) => {
   t = t['mission']
@@ -17,7 +18,7 @@ const Mission = ({t}) => {
         </div>
 
         <div className='flex-1 relative'>
-            <img className='object-cover min-w-full' src='/images/Jakov_Mrso.jpg' alt='Clan powerlifting kluba Galacticos radi mrtvo dizanje na natjecanju' loading='lazy'></img>
+            <Image className='object-cover min-w-full' src='/images/Jakov_Mrso.jpg' alt='Clan powerlifting kluba Galacticos radi mrtvo dizanje na natjecanju' loading='lazy' width={1024} height={682} />
         </div>
 
         <div className='border-4 border-gold rounded-md p-2 rotate-45 absolute max-lg:-right-16 lg:-left-16 -top-4 lg:top-24 -z-10'>

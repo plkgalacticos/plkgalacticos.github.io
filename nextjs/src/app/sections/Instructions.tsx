@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 
 const Instructions = ({t}) => {
@@ -27,11 +28,11 @@ const Instructions = ({t}) => {
              <h3 className='text-xl font-semibold mb-4'>{t['h4']}</h3>
              <p>{t['p3']}:</p>
              <ol className='flex flex-col gap-2'>
-                 <li className='flex flex-row items-center gap-4'><img className='w-6 h-auto' src="/images/logo/plk-galacticos-logo-round.png" alt="" /><span>{t['d1']}.</span></li>
-                 <li className='flex flex-row items-center gap-4'><img className='w-6 h-auto' src="/images/logo/plk-galacticos-logo-round.png" alt="" /><span>{t['d21']} <span className='font-semibold'>{t['d22']}</span>.</span></li>
-                 <li className='flex flex-row items-center gap-4'><img className='w-6 h-auto' src="/images/logo/plk-galacticos-logo-round.png" alt="" /><span>{t['d31']} <span className='font-semibold'>{t['d32']}</span>.</span></li>
-                 <li className='flex flex-row items-center gap-4'><img className='w-6 h-auto' src="/images/logo/plk-galacticos-logo-round.png" alt="" /><span>{t['d41']} <span className='font-semibold'>{t['d42']}</span> {t['d43']}.</span></li>
-                 <li className='flex flex-row items-center gap-4'><img className='w-6 h-auto' src="/images/logo/plk-galacticos-logo-round.png" alt="" /><span>{t['d51']} <span className='font-semibold'>{t['d52']}</span>.</span></li>
+                 <li className='flex flex-row items-center gap-4'><Image className='w-6 h-auto' src="/images/logo/plk-galacticos-logo-round.png" alt="" loading='lazy' width={309} height={402} /><span>{t['d1']}.</span></li>
+                 <li className='flex flex-row items-center gap-4'><Image className='w-6 h-auto' src="/images/logo/plk-galacticos-logo-round.png" alt="" loading='lazy' width={309} height={402} /><span>{t['d21']} <span className='font-semibold'>{t['d22']}</span>.</span></li>
+                 <li className='flex flex-row items-center gap-4'><Image className='w-6 h-auto' src="/images/logo/plk-galacticos-logo-round.png" alt="" loading='lazy' width={309} height={402} /><span>{t['d31']} <span className='font-semibold'>{t['d32']}</span>.</span></li>
+                 <li className='flex flex-row items-center gap-4'><Image className='w-6 h-auto' src="/images/logo/plk-galacticos-logo-round.png" alt="" loading='lazy' width={309} height={402} /><span>{t['d41']} <span className='font-semibold'>{t['d42']}</span> {t['d43']}.</span></li>
+                 <li className='flex flex-row items-center gap-4'><Image className='w-6 h-auto' src="/images/logo/plk-galacticos-logo-round.png" alt="" loading='lazy' width={309} height={402} /><span>{t['d51']} <span className='font-semibold'>{t['d52']}</span>.</span></li>
              </ol>
             </div>
             <div className='realative flex flex-col lg:flex-row flex-wrap justify-center items-center gap-8 mt-8'>

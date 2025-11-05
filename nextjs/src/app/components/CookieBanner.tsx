@@ -54,7 +54,7 @@ export default function CookieBanner(){
             
             <div className='flex gap-2 font-semibold'>
                 <button className='px-5 py-2 border-2 border-gold rounded-md ' onClick={() => setCookieConsent(false)}>{t['decline']}</button>
-                <button className='bg-gold px-5 py-2 rounded-lg' onClick={() => setCookieConsent(true)}>{t['allow']}</button>
+                <button className='bg-yellow-800 border-gold border-2 px-5 py-2 rounded-lg' onClick={() => setCookieConsent(true)}>{t['allow']}</button>
             </div>   
         </div>
     )}

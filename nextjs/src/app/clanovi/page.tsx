@@ -6,7 +6,7 @@ import { Metadata } from "next";
 import Clanovi from "./Clanovi";
 
 export const metadata: Metadata = {
-    title: 'PLK Galacticos - Članovi',
+    title: 'Powerlifting klub Galacticos - Članovi',
 };
 
 

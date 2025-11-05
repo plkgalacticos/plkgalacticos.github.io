@@ -1,9 +1,8 @@
 'use client'
 import React, { useEffect, useState } from 'react'
-import Head from "next/head";
 import { members } from "../constants/membersData";
-import { useRouter } from "next/router";
 import MemberCard from "../components/MemberCard";
+import Image from 'next/image';
 
 const Clanovi = () => {
     const [currentMember, setCurrentMember] = useState(members[0]);
@@ -17,7 +16,7 @@ const Clanovi = () => {
     className="px-4 py-8 lg:px-16 lg:pb-32 pt-32 bg-black text-white gradient-sm md:gradient-md lg:gradient"
   >
     <div className="flex flex-col justify-center items-center max-container">
-      <div className="pb-32">
+      <div className="">
         <h1 className="heading-text">
           Galacticosi
         </h1>
@@ -44,6 +43,7 @@ const Clanovi = () => {
                     className="w-8 lg:w-10 h-auto mr-2"
                     src="icons/medal.svg"
                     alt="IKONA POWERLIFTING MEDALJE"
+                    loading='lazy'
                   />
                   <p>
                     Godina u sportu: {currentMember.years_competing}
@@ -55,6 +55,7 @@ const Clanovi = () => {
                       className="w-8 lg:w-10 h-auto mr-2"
                       src="icons/trophy-yellow.svg"
                       alt="IKONA POWERLIFTING TROFEJA"
+                      loading='lazy'
                     />
                     <p>Broj rekorda: {currentMember.records}</p>
                   </div>
@@ -66,6 +67,7 @@ const Clanovi = () => {
                     className="w-8 lg:w-10 h-auto"
                     src="icons/ig-white.svg"
                     alt="POWERLIFTING KLUB IG"
+                    loading='lazy'
                   />
                 </a>
                 <a href={currentMember.ipf} target="_blank" rel="noreferrer">
@@ -73,6 +75,7 @@ const Clanovi = () => {
                     className="w-8 lg:w-10 h-auto"
                     src="icons/trophy.svg"
                     alt="POWERLIFTING KLUB TROPHY"
+                    loading='lazy'
                   />
                 </a>
               </div>

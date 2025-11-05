@@ -35,6 +35,7 @@ export default {
         "logo-purple-sec": "#53159b",
         "logo-purple-400": "rgba(60, 16, 102, 0.8)",
         "logo-yellow": "#ffc200",
+        "logo-yellow-900": "#a17a00",
         "logo-yellow-300": "rgba(255, 194, 0, 0.7)",
         "logo-yellow-op-8": "rgba(255, 194, 0, 0.8)",
         "logo-yellow-op-9": "rgba(255, 194, 0, 0.9)",

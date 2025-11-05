@@ -76,6 +76,7 @@ const FAQ = ({ t }) => {
                         className={`w-4 lg:w-6 h-auto transition-all duration-300 ${isActive[index + 1] ? 'rotate-90' : ''}`}
                         src="/icons/arrow-right.svg"
                         alt="ARROW"
+                         loading='lazy'
                       />
                       <h2 className="font-semibold text-xl">
                         {t[`q${index + 1}`]}

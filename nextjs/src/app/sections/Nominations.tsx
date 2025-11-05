@@ -1,5 +1,6 @@
 import React from 'react'
 import NominationTable from '../components/NominationTable'
+import Image from 'next/image'
 
 const Nominations = ({t}) => {
   const tNav = t['nav']
@@ -17,17 +18,17 @@ const Nominations = ({t}) => {
 
                 <h3 className='text-lg font-semibold'>{t['h12']}</h3>
                 <ol className='flex flex-col gap-4 list-decimal ml-4'>
-                    <li className='flex flex-row items-center gap-4'><img className='w-6 h-auto' src="/images/logo/plk-galacticos-logo-round.png" alt="" /><p>{t['l11']} <span className='font-semibold text-logo-yellow'>{t['l12']}</span> {t['l13']} <span className='font-semibold text-logo-yellow'>{t['l14']}</span> {t['l15']}</p></li>
-                    <li className='flex flex-row items-center gap-4'><img className='w-6 h-auto' src="/images/logo/plk-galacticos-logo-round.png" alt="" /><p><span className='font-semibold text-logo-yellow'>{t['l21']}</span> {t['l22']} </p></li>
-                    <li className='flex flex-row items-center gap-4'><img className='w-6 h-auto' src="/images/logo/plk-galacticos-logo-round.png" alt="" /><p><span className='font-semibold text-logo-yellow'>{t['l31']}</span> {t['l32']} <span className='font-semibold text-logo-yellow'>{t['l33']}</span> {t['l34']} <span className='font-semibold text-logo-yellow'>{t['l35']}</span></p></li>
-                    <li className='flex flex-row items-center gap-4'><img className='w-6 h-auto' src="/images/logo/plk-galacticos-logo-round.png" alt="" /><p>{t['l3-date']} {t['l3-date2']}</p></li>
+                    <li className='flex flex-row items-center gap-4'><Image className='w-6 h-auto' src="/images/logo/plk-galacticos-logo-round.png" alt="" loading='lazy' width={309} height={402} /><p>{t['l11']} <span className='font-semibold text-logo-yellow'>{t['l12']}</span> {t['l13']} <span className='font-semibold text-logo-yellow'>{t['l14']}</span> {t['l15']}</p></li>
+                    <li className='flex flex-row items-center gap-4'><Image className='w-6 h-auto' src="/images/logo/plk-galacticos-logo-round.png" alt="" loading='lazy' width={309} height={402} /><p><span className='font-semibold text-logo-yellow'>{t['l21']}</span> {t['l22']} </p></li>
+                    <li className='flex flex-row items-center gap-4'><Image className='w-6 h-auto' src="/images/logo/plk-galacticos-logo-round.png" alt="" loading='lazy' width={309} height={402} /><p><span className='font-semibold text-logo-yellow'>{t['l31']}</span> {t['l32']} <span className='font-semibold text-logo-yellow'>{t['l33']}</span> {t['l34']} <span className='font-semibold text-logo-yellow'>{t['l35']}</span></p></li>
+                    <li className='flex flex-row items-center gap-4'><Image className='w-6 h-auto' src="/images/logo/plk-galacticos-logo-round.png" alt="" loading='lazy' width={309} height={402} /><p>{t['l3-date']} {t['l3-date2']}</p></li>
                 </ol>
                 
                 <h3 className='text-lg font-semibold'>{t['h13']}</h3>
                 <ol className='flex flex-col gap-4 list-decimal ml-4'>
-                    <li className='flex flex-row items-center gap-4'><img className='w-6 h-auto' src="/images/logo/plk-galacticos-logo-round.png" alt="" /><p>{t['l41']} <span className='font-semibold text-logo-yellow'>{t['l42']}</span> {t['l43']} <span className='font-semibold text-logo-yellow'>{t['l44']}</span> {t['l45']}</p></li>
+                    <li className='flex flex-row items-center gap-4'><Image className='w-6 h-auto' src="/images/logo/plk-galacticos-logo-round.png" alt="" loading='lazy' width={309} height={402} /><p>{t['l41']} <span className='font-semibold text-logo-yellow'>{t['l42']}</span> {t['l43']} <span className='font-semibold text-logo-yellow'>{t['l44']}</span> {t['l45']}</p></li>
                     <li className='flex flex-row items-start gap-4'>
-                        <img className='w-6 h-auto' src="/images/logo/plk-galacticos-logo-round.png" alt="" />
+                        <Image className='w-6 h-auto' src="/images/logo/plk-galacticos-logo-round.png" alt="" loading='lazy' width={309} height={402} />
                         <div>
                             <p>{t['l5']}</p>
                             <ul className='list-disc ml-8'>
@@ -37,7 +38,7 @@ const Nominations = ({t}) => {
                         </div>
                      </li>
                      <li className='flex flex-row items-start gap-4'>
-                        <img className='w-6 h-auto' src="/images/logo/plk-galacticos-logo-round.png" alt="" />
+                        <Image className='w-6 h-auto' src="/images/logo/plk-galacticos-logo-round.png" alt="" loading='lazy' width={309} height={402} />
                         <div>
                             <p className='font-semibold text-logo-yellow'>{t['l8']}</p>
                             <ul className='list-disc ml-8'>
@@ -50,7 +51,7 @@ const Nominations = ({t}) => {
                 
                 <h3 className='text-lg font-semibold'>{t['h14']}</h3>
                 <ol className='flex flex-col gap-4 list-decimal ml-4'>
-                    <li className='flex flex-row items-center gap-4'><img className='w-6 h-auto' src="/images/logo/plk-galacticos-logo-round.png" alt="" /><p>{t['l11-1']} <span className='font-semibold text-logo-yellow'>{t['l11-2']}</span></p></li>
+                    <li className='flex flex-row items-center gap-4'><Image className='w-6 h-auto' src="/images/logo/plk-galacticos-logo-round.png" alt="" loading='lazy' width={309} height={402} /><p>{t['l11-1']} <span className='font-semibold text-logo-yellow'>{t['l11-2']}</span></p></li>
                 </ol>
             </div>
 
@@ -59,10 +60,10 @@ const Nominations = ({t}) => {
             <div className='mt-8'>
                 <h2 className='subheading-text'>{t['h2']}</h2>
                 <ol className='flex flex-col gap-4 list-decimal ml-4 mt-8'>
-                    <li className='flex flex-row items-center gap-4'><img className='w-6 h-auto' src="/images/logo/plk-galacticos-logo-round.png" alt="" /><p>{t['l12-1']} <a href={'/' + tNav['application-link']} className='font-semibold text-logo-yellow underline'>{t['l12-2']}</a></p></li>
-                    <li className='flex flex-row items-center gap-4'><img className='w-6 h-auto' src="/images/logo/plk-galacticos-logo-round.png" alt="" /><p>{t['l13-1']} <span className='font-semibold text-logo-yellow'>josiptoric1997@gmail.com</span> {t['l13-3']}</p></li>
+                    <li className='flex flex-row items-center gap-4'><Image className='w-6 h-auto' src="/images/logo/plk-galacticos-logo-round.png" alt="" loading='lazy' width={309} height={402} /><p>{t['l12-1']} <a href={'/' + tNav['application-link']} className='font-semibold text-logo-yellow underline'>{t['l12-2']}</a></p></li>
+                    <li className='flex flex-row items-center gap-4'><Image className='w-6 h-auto' src="/images/logo/plk-galacticos-logo-round.png" alt="" loading='lazy' width={309} height={402} /><p>{t['l13-1']} <span className='font-semibold text-logo-yellow'>josiptoric1997@gmail.com</span> {t['l13-3']}</p></li>
                     <li className='flex flex-row items-start gap-4'>
-                        <img className='w-6 h-auto' src="/images/logo/plk-galacticos-logo-round.png" alt="" />
+                        <Image className='w-6 h-auto' src="/images/logo/plk-galacticos-logo-round.png" alt="" loading='lazy' width={309} height={402} />
                         <div>
                             <p>{t['l14-1']}</p>
                             <ul className='list-disc ml-8'>
@@ -81,7 +82,7 @@ const Nominations = ({t}) => {
                 <h3 className='subheading-text'>{t['h3']}</h3>
                 <ol className='flex flex-col gap-4 list-decimal ml-4 mt-8'>
                     <li className='flex flex-row items-start gap-4'>
-                        <img className='w-6 h-auto' src="/images/logo/plk-galacticos-logo-round.png" alt="" />
+                        <Image className='w-6 h-auto' src="/images/logo/plk-galacticos-logo-round.png" alt="" loading='lazy' width={309} height={402} />
                         <div>
                             <p><span className='font-semibold text-logo-yellow'>{t['l17-1']}</span> {t['l17-2']} <span className='font-semibold text-logo-yellow'>{t['l17-3']}</span></p>
                             <ul className='list-disc ml-8'>
@@ -91,7 +92,7 @@ const Nominations = ({t}) => {
                         </div>
                      </li>
                      <li className='flex flex-row items-start gap-4'>
-                        <img className='w-6 h-auto' src="/images/logo/plk-galacticos-logo-round.png" alt="" />
+                        <Image className='w-6 h-auto' src="/images/logo/plk-galacticos-logo-round.png" alt="" loading='lazy' width={309} height={402} />
                         <div>
                             <p><span className='font-semibold text-logo-yellow'>{t['l20-1']}</span> {t['l20-2']} <span className='font-semibold text-logo-yellow'>{t['l17-3']}</span></p>
                             <ul className='list-disc ml-8'>
@@ -108,8 +109,8 @@ const Nominations = ({t}) => {
             <div className='flex flex-col gap-2 mt-8'>
                 <h2 className='subheading-text'>{t['h4']}</h2>
                 <ol className='flex flex-col gap-4 list-decimal ml-4 mt-8'>
-                    <li className='flex flex-row items-center gap-4'><img className='w-6 h-auto' src="/images/logo/plk-galacticos-logo-round.png" alt="" /><p>{t['l23-1']} <span className='font-semibold text-logo-yellow'>{t['l23-2']}</span></p></li>
-                    <li className='flex flex-row items-center gap-4'><img className='w-6 h-auto' src="/images/logo/plk-galacticos-logo-round.png" alt="" /><p>{t['l24-1']} <span className='font-semibold text-logo-yellow'>{t['l24-2']}</span></p></li>
+                    <li className='flex flex-row items-center gap-4'><Image className='w-6 h-auto' src="/images/logo/plk-galacticos-logo-round.png" alt="" loading='lazy' width={309} height={402} /><p>{t['l23-1']} <span className='font-semibold text-logo-yellow'>{t['l23-2']}</span></p></li>
+                    <li className='flex flex-row items-center gap-4'><Image className='w-6 h-auto' src="/images/logo/plk-galacticos-logo-round.png" alt="" loading='lazy' width={309} height={402} /><p>{t['l24-1']} <span className='font-semibold text-logo-yellow'>{t['l24-2']}</span></p></li>
                 </ol>
             </div>
 
@@ -117,8 +118,8 @@ const Nominations = ({t}) => {
             <div className='flex flex-col gap-2 mt-8'>
                 <h2 className='subheading-text'>{t['h5']}</h2>
                 <ol className='flex flex-col gap-4 list-decimal ml-4 mt-8'>
-                    <li className='flex flex-row items-center gap-4'><img className='w-6 h-auto' src="/images/logo/plk-galacticos-logo-round.png" alt="" /><p>{t['l25-1']} <span className='font-semibold text-logo-yellow'>{t['l25-2']}</span></p></li>
-                    <li className='flex flex-row items-center gap-4'><img className='w-6 h-auto' src="/images/logo/plk-galacticos-logo-round.png" alt="" /><p>{t['l26-1']} <span className='font-semibold text-logo-yellow'>{t['l26-2']}</span></p></li>
+                    <li className='flex flex-row items-center gap-4'><Image className='w-6 h-auto' src="/images/logo/plk-galacticos-logo-round.png" alt="" loading='lazy' width={309} height={402} /><p>{t['l25-1']} <span className='font-semibold text-logo-yellow'>{t['l25-2']}</span></p></li>
+                    <li className='flex flex-row items-center gap-4'><Image className='w-6 h-auto' src="/images/logo/plk-galacticos-logo-round.png" alt="" loading='lazy' width={309} height={402} /><p>{t['l26-1']} <span className='font-semibold text-logo-yellow'>{t['l26-2']}</span></p></li>
                 </ol>
             </div>
 

@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from "react";
 import { members } from "@/app/constants/membersData";
 import MemberCard from "@/app/components/MemberCard";
+import Image from "next/image";
 
 const Members = () => {
   const [currentMember, setCurrentMember] = useState(members[0]);
@@ -42,6 +43,7 @@ const Members = () => {
                       className="w-8 lg:w-10 h-auto mr-2"
                       src="/icons/medal.svg"
                       alt="POWERLIFTING MEDAL ICON"
+                      loading="lazy"
                     />
                     <p>
                       Years competing: {currentMember.years_competing}
@@ -53,6 +55,7 @@ const Members = () => {
                         className="w-8 lg:w-10 h-auto mr-2"
                         src="/icons/trophy-yellow.svg"
                         alt="POWERLIFTING TROPHY ICON"
+                        loading="lazy"
                       />
                       <p>Records: {currentMember.records}</p>
                     </div>
@@ -64,6 +67,7 @@ const Members = () => {
                       className="w-8 lg:w-10 h-auto"
                       src="/icons/ig-white.svg"
                       alt="POWERLIFTING CLUB IG"
+                      loading="lazy"
                     />
                   </a>
                   <a href={currentMember.ipf} target="_blank" rel="noreferrer">
@@ -71,6 +75,7 @@ const Members = () => {
                       className="w-8 lg:w-10 h-auto"
                       src="/icons/trophy.svg"
                       alt="POWERLIFTING CLUB TROPHY"
+                      loading="lazy"
                     />
                   </a>
                 </div>

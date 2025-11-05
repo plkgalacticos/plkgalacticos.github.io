@@ -4,6 +4,9 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
     basePath: "",
     output: "export",
+    images: {
+      unoptimized: true, // Disable image optimization
+    },
     future: {
 
         // by default, if you customize webpack config, they switch back to version 4.

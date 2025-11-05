@@ -14,8 +14,8 @@ const Accommodation = ({t}) => {
                     <h3 className='text-xl font-semibold mt-4'>{t['p1']}</h3>
                     <p className='mt-8'>{t['p2']}</p>
                     <ul className='flex flex-col gap-2 mt-8'>
-                      <li className='flex flex-row items-start gap-4'><img className='w-6 h-auto max-sm:pt-[0.375rem]' src="/images/logo/plk-galacticos-logo-round.png" alt="" /><span><span className='font-extrabold'>{t['p2-1']}</span> {t['p2-2']} <a className='text-logo-yellow underline' href="mailto:plkgalacticos@gmail.com">email</a> {t['p2-3']}</span></li>
-                      <li className='flex flex-row items-start gap-4'><img className='w-6 h-auto max-sm:pt-[0.375rem]' src="/images/logo/plk-galacticos-logo-round.png" alt="" /><span><span className='font-extrabold'>{t['p2-4']}</span> {t['p2-5']}</span></li>
+                      <li className='flex flex-row items-start gap-4'><img className='w-6 h-auto max-sm:pt-[0.375rem]' src="/images/logo/plk-galacticos-logo-round.png" alt="" loading='lazy' /><span><span className='font-extrabold'>{t['p2-1']}</span> {t['p2-2']} <a className='text-logo-yellow underline' href="mailto:plkgalacticos@gmail.com">email</a> {t['p2-3']}</span></li>
+                      <li className='flex flex-row items-start gap-4'><img className='w-6 h-auto max-sm:pt-[0.375rem]' src="/images/logo/plk-galacticos-logo-round.png" alt="" loading='lazy' /><span><span className='font-extrabold'>{t['p2-4']}</span> {t['p2-5']}</span></li>
                     </ul>
                 </div>
                 <div className='flex-1'>
@@ -28,9 +28,9 @@ const Accommodation = ({t}) => {
             <div>
                 <h2 className='subheading-text'>{t['h31']} <span className='text-logo-yellow'>{t['h32']}</span></h2>
                 <ul className='flex flex-col gap-2 mt-8'>
-                  <li className='flex flex-row items-start gap-4'><img className='w-6 h-auto max-sm:pt-[0.375rem]' src="/images/logo/plk-galacticos-logo-round.png" alt="" /><span><span className='font-extrabold'>{t['l11']}</span>, {t['l12']}<span className='font-extrabold'> {t['l13']}</span> {t['l14']}</span></li>
-                  <li className='flex flex-row items-start gap-4'><img className='w-6 h-auto max-sm:pt-[0.375rem]' src="/images/logo/plk-galacticos-logo-round.png" alt="" /><span><span className='font-extrabold'>{t['l21']}</span> {t['l22']}</span></li>
-                  <li className='flex flex-row items-start gap-4'><img className='w-6 h-auto max-sm:pt-[0.375rem]' src="/images/logo/plk-galacticos-logo-round.png" alt="" /><span>{t['l31']} <span className='font-extrabold'>{t['l32']}</span></span></li>
+                  <li className='flex flex-row items-start gap-4'><img className='w-6 h-auto max-sm:pt-[0.375rem]' src="/images/logo/plk-galacticos-logo-round.png" alt="" loading='lazy' /><span><span className='font-extrabold'>{t['l11']}</span>, {t['l12']}<span className='font-extrabold'> {t['l13']}</span> {t['l14']}</span></li>
+                  <li className='flex flex-row items-start gap-4'><img className='w-6 h-auto max-sm:pt-[0.375rem]' src="/images/logo/plk-galacticos-logo-round.png" alt="" loading='lazy' /><span><span className='font-extrabold'>{t['l21']}</span> {t['l22']}</span></li>
+                  <li className='flex flex-row items-start gap-4'><img className='w-6 h-auto max-sm:pt-[0.375rem]' src="/images/logo/plk-galacticos-logo-round.png" alt="" loading='lazy' /><span>{t['l31']} <span className='font-extrabold'>{t['l32']}</span></span></li>
                 </ul>
             </div>
 
@@ -63,12 +63,12 @@ const Accommodation = ({t}) => {
             <div className='z-10'>
                 <h2 className='subheading-text'>{t['h41']} <span className='text-logo-yellow'>{t['h42']}</span></h2>
                 <ol className='flex flex-col gap-2 mt-8'>
-                <li className='flex flex-row items-center gap-4'><img className='w-6 h-auto' src="/images/logo/plk-galacticos-logo-round.png" alt="" /><span><span className='font-semibold'>{t['l41']}</span> {t['l42']}</span></li>
-                <li className='flex flex-row items-center gap-4'><img className='w-6 h-auto' src="/images/logo/plk-galacticos-logo-round.png" alt="" /><span><span className='font-semibold'>{t['l51']}</span> {t['l52']}</span></li>
-                <li className='flex flex-row items-start gap-4'><img className='w-6 h-auto ' src="/images/logo/plk-galacticos-logo-round.png" alt="" /><span><span className='font-semibold'>{t['l61']}</span> {t['l62']}</span></li>
-                <li className='flex flex-row items-start gap-4'><img className='w-6 h-auto max-sm:pt-[0.375rem]' src="/images/logo/plk-galacticos-logo-round.png" alt="" /><span><span className='font-semibold'>{t['l71']}</span> {t['l72']}</span></li>
-                <li className='flex flex-row items-start gap-4'><img className='w-6 h-auto max-sm:pt-[0.375rem]' src="/images/logo/plk-galacticos-logo-round.png" alt="" /><span><span className='font-semibold'>{t['l81']}</span> {t['l82']}</span></li>
-                <li className='flex flex-row items-start gap-4'><img className='w-6 h-auto max-sm:pt-[0.375rem]' src="/images/logo/plk-galacticos-logo-round.png" alt="" /><span><span className='font-semibold'>{t['l91']}</span> {t['l92']}</span></li>
+                <li className='flex flex-row items-center gap-4'><img className='w-6 h-auto' src="/images/logo/plk-galacticos-logo-round.png" alt="" loading='lazy' /><span><span className='font-semibold'>{t['l41']}</span> {t['l42']}</span></li>
+                <li className='flex flex-row items-center gap-4'><img className='w-6 h-auto' src="/images/logo/plk-galacticos-logo-round.png" alt="" loading='lazy' /><span><span className='font-semibold'>{t['l51']}</span> {t['l52']}</span></li>
+                <li className='flex flex-row items-start gap-4'><img className='w-6 h-auto ' src="/images/logo/plk-galacticos-logo-round.png" alt="" loading='lazy' /><span><span className='font-semibold'>{t['l61']}</span> {t['l62']}</span></li>
+                <li className='flex flex-row items-start gap-4'><img className='w-6 h-auto max-sm:pt-[0.375rem]' src="/images/logo/plk-galacticos-logo-round.png" alt="" loading='lazy' /><span><span className='font-semibold'>{t['l71']}</span> {t['l72']}</span></li>
+                <li className='flex flex-row items-start gap-4'><img className='w-6 h-auto max-sm:pt-[0.375rem]' src="/images/logo/plk-galacticos-logo-round.png" alt="" loading='lazy' /><span><span className='font-semibold'>{t['l81']}</span> {t['l82']}</span></li>
+                <li className='flex flex-row items-start gap-4'><img className='w-6 h-auto max-sm:pt-[0.375rem]' src="/images/logo/plk-galacticos-logo-round.png" alt="" loading='lazy' /><span><span className='font-semibold'>{t['l91']}</span> {t['l92']}</span></li>
              </ol>
             </div>
 
@@ -77,9 +77,9 @@ const Accommodation = ({t}) => {
             </div>
 
             <div className='w-full flex flex-wrap flex-col lg:flex-row justify-center items-center gap-12 z-[1]'>
-                <img className='w-full max-w-md h-auto' src="/images/hotel/hotel-slavonija-1.jpg" alt="Hotel Slavonija" />
-                <img className='w-full max-w-md h-auto' src="/images/hotel/hotel-slavonija-2.jpg" alt="Hotel Slavonija" />
-                <img className="w-full max-w-md h-auto" src="/images/hotel/hotel-slavonija-3.jpg" alt="Hotel Slavonija" />
+                <img className='w-full max-w-md h-auto' src="/images/hotel/hotel-slavonija-1.jpg" alt="Hotel Slavonija" loading='lazy' />
+                <img className='w-full max-w-md h-auto' src="/images/hotel/hotel-slavonija-2.jpg" alt="Hotel Slavonija" loading='lazy' />
+                <img className="w-full max-w-md h-auto" src="/images/hotel/hotel-slavonija-3.jpg" alt="Hotel Slavonija" loading='lazy' />
 
             </div>
         </div>

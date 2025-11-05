@@ -4,7 +4,7 @@ import { Metadata } from 'next'
 import CibalaeOpenCupMain from '@/app/sections/CibalaeOpenCupMain';
 
 export const metadata: Metadata = {
-    title: 'PLK Galacticos - Cibalae Open Cup',
+    title: 'Powerlifting klub Galacticos - Cibalae Open Cup',
   };
 
 const CibalaeOpenCup = () => {

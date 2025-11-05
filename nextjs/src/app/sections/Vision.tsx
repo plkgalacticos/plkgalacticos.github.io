@@ -1,6 +1,7 @@
 'use client';
 import React from 'react'
 import useInViewAnimation from '../hooks/useInViewAnimation';
+import Image from 'next/image';
 
 const Vision = ({t}) => {
   t = t['vision']  
@@ -10,7 +11,7 @@ const Vision = ({t}) => {
   return (
     <section className='relative flex flex-col-reverse lg:flex-row justify-center items-center'>
         <div className='flex-1 relative'>
-            <img className='object-cover min-w-full' src='/images/tara_deadlift.png' alt='Clan powerlifting kluba Galacticos radi mrtvo dizanje na natjecanju' loading='lazy'></img>
+            <Image className='object-cover min-w-full' src='/images/tara_deadlift.png' alt='Clan powerlifting kluba Galacticos radi mrtvo dizanje na natjecanju' loading='lazy' width={1024} height={614}></Image>
         </div>
         <div className='flex-1 flex flex-col justify-center items-center'>
             <div className='px-4 py-24'>
