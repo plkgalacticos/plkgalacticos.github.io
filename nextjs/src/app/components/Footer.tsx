@@ -1,38 +1,41 @@
 'use client';
-import React from 'react'
+import React, { useState } from 'react'
 import Image from 'next/image'
+import dynamic from 'next/dynamic';
+
+const LazyRegistrationPopup = dynamic(() => import('@/app/components/RegistrationPopup'), {
+  ssr: false,
+  loading: () => null, // no skeleton; optional
+});
 
 const Footer = ({t}) => {
   const tSwal = t['swal'];
   const tNav = t['nav']
   t = t['footer']
-  
-  const showAlert = async () => {
-    const Swal = (await import('sweetalert2')).default;
 
-    if (Swal) {
-        Swal.fire({
-          title: tSwal['h'],
-          html: `<p class="text-left">${tSwal['p']}</p>
-                <div class="mt-4 mb-4">
-                  <ul class="list-disc ml-5">
-                    <li class="text-left">${tSwal['l11']}
-                      <a href="${tSwal['a']}" target="_blank" class="text-blue-500 hover:underline">
-                        ${tSwal['l12']}.
-                      </a>
-                    </li>
-                    <li class="text-left">${tSwal['l21']}
-                      <a href="https://www.instagram.com/plk.galacticos/" target="_blank" class="text-blue-500 hover:underline">
-                        Instagram.
-                      </a>
-                      ${tSwal['l22']}
-                    </li>
-                  </ul>
-                </div>`,
-            icon: "info",
-            confirmButtonText: "Ide gas"
-        });
-    }
+  const [isOpen, setIsOpen] = useState(false);
+  const [shouldMountPopup, setShouldMountPopup] = useState(false);
+
+  React.useEffect(() => {
+    const mountWarm = () => {
+      // let hydration finish, then mount the popup closed
+      if ('requestIdleCallback' in window) {
+        (window as any).requestIdleCallback(() => setShouldMountPopup(true), { timeout: 2000 });
+      } else {
+        setTimeout(() => setShouldMountPopup(true), 1200);
+      }
+    };
+  
+    if (document.readyState === 'complete') mountWarm();
+    else window.addEventListener('load', mountWarm);
+  
+    return () => window.removeEventListener('load', mountWarm);
+  }, []);
+
+  const handleOpen = () => {
+    // Trigger first render of LazyInfoPopup -> downloads chunk on demand
+    if (!shouldMountPopup) setShouldMountPopup(true);
+    setIsOpen(true);
   };
   
   return (
@@ -46,7 +49,7 @@ const Footer = ({t}) => {
                         <li><a href={"/" + tNav['home-link']} className='link'>{t['l11']}</a></li>
                         <li><a href={"/" + tNav['members-link']} className='link'>{t['l12']}</a></li>
                         {/* <li><a href={"/" + tNav['kup-link']} className='link'>{t['l13']}</a></li> */}
-                        <li><span onClick={showAlert} className='link cursor-pointer'>{t['l14']}</span></li>
+                        <li><span onClick={handleOpen} className='link cursor-pointer'>{t['l14']}</span></li>
                     </ul>
                 </div>
 
@@ -92,6 +95,10 @@ const Footer = ({t}) => {
             <p>© 2025 Powerlifting klub Galacticos. {t['footer.copy']} </p>
           </div>
         </div>
+
+        {shouldMountPopup && (
+          <LazyRegistrationPopup open={isOpen} onClose={() => setIsOpen(false)} tSwal={tSwal} confirmText="Ide gas" />
+        )}
     </footer>
   )
 }

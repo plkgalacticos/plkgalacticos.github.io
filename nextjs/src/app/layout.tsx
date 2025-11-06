@@ -3,8 +3,6 @@ import "./globals.css";
 import { Roboto_Mono } from "next/font/google";
 import GoogleAnalytics from "./components/GoogleAnalytics";
 import CookieBanner from "./components/CookieBanner";
-import hr from '../../messages/hr.json'
-import Head from "next/head";
 
 const robotoMono = Roboto_Mono({subsets: ['latin']})
 
