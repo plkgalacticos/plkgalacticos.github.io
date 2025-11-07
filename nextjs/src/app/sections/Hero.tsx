@@ -39,9 +39,9 @@ const Hero = ({t}) => {
 
   return (
     <section className='min-w-full min-h-[100vh] bg-blend-darken bg-black/70'>
-        {/* <div className='fixed top-0 right-0 left-0 min-w-full min-h-[100vh] -z-10'><Image className='w-full min-h-[100vh] object-cover object-top' src="/images/Walter1.jpg" alt="Cucanj" width={1024} height={572} /></div> */}
-        <div className='hidden lg:block absolute inset-0 min-w-full min-h-[100vh] -z-10'><Image className='w-full min-h-[100vh] object-cover object-top' src="/images/hero-bg.png" alt="Cucanj" width={1024} height={572} priority={true} layout='intrinsic' /></div>
-        <div className='block lg:hidden absolute inset-0 min-w-full min-h-[100vh] -z-10'><Image className='w-full min-h-[100vh] object-cover object-top' src="/images/bg-hero-mobile.png" alt="Cucanj" width={1024} height={572} priority={true} layout='intrinsic' /></div>
+        <div className='fixed top-0 right-0 left-0 min-w-full min-h-[100vh] -z-10'><Image className='w-full min-h-[100vh] object-cover object-top' src="/images/Walter1.jpg" alt="Cucanj" width={1024} height={572} /></div>
+        {/* <div className='hidden lg:block absolute inset-0 min-w-full min-h-[100vh] -z-10'><Image className='w-full min-h-[100vh] object-cover object-top' src="/images/hero-bg.png" alt="Cucanj" width={1024} height={572} priority={true} layout='intrinsic' /></div> */}
+        {/* <div className='block lg:hidden absolute inset-0 min-w-full min-h-[100vh] -z-10'><Image className='w-full min-h-[100vh] object-cover object-top' src="/images/bg-hero-mobile.png" alt="Cucanj" width={1024} height={572} priority={true} layout='intrinsic' /></div> */}
         
         <div className='max-container flex flex-col justify-end items-start min-h-[100vh] gap-4 px-4 pb-20 lg:pb-28'>
             <h1 className='text-3xl lg:text-4xl font-extrabold uppercase leading-none'>{t['h1']}</h1>
