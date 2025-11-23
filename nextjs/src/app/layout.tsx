@@ -8,7 +8,7 @@ const robotoMono = Roboto_Mono({subsets: ['latin']})
 
 export const metadata: Metadata = {
   title: "Powerlifting klub Galacticos",
-  description: "Powerlifting klub Galacticos je zajednica strastvenih sportaša diljem Hrvatske. Težimo biti najjači i najtrofejniji powerlifting klub. Ponosan smo član Hrvatskog Powerlifting Saveza od 2024.",
+  description: "Powerlifting klub Galacticos je zajednica strastvenih sportaša diljem Hrvatske. Težimo biti najjači i najtrofejniji powerlifting klub. Član smo Hrvatskog Powerlifting Saveza od 2024.",
 };
 
 export default async function RootLayout({
@@ -22,7 +22,7 @@ export default async function RootLayout({
         "name": "Powerlifting Klub Galacticos",
         "url": "https://www.plkgalacticos.hr",
         "logo": "https://www.plkgalacticos.hr/images/logo/plk-galacticos-logo-bright.png",
-        "description": "Powerlifting klub Galacticos je zajednica strastvenih sportaša diljem Hrvatske. Težimo biti najjači i najtrofejniji powerlifting klub. Ponosan smo član Hrvatskog Powerlifting Saveza od 2024.",
+        "description": "Powerlifting klub Galacticos je zajednica strastvenih sportaša diljem Hrvatske. Težimo biti najjači i najtrofejniji powerlifting klub. Član smo Hrvatskog Powerlifting Saveza od 2024.",
         "image": "https://www.plkgalacticos.hr/images/logo/plk-galacticos-logo-bright.png",
         "foundingDate": "2024-08-01",
         "location": {
@@ -148,7 +148,7 @@ export default async function RootLayout({
     <html lang="hr">
       <head>
           <meta property="og:title" content="PLK Galacticos" />
-          <meta property="og:description" content="Powerlifting klub Galacticos je zajednica strastvenih sportaša diljem Hrvatske. Težimo biti najjači i najtrofejniji powerlifting klub. Ponosan smo član Hrvatskog Powerlifting Saveza od 2024." />
+          <meta property="og:description" content="Powerlifting klub Galacticos je zajednica strastvenih sportaša diljem Hrvatske. Težimo biti najjači i najtrofejniji powerlifting klub. Član smo Hrvatskog Powerlifting Saveza od 2024." />
           <meta property="og:image" content="https://www.plkgalacticos.hr/images/logo/plk-galacticos-logo-bright.png" />
           <script
             type="application/ld+json"
