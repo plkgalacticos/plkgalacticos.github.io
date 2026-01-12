@@ -3,7 +3,7 @@ import type { NextConfig } from "next";
 /** @type {import('next').NextConfig} */
 const nextConfig: NextConfig = {
     basePath: "",
-    // output: "export",
+    output: "export",
     images: {
         unoptimized: true, // Disable image optimization
     },
