@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from "react";
 import Navbar from "../components/Navbar";
 import hr from '../../../messages/hr.json'
 import Footer from "../components/Footer";
@@ -11,15 +10,15 @@ export const metadata: Metadata = {
 
 
 const ClanoviPage = () => {
-  
 
-  return (
-   <main>
-     <Navbar t={hr}></Navbar>
-     <Clanovi ></Clanovi>
-     <Footer t={hr}></Footer>
-   </main>
-  );
+
+    return (
+        <main>
+            <Navbar t={hr}></Navbar>
+            <Clanovi ></Clanovi>
+            <Footer t={hr}></Footer>
+        </main>
+    );
 };
 
 export default ClanoviPage;
