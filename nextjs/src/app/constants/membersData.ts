@@ -121,7 +121,7 @@ Dok me moja ludost ne dokrajči.`,
         ipf: "https://www.openipf.org/u/stjepanromic",
         description: "315/205/325 - državno 2026",
         description_en: "315/205/325 - Nationals 2026",
-        imgUrl: "/images/members/Romic_Stjepan.JPG"
+        imgUrl: "/images/members/Romic_Stjepan.jpg"
     },
     {
         name: 'Luka Puček',
