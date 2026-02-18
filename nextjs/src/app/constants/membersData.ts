@@ -47,7 +47,7 @@ export const members: Athlete[] = [
         ipf: "https://www.openipf.org/u/lukababic",
         description: "Inače se bavim skijanjem, a u slobodno vrijeme powerliftam. Vjerujem da ovaj klub ima potencijal postati najbolji u HPLS-u ikad, te ću dati sve od sebe da to i postane. Inače po struci FER-ovac, zadnja godina. Dolazim iz Pleternice, najjači grad ikad.",
         description_en: "I usually do skiing, and in my free time, I powerlift. I believe this club has the potential to become the best in HPLS ever, and I will give my all to make it so. I'm a FER (Electrical Engineering) student in my final year. I come from Pleternica, the strongest city ever.",
-        imgUrl: "/images/members/Babic_Luka.PNG"
+        imgUrl: "/images/members/Babic_Luka.png"
     },
     {
         name: "Oliver Ozvačić",
@@ -196,7 +196,7 @@ Dok me moja ludost ne dokrajči.`,
         ipf: "https://www.openipf.org/u/mateakucljak",
         description: "Spajam nespojivo i potičem ljude da naprave prvi korak. Saznaj više na mom webu. (<---link: https://matticoaching.odoo.com/ )\n\nEvery day is bench day!",
         description_en: "I connect the incompatible and encourage people to take the first step. Find out more on my website. (<---link: https://matticoaching.odoo.com/ )\n\nEvery day is bench day!",
-        imgUrl: "/images/members/Kucljak_Matea.JPG"
+        imgUrl: "/images/members/Kucljak_Matea.jpg"
     },
     {
         name: 'Josip Šestak',
@@ -256,7 +256,7 @@ Dok me moja ludost ne dokrajči.`,
         ipf: "https://www.openipf.org/u/davidslezak",
         description: "Si mi povedaju kaj me ne razmeju i kaj sam Slovenec, a nesam.",
         description_en: "Everyone tells me they don't understand me and that I'm Slovenian, but I'm not.",
-        imgUrl: "/images/members/Slezak_David.JPG"
+        imgUrl: "/images/members/Slezak_David.jpg"
     },
     {
         name: 'Tara Baće',
@@ -577,7 +577,7 @@ Congratulations!!! See you at the Euros`,
         ipf: "https://www.openipf.org/u/karloknezevic",
         description: "Najviše volim deadliftat i piti mlijeko. U slobodno vrijeme sam najbrži vozač Wolta na biciklu (i najjači🦾)",
         description_en: "I love deadlifting and drinking milk the most. In my free time, I am the fastest Wolt delivery rider on a bicycle (and the strongest🦾).",
-        imgUrl: "/images/members/Knezevic_Karlo.JPG"
+        imgUrl: "/images/members/Knezevic_Karlo.jpg"
     },
     {
         name: "Petar Ovčar",
@@ -592,7 +592,7 @@ Congratulations!!! See you at the Euros`,
         ipf: "https://www.openipf.org/u/petarovcar",
         description: "Čučanj na glavi - 100kg\nBench s pljeskom - 60kg\nDeadlift iza leđa - 200.5kg",
         description_en: "Head squat - 100kg\nClap bench - 60kg\nBehind-the-back deadlift - 200.5kg",
-        imgUrl: "/images/members/Ovcar_Petar.JPG"
+        imgUrl: "/images/members/Ovcar_Petar.jpg"
     },
     {
         name: "Marin Štambuk",
@@ -607,7 +607,7 @@ Congratulations!!! See you at the Euros`,
         ipf: "https://www.openipf.org/u/marinstambuk",
         description: "Ja sam Marin.\nPo struci sam magistar ekonomije i fitness trener.\nNatječem se od ranih dana HPLS-a jer sam jako competitive i to me motivira da nastavim sa svojim treningom i putom.",
         description_en: "I am Marin. I am a Master of Economics and a fitness trainer by profession. I have been competing since the early days of HPLS because I am very competitive, and that motivates me to continue with my training and journey.",
-        imgUrl: "/images/members/Stambuk_Marin.JPG"
+        imgUrl: "/images/members/Stambuk_Marin.jpg"
     },
     {
         name: "Ante Perković",
@@ -622,7 +622,7 @@ Congratulations!!! See you at the Euros`,
         ipf: "https://www.openipf.org/u/anteperkovic",
         description: "Samo gas, prljav beton, sranje smrdi na aceton.\nPrvak u RPE overshootanju i skippanju accessorija.",
         description_en: "Full gas, dirty concrete... Champion of RPE overshooting and skipping accessories.",
-        imgUrl: "/images/members/Perkovic_Ante.JPG"
+        imgUrl: "/images/members/Perkovic_Ante.jpg"
     },
     {
         name: "Antun Mraz",
@@ -637,7 +637,7 @@ Congratulations!!! See you at the Euros`,
         ipf: "https://www.openipf.org/u/antunmraz",
         description: "Najjaki",
         description_en: "The strongest.",
-        imgUrl: "/images/members/Mraz_Antun.PNG"
+        imgUrl: "/images/members/Mraz_Antun.png"
     },
     {
         name: "Luka Radilovic",
@@ -652,7 +652,7 @@ Congratulations!!! See you at the Euros`,
         ipf: "https://www.openpowerlifting.org/u/lukaradilovic",
         description: "Tajna uspijeha u zivotu:\n\"Nemoj nikad, iz bilokog razloga, napraviti ista, ikome, iz bilokog razloga, ikad, neovisno sto, neovisno gdje, ili tko, ili s kim si, ili gdje ides, ili gjde si bio, ikad, iz bilokog moguceg razloga.\"",
         description_en: "The secret to success in life: \"Don't ever, for any reason, do anything, to anyone, for any reason, ever, no matter what, no matter where, or who, or who you are with, or where you are going, or where you've been, ever, for any reason whatsoever.\"",
-        imgUrl: "/images/members/Radilovic_Luka.JPG"
+        imgUrl: "/images/members/Radilovic_Luka.jpg"
     },
     {
         name: "Vjekoslav Babić",
@@ -667,7 +667,7 @@ Congratulations!!! See you at the Euros`,
         ipf: "https://www.openipf.org/u/vjekoslavbabic",
         description: "Pozdrav svima, ja sam Vjeko iz Pleternice. Keramičar po struci i vječni student života, imam 50 godina i nikako da diplomiram. Pronašao sam novi smisao života prije svega kroz ovaj klub, a iza toga i u ovom sportu. Životne sam filozofije da stalno moramo napredovati i tražiti načine da budemo bolji. Krvi bih dao za ovaj klub jer je doista \"Klub iznad svega\", ali nije iznad Boga!",
         description_en: "Hello everyone, I'm Vjeko from Pleternice. A tiler by profession and an eternal student of life, I'm 50 years old and still haven't graduated. I found a new meaning in life primarily through this club, and then in this sport. My life philosophy is that we must constantly progress and find ways to be better. I would give my blood for this club because it truly is 'The Club above all,' but it is not above God!",
-        imgUrl: "/images/members/Babic_Vjekoslav.JPG"
+        imgUrl: "/images/members/Babic_Vjekoslav.jpg"
     },
     {
         name: "David Smoljan",
@@ -697,7 +697,7 @@ Congratulations!!! See you at the Euros`,
         ipf: "https://www.openipf.org/u/leonorakuqi",
         description: "Ja sam Leonora. Na natjecanjima sam uvijek u rozom (ofc). Chronical back pain enjoyer.",
         description_en: "I am Leonora. I'm always in pink at competitions (ofc). Chronic back pain enjoyer.",
-        imgUrl: "/images/members/Kuqi_Leonora.PNG"
+        imgUrl: "/images/members/Kuqi_Leonora.png"
     },
     {
         name: "Andrija Svoboda",
@@ -712,7 +712,7 @@ Congratulations!!! See you at the Euros`,
         ipf: "https://www.openipf.org/u/andrijasvobodaarnautov",
         description: "Drugi najjači lifter Ivanić-Grada",
         description_en: "The second strongest lifter in Ivanić-Grad.",
-        imgUrl: "/images/members/Svoboda_Andrija.JPEG"
+        imgUrl: "/images/members/Svoboda_Andrija.jpeg"
     },
     {
         name: "Valeria Matić",
@@ -727,7 +727,7 @@ Congratulations!!! See you at the Euros`,
         ipf: "https://www.openipf.org/u/valeriamatic",
         description: "Počela sam se baviti powerliftingom jer mi je bilo premalo imati samo šest hobija.",
         description_en: "I started powerlifting because having only six hobbies wasn't enough for me.",
-        imgUrl: "/images/members/Matic_Valeria.PNG"
+        imgUrl: "/images/members/Matic_Valeria.png"
     },
     {
         name: "Karla Kolić",
@@ -742,7 +742,7 @@ Congratulations!!! See you at the Euros`,
         ipf: "https://www.openipf.org/u/karlakolic",
         description: "Ja sam Karla, u slobodno vrijeme ragebaitam mačke i ne hodam po crtama.",
         description_en: "I am Karla, in my free time I rage-bait cats and don't walk on lines.",
-        imgUrl: "/images/members/Kolic_Karla.JPG"
+        imgUrl: "/images/members/Kolic_Karla.jpg"
     },
     {
         name: "Melisa Matulin",
@@ -757,7 +757,7 @@ Congratulations!!! See you at the Euros`,
         ipf: "https://www.openipf.org/u/melisamatulin",
         description: "Studiram kineziologiju kaj nebudem još jedan debeli powerlifter koji nemre trčat. \nAk me tražiš kad je squat day sigurno sam na benchu.\nA ako ovo čitaš dužan si mi rozi monster (može i bull)",
         description_en: "I'm studying kinesiology so I don't become another fat powerlifter who can't run. If you're looking for me on squat day, I'm definitely on the bench. And if you're reading this, you owe me a pink Monster (or Red Bull).",
-        imgUrl: "/images/members/Matulin_Melisa.JPG"
+        imgUrl: "/images/members/Matulin_Melisa.jpg"
     },
     {
         name: "Petar Rendulić",
@@ -772,7 +772,7 @@ Congratulations!!! See you at the Euros`,
         ipf: "https://www.openipf.org/u/petarrendulic",
         description: "Za prijatelje Pero. Volim papat i trenirat, a u slobodno vrijeme watercutam. Također, imam veći deadlift od debelog smrada Waltera hehe",
         description_en: "Pero to my friends. I love to eat and train, and in my free time, I water cut. Also, I have a bigger deadlift than that fat stink Walter hehe.",
-        imgUrl: "/images/members/Rendulic_Petar.JPEG"
+        imgUrl: "/images/members/Rendulic_Petar.jpeg"
     },
     {
         name: "Sara Magaš",
@@ -802,6 +802,6 @@ Congratulations!!! See you at the Euros`,
         ipf: "https://www.openipf.org/u/jankocerjan",
         description: "Yeah buddy lightweight!",
         description_en: "Yeah buddy lightweight!",
-        imgUrl: "/images/members/Cerjan_Janko.PNG"
+        imgUrl: "/images/members/Cerjan_Janko.png"
     },
 ]
