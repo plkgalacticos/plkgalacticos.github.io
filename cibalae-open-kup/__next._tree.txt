@@ -1,4 +1,4 @@
-:HL["/_next/static/chunks/1a156d831ac1c6fe.css","style"]
+:HL["/_next/static/chunks/a150e73b5c8fc597.css","style"]
 :HL["/_next/static/media/2f13ad8e538108e0-s.p.9b936cf7.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 :HL["/images/EmilKrastev.png","image"]
 :HL["/images/sponsors/grad-vinkovci.png","image"]
@@ -14,4 +14,4 @@
 :HL["/images/sponsors/ttigroup.png","image"]
 :HL["/images/sponsors/Jurcak-design.png","image"]
 :HL["/images/sponsors/Keramika-Babic.png","image"]
-0:{"buildId":"WAYZLw0bsqv2otF8872rZ","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"cibalae-open-kup","paramType":null,"paramKey":"cibalae-open-kup","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":false}},"isRootLayout":true},"staleTime":300}
+0:{"buildId":"xkqRFxvSkFZ1OqDLSCWt5","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"cibalae-open-kup","paramType":null,"paramKey":"cibalae-open-kup","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":false}},"isRootLayout":true},"staleTime":300}
